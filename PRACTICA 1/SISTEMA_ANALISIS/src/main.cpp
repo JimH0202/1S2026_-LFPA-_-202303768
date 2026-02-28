@@ -65,6 +65,7 @@
 #include <iostream>
 #include <vector>    // Para almacenar datos
 #include <string>    // Para rutas de archivos
+#include <sstream>   // Para parseo de input del menú
 
 // Headers de modulos
 #include "../include/FileManager.h"    // Carga de archivos
@@ -74,6 +75,38 @@
 using namespace std;
 
 // Vector global para almacenar 3 estructuras de datos
+// Función auxiliar: lee una línea de entrada y valida que sea
+// un número entero dentro del rango válido del menú (1-9).
+int getMenuOption() {
+    string input;
+    while (true) {
+        cout << "Seleccione una opcion: ";
+        if (!std::getline(cin, input)) return 9; // EOF -> salir
+
+        // Trim simple (solo espacios y tabs)
+        size_t start = input.find_first_not_of(" \t\r\n");
+        if (start == string::npos) {
+            cout << "Entrada vacía. Ingrese un número entre 1 y 9.\n";
+            continue;
+        }
+        size_t end = input.find_last_not_of(" \t\r\n");
+        string trimmed = input.substr(start, end - start + 1);
+
+        // Intentar convertir a entero con stringstream
+        stringstream ss(trimmed);
+        int opt;
+        if (!(ss >> opt) || !(ss.eof())) {
+            cout << "Entrada inválida. Ingrese un número entre 1 y 9.\n";
+            continue;
+        }
+        if (opt < 1 || opt > 9) {
+            cout << "Opción fuera de rango. Ingrese un número entre 1 y 9.\n";
+            continue;
+        }
+        return opt;
+    }
+}
+
 int main() {
     vector<Student> students;  // Almacena estructura de estudiantes
     vector<Course> courses;     // Almacena estructura de cursos
@@ -95,8 +128,7 @@ int main() {
         cout << "7. Generar Reporte: Cursos con Mayor Reprobacion\n";
         cout << "8. Generar Reporte: Analisis por Carrera\n";
         cout << "9. Salir\n";
-        cout << "Seleccione una opcion: ";
-        cin >> option;
+        option = getMenuOption();
         
         // PROCESAMIENTO DE OPCIONES
         switch(option) {
