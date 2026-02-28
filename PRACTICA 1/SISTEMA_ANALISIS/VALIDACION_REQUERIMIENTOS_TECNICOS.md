@@ -486,31 +486,31 @@ int main() {
 
 ```
 ┌────────────────────────────────────────────────────────────┐
-│     VALIDACION DE REQUERIMIENTOS TECNICOS (5/5)           │
+│     VALIDACION DE REQUERIMIENTOS TECNICOS (5/5)            │
 ├────────────────────────────────────────────────────────────┤
-│ 1. Lectura de archivos con clases nativas (ifstream)   │
-│    - 3 archivos .lfp cargados                             │
-│    - Manejo de errores implementado                       │
+│ 1. Lectura de archivos con clases nativas (ifstream)       │
+│    - 3 archivos .lfp cargados                              │
+│    - Manejo de errores implementado                        │
 │                                                            │
-│ 2. Separación de datos con split()                     │
-│    - Función split() implementada                         │
-│    - Usa stringstream y getline()                         │
-│    - Procesa 3 formatos CSV diferentes                    │
+│ 2. Separación de datos con split()                         │
+│    - Función split() implementada                          │
+│    - Usa stringstream y getline()                          │
+│    - Procesa 3 formatos CSV diferentes                     │
 │                                                            │
-│ 3. Estructuras de control + Colecciones               │
-│    - if, while, for, switch implementados                │
-│    - 3 vectores para almacenar datos                      │
-│    - STL methods: push_back, size, empty                │
+│ 3. Estructuras de control + Colecciones                    │
+│    - if, while, for, switch implementados                  │
+│    - 3 vectores para almacenar datos                       │
+│    - STL methods: push_back, size, empty                   │
 │                                                            │
-│ 4. Generación de reportes HTML                         │
-│    - 5 reportes generados con ofstream                   │
-│    - Tablas HTML con formatos correctos                  │
-│    - 32 campos totales en reportes                        │
+│ 4. Generación de reportes HTML                             │
+│    - 5 reportes generados con ofstream                     │
+│    - Tablas HTML con formatos correctos                    │
+│    - 32 campos totales en reportes                         │
 │                                                            │
-│ 5. Menú funcional en consola                           │
-│    - do-while loop con 9 opciones                        │
-│    - Switch para procesamiento                           │
-│    - Entrada/salida por consola                          │
+│ 5. Menú funcional en consola                               │
+│    - do-while loop con 9 opciones                          │
+│    - Switch para procesamiento                             │
+│    - Entrada/salida por consola                            │
 ├────────────────────────────────────────────────────────────┤
 │           CUMPLIMIENTO: 5/5 (100%)                         │
 └────────────────────────────────────────────────────────────┘

@@ -242,17 +242,17 @@ do {
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│         VALIDACION DE REQUISITOS OBLIGATORIOS          │
+│         VALIDACION DE REQUISITOS OBLIGATORIOS           │
 ├─────────────────────────────────────────────────────────┤
-│ 1. Lenguaje C++                                      │
-│ 2. Lectura de archivos .lfp                          │
-│ 3. Separación de datos mediante comas               │
-│ 4. Estructuras de control (if,while,for,switch)    │
-│ 5. Cálculos estadísticos                             │
-│ 6. Generación de reportes HTML                       │
-│ 7. Uso de vectores/arreglos                          │
-│ 8. Relación entre múltiples archivos                 │
-│ 9. Menú funcional en consola                         │
+│ 1. Lenguaje C++                                         │
+│ 2. Lectura de archivos .lfp                             │
+│ 3. Separación de datos mediante comas                   │
+│ 4. Estructuras de control (if,while,for,switch)         │
+│ 5. Cálculos estadísticos                                │
+│ 6. Generación de reportes HTML                          │
+│ 7. Uso de vectores/arreglos                             │
+│ 8. Relación entre múltiples archivos                    │
+│ 9. Menú funcional en consola                            │
 ├─────────────────────────────────────────────────────────┤
 │              CUMPLIMIENTO: 9/9 (100%)                   │
 └─────────────────────────────────────────────────────────┘

@@ -10,7 +10,7 @@
 **Archivo:** `reporte_curso.html`  
 **Función:** `reportStatsByCourse()`
 
-### ✅ Especificación vs Implementación
+### Especificación vs Implementación
 
 | Campo Requerido | Especificación | Implementación | Estado |
 |---|---|---|---|
@@ -39,7 +39,7 @@
 **Archivo:** `reporte_estudiante.html`  
 **Función:** `reportPerformanceByStudent()`
 
-### ✅ Especificación vs Implementación
+### Especificación vs Implementación
 
 | Campo Requerido | Especificación | Implementación | Estado |
 |---|---|---|---|
@@ -79,16 +79,16 @@ if (g.nota >= 61) {
 **Archivo:** `reporte_top10.html`  
 **Función:** `reportTop10()`
 
-### ✅ Especificación vs Implementación
+### Especificación vs Implementación
 
 | Campo Requerido | Especificación | Implementación | Estado |
 |---|---|---|---|
-| **Posición** | Número en ranking (1-10) | `i+1` | ✅ |
-| **Carnet** | ID del estudiante | `carnet` (de ranking) | ✅ |
-| **Nombre completo** | Nombre + Apellido | `nombre + " " + apellido` | ✅ |
-| **Carrera** | Carrera inscrita | `carrera` | ✅ |
-| **Semestre** | Semestre actual | `semestre` | ✅ |
-| **Promedio** | Promedio general | `average(notas)` | ✅ |
+| **Posición** | Número en ranking (1-10) | `i+1` |  |
+| **Carnet** | ID del estudiante | `carnet` (de ranking) | |
+| **Nombre completo** | Nombre + Apellido | `nombre + " " + apellido` | |
+| **Carrera** | Carrera inscrita | `carrera` | |
+| **Semestre** | Semestre actual | `semestre` | |
+| **Promedio** | Promedio general | `average(notas)` | |
 
 ### Ordenamiento
 ```cpp
@@ -118,16 +118,16 @@ for (size_t i=0; i<avgCarnet.size() && i<10; i++) { ... }
 **Archivo:** `reporte_reprobacion.html`  
 **Función:** `reportCoursesReprobation()`
 
-### ✅ Especificación vs Implementación
+### Especificación vs Implementación
 
 | Campo Requerido | Especificación | Implementación | Estado |
 |---|---|---|---|
-| **Código del curso** | Código único del curso | `code` | ✅ |
-| **Nombre del curso** | Nombre del curso | `it->nombre` (búsqueda) | ✅ |
-| **Total de estudiantes** | Cantidad total | `st.total` | ✅ |
-| **Cantidad aprobados** | Count con nota >= 61 | `st.apr` | ✅ |
-| **Cantidad reprobados** | Count con nota < 61 | `st.rep` | ✅ |
-| **Porcentaje reprobación** | % de estudiantes reprobados | `(100.0*st.rep/st.total)` | ✅ |
+| **Código del curso** | Código único del curso | `code` | |
+| **Nombre del curso** | Nombre del curso | `it->nombre` (búsqueda) | |
+| **Total de estudiantes** | Cantidad total | `st.total` | |
+| **Cantidad aprobados** | Count con nota >= 61 | `st.apr` | |
+| **Cantidad reprobados** | Count con nota < 61 | `st.rep` | |
+| **Porcentaje reprobación** | % de estudiantes reprobados | `(100.0*st.rep/st.total)` | |
 
 ### Fórmula de Cálculo
 ```cpp
@@ -158,15 +158,15 @@ sort(order.begin(), order.end(), greater<>());
 **Archivo:** `reporte_carrera.html`  
 **Función:** `reportAnalysisByCareer()`
 
-### ✅ Especificación vs Implementación
+### Especificación vs Implementación
 
 | Campo Requerido | Especificación | Implementación | Estado |
 |---|---|---|---|
-| **Nombre de carrera** | Nombre de la carrera | `carrera` | ✅ |
-| **Cantidad total de estudiantes** | Total en la carrera | `studentsByCareer[carrera].size()` | ✅ |
-| **Promedio general de carrera** | Promedio de todas sus notas | `average(careerGrades[carrera])` | ✅ |
-| **Cantidad de cursos disponibles** | Total de cursos | `careerCourses[carrera].size()` | ✅ |
-| **Distribución por semestre** | Estudiantes por semestre | `distribution[carrera][semestre]` | ✅ |
+| **Nombre de carrera** | Nombre de la carrera | `carrera` | |
+| **Cantidad total de estudiantes** | Total en la carrera | `studentsByCareer[carrera].size()` | |
+| **Promedio general de carrera** | Promedio de todas sus notas | `average(careerGrades[carrera])` | |
+| **Cantidad de cursos disponibles** | Total de cursos | `careerCourses[carrera].size()` | |
+| **Distribución por semestre** | Estudiantes por semestre | `distribution[carrera][semestre]` ||
 
 ### Mapeos de Datos
 ```cpp
@@ -232,9 +232,9 @@ map<string,map<int,int>> distribution;
 TODOS LOS 5 REPORTES CUMPLEN 100% CON LAS ESPECIFICACIONES
 
 Cada reporte incluye:
-- ✅ Todos los campos requeridos
-- ✅ Cálculos estadísticos correctos
-- ✅ Relaciones de datos adecuadas
-- ✅ Ordenamiento según especificación
-- ✅ Formato HTML con tablas
-- ✅ Guardado en archivo del sistema
+- Todos los campos requeridos
+- Cálculos estadísticos correctos
+- Relaciones de datos adecuadas
+- Ordenamiento según especificación
+- Formato HTML con tablas
+- Guardado en archivo del sistema

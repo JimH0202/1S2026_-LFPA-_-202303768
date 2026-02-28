@@ -43,7 +43,7 @@ struct Grade {
 
 // FUNCIONES DE UTILIDAD Y CARGA DE DATOS
 
-// Funcion auxiliar: Separar string por delimitador (comma)
+// Funcion auxiliar: Separar string por delimitador (coma)
 // Implementa procesamiento CSV para parsear archivos .lfp
 std::vector<std::string> split(const std::string &s, char delim);
 

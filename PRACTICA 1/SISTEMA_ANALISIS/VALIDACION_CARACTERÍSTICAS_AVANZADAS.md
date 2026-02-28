@@ -55,7 +55,7 @@ if (file.eof() && file.tellg() == 0) {
 ```cpp
 // MANEJO DE ERRORES: Validación de formato
 if (parts.size() < 5) {
-    cerr << "⚠️  Advertencia: Línea " << lineCount << " tiene solo " << parts.size() 
+    cerr << "Advertencia: Línea " << lineCount << " tiene solo " << parts.size() 
          << " campos (esperado 5). Línea ignorada.\n";
     errorCount++;
     continue;
@@ -78,17 +78,17 @@ try {
     
     // MANEJO DE ERRORES: Validaciones de datos
     if (s.carnet <= 0) {
-        cerr << "⚠️  Advertencia: Línea " << lineCount << " - Carnet debe ser positivo. Ignorada.\n";
+        cerr << "Advertencia: Línea " << lineCount << " - Carnet debe ser positivo. Ignorada.\n";
         errorCount++;
         continue;
     }
     if (s.nombre.empty() || s.apellido.empty() || s.carrera.empty()) {
-        cerr << "⚠️  Advertencia: Línea " << lineCount << " - Campos de texto vacíos. Ignorada.\n";
+        cerr << "Advertencia: Línea " << lineCount << " - Campos de texto vacíos. Ignorada.\n";
         errorCount++;
         continue;
     }
     if (s.semestre < 1 || s.semestre > 10) {
-        cerr << "⚠️  Advertencia: Línea " << lineCount << " - Semestre fuera de rango (1-10). Ignorada.\n";
+        cerr << "Advertencia: Línea " << lineCount << " - Semestre fuera de rango (1-10). Ignorada.\n";
         errorCount++;
         continue;
     }
@@ -116,7 +116,7 @@ try {
 cout << "\n========== RESUMEN CARGA ESTUDIANTES ==========\n";
 cout << "Estudiantes cargados exitosamente: " << students.size() << "\n";
 if (errorCount > 0) {
-    cout << "⚠️  Líneas omitidas por errores: " << errorCount << "\n";
+    cout << "Líneas omitidas por errores: " << errorCount << "\n";
     cout << "Total de líneas procesadas: " << lineCount << "\n";
 }
 cout << "=============================================\n\n";
@@ -449,34 +449,34 @@ const repChart = new Chart(ctx2, {
 
 ```
 ┌────────────────────────────────────────────────────────────┐
-│     VALIDACION DE CARACTERÍSTICAS AVANZADAS (4/4)         │
+│     VALIDACION DE CARACTERÍSTICAS AVANZADAS (4/4)          │
 ├────────────────────────────────────────────────────────────┤
-│ 1. Manejo de Errores Robusto                           │
-│    - Detección de archivos inexistentes                   │
-│    - Validación de formato de datos                       │
-│    - Try-catch para excepciones                           │
-│    - Mensajes descriptivos y resumen de carga             │
+│ 1. Manejo de Errores Robusto                               │
+│    - Detección de archivos inexistentes                    │
+│    - Validación de formato de datos                        │
+│    - Try-catch para excepciones                            │
+│    - Mensajes descriptivos y resumen de carga              │
 │                                                            │
-│ 2. Algoritmos de Ordenamiento Eficientes              │
-│    - IntroSort (O(n log n))                              │
-│    - Aplicado en Top 10 y Reprobación                    │
-│    - Comentarios sobre complejidad                        │
-│    - Uso de STL sort()                                    │
+│ 2. Algoritmos de Ordenamiento Eficientes                   │
+│    - IntroSort (O(n log n))                                │
+│    - Aplicado en Top 10 y Reprobación                      │
+│    - Comentarios sobre complejidad                         │
+│    - Uso de STL sort()                                     │
 │                                                            │
-│ 3. Estructuras Personalizadas                          │
-│    - Student, Course, Grade                              │
-│    - Con campos documentados                              │
-│    - Usadas en vectores                                   │
-│    - Tipificación fuerte                                  │
+│ 3. Estructuras Personalizadas                              │
+│    - Student, Course, Grade                                │
+│    - Con campos documentados                               │
+│    - Usadas en vectores                                    │
+│    - Tipificación fuerte                                   │
 │                                                            │
-│ 4. Gráficos Estadísticos (Chart.js)                   │
-│    - 2 reportes con gráficos                             │
-│    - Librería CDN (sin instalación)                      │
-│    - Barras de promedio y reprobación                    │
-│    - Interactivos y responsivos                          │
+│ 4. Gráficos Estadísticos (Chart.js)                        │
+│    - 2 reportes con gráficos                               │
+│    - Librería CDN (sin instalación)                        │
+│    - Barras de promedio y reprobación                      │
+│    - Interactivos y responsivos                            │
 ├────────────────────────────────────────────────────────────┤
 │           CUMPLIMIENTO: 4/4 (100%)                         │
-│     COMPILACIÓN: EXITOSA (sin errores)                │
+│     COMPILACIÓN: EXITOSA (sin errores)                     │
 └────────────────────────────────────────────────────────────┘
 ```
 
@@ -499,7 +499,7 @@ g++ -std=c++17 -Iinclude src/main.cpp src/FileManager.cpp src/Estadisticas.cpp s
 
 ---
 
-## 📁 ARCHIVOS MODIFICADOS
+## ARCHIVOS MODIFICADOS
 
 1. **src/FileManager.cpp**
    - Manejo robusto de errores con try-catch
@@ -514,4 +514,3 @@ g++ -std=c++17 -Iinclude src/main.cpp src/FileManager.cpp src/Estadisticas.cpp s
 ---
 
 **Fecha:** 28 de febrero de 2026
-**Estado:** TODAS LAS CARACTERÍSTICAS AVANZADAS IMPLEMENTADAS Y COMPILADAS

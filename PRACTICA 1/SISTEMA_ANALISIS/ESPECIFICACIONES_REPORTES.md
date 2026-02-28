@@ -4,13 +4,13 @@
 
 ```
 Especificación del Usuario:
-- nombre del curso ✅
-- cantidad de estudiantes que lo han cursado ✅
-- nota promedio ✅
-- nota máxima ✅
-- nota mínima ✅
-- desviación estándar ✅
-- mediana de las calificaciones ✅
+- nombre del curso 
+- cantidad de estudiantes que lo han cursado 
+- nota promedio 
+- nota máxima 
+- nota mínima 
+- desviación estándar 
+- mediana de las calificaciones 
 
 Implementación:
 ┌─────────────────┬──────────────┬──────────────────────────┐
@@ -34,14 +34,14 @@ Archivo: reportes/reporte_curso.html
 
 ```
 Especificación del Usuario:
-- nombre completo ✅
-- carnet ✅
-- carrera ✅
-- semestre actual ✅
-- promedio general de todas sus notas ✅
-- cantidad de cursos aprobados (nota >= 61) ✅
-- cantidad de cursos reprobados (nota < 61) ✅
-- créditos acumulados ✅
+- nombre completo 
+- carnet 
+- carrera 
+- semestre actual 
+- promedio general de todas sus notas 
+- cantidad de cursos aprobados (nota >= 61) 
+- cantidad de cursos reprobados (nota < 61) 
+- créditos acumulados 
 
 Implementación:
 ┌─────────────────────────┬──────────────┬──────────────────────────┐
@@ -57,7 +57,7 @@ Implementación:
 │ Créditos Acumulados     │ SI           │ acumulador creditos      │
 └─────────────────────────┴──────────────┴──────────────────────────┘
 
-Criterio Aprobación: nota >= 61 ✅
+Criterio Aprobación: nota >= 61 
 
 Archivo: reportes/reporte_estudiante.html
 ```
@@ -68,13 +68,13 @@ Archivo: reportes/reporte_estudiante.html
 
 ```
 Especificación del Usuario:
-- posición (1-10) ✅
-- carnet ✅
-- nombre completo ✅
-- carrera ✅
-- semestre ✅
-- promedio ✅
-- ordenados por promedio descendente ✅
+- posición (1-10) 
+- carnet 
+- nombre completo 
+- carrera 
+- semestre 
+- promedio 
+- ordenados por promedio descendente 
 
 Implementación:
 ┌──────────────────┬──────────────┬──────────────────────────┐
@@ -105,13 +105,13 @@ Archivo: reportes/reporte_top10.html
 
 ```
 Especificación del Usuario:
-- código del curso ✅
-- nombre del curso ✅
-- total de estudiantes ✅
-- cantidad de aprobados ✅
-- cantidad de reprobados ✅
-- porcentaje de reprobación ✅
-- ordenados por % reprobación (mayor a menor) ✅
+- código del curso 
+- nombre del curso 
+- total de estudiantes 
+- cantidad de aprobados 
+- cantidad de reprobados 
+- porcentaje de reprobación 
+- ordenados por % reprobación (mayor a menor) 
 
 Implementación:
 ┌─────────────────────────┬──────────────┬──────────────────────────┐
@@ -129,7 +129,7 @@ Implementación:
 Fórmula de Cálculo:
 % Reprobación = (Cantidad Reprobados / Total Estudiantes) * 100
 
-Criterio Aprobación: nota >= 61 ✅
+Criterio Aprobación: nota >= 61 
 
 Algoritmo:
 1. Contar por curso: total, aprobados, reprobados
@@ -147,11 +147,11 @@ Archivo: reportes/reporte_reprobacion.html
 
 ```
 Especificación del Usuario:
-- nombre de la carrera ✅
-- cantidad total de estudiantes ✅
-- promedio general de la carrera ✅
-- cantidad de cursos disponibles ✅
-- distribución de estudiantes por semestre ✅
+- nombre de la carrera 
+- cantidad total de estudiantes 
+- promedio general de la carrera 
+- cantidad de cursos disponibles 
+- distribución de estudiantes por semestre 
 
 Implementación:
 ┌─────────────────────────┬──────────────┬──────────────────────────┐
@@ -195,14 +195,3 @@ Archivo: reportes/reporte_carrera.html
 | Análisis Carrera | 5 | Completo | reporte_carrera.html |
 | **TOTAL** | **32 campos** | **100%** | **5 HTML** |
 
-## CONCLUSIÓN
-
-**Todos los 5 reportes cumplen exactamente con las especificaciones proporcionadas.**
-
-- Todos los campos requeridos están implementados
-- Cálculos estadísticos correctos y documentados
-- Relaciones de datos adecuadamente programadas
-- Criterio de aprobación: nota >= 61 (nota < 61 = reprobado)
-- Archivos HTML generados dinámicamente en directorio reportes/
-- Menú interactivo de 9 opciones en main.cpp
-- Compilación exitosa sin errores

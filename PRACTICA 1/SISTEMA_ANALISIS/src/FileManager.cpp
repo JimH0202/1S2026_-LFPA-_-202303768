@@ -74,7 +74,7 @@ bool loadStudents(const string &path, vector<Student> &students) {
     
     // MANEJO DE ERRORES: Verificación 1 - Archivo existe y es accesible
     if (!file.is_open()) {
-        cerr << "Error crítico: No se puede abrir el archivo '" << path << "'\n";
+        cerr << "Error critico: No se puede abrir el archivo '" << path << "'\n";
         cerr << "   Posibles causas:\n";
         cerr << "   - El archivo no existe\n";
         cerr << "   - No tienes permisos para leer el archivo\n";
@@ -105,7 +105,7 @@ bool loadStudents(const string &path, vector<Student> &students) {
         
         // MANEJO DE ERRORES: Validación de formato
         if (parts.size() < 5) {
-            cerr << "⚠️  Advertencia: Línea " << lineCount << " tiene solo " << parts.size() 
+            cerr << "Advertencia: Línea " << lineCount << " tiene solo " << parts.size() 
                  << " campos (esperado 5). Línea ignorada.\n";
             errorCount++;
             continue;
@@ -124,17 +124,17 @@ bool loadStudents(const string &path, vector<Student> &students) {
             
             // MANEJO DE ERRORES: Validaciones de datos
             if (s.carnet <= 0) {
-                cerr << "⚠️  Advertencia: Línea " << lineCount << " - Carnet debe ser positivo. Ignorada.\n";
+                cerr << "Advertencia: Línea " << lineCount << " - Carnet debe ser positivo. Ignorada.\n";
                 errorCount++;
                 continue;
             }
             if (s.nombre.empty() || s.apellido.empty() || s.carrera.empty()) {
-                cerr << "⚠️  Advertencia: Línea " << lineCount << " - Campos de texto vacíos. Ignorada.\n";
+                cerr << "Advertencia: Línea " << lineCount << " - Campos de texto vacíos. Ignorada.\n";
                 errorCount++;
                 continue;
             }
             if (s.semestre < 1 || s.semestre > 10) {
-                cerr << "⚠️  Advertencia: Línea " << lineCount << " - Semestre fuera de rango (1-10). Ignorada.\n";
+                cerr << "Advertencia: Línea " << lineCount << " - Semestre fuera de rango (1-10). Ignorada.\n";
                 errorCount++;
                 continue;
             }
@@ -157,7 +157,7 @@ bool loadStudents(const string &path, vector<Student> &students) {
     cout << "\n========== RESUMEN CARGA ESTUDIANTES ==========\n";
     cout << "Estudiantes cargados exitosamente: " << students.size() << "\n";
     if (errorCount > 0) {
-        cout << "⚠️  Líneas omitidas por errores: " << errorCount << "\n";
+        cout << "Líneas omitidas por errores: " << errorCount << "\n";
         cout << "Total de líneas procesadas: " << lineCount << "\n";
     }
     cout << "=============================================\n\n";

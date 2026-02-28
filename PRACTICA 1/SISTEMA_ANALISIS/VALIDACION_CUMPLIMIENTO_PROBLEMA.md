@@ -25,21 +25,21 @@ Una universidad necesita un sistema para:
 - **Implementación:** `data/estudiantes.lfp`
 - **Función:** `loadStudents()` en `src/FileManager.cpp` línea 64
 - **Campos:** Carnet, Nombre, Apellido, Carrera, Semestre
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 1.2 "Archivo con los cursos disponibles"
 - **Requisito:** Leer archivo de cursos
 - **Implementación:** `data/cursos.lfp`
 - **Función:** `loadCourses()` en `src/FileManager.cpp` línea 174
 - **Campos:** Código, Nombre, Créditos, Semestre, Carrera
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 1.3 "Archivo con calificaciones"
 - **Requisito:** Leer archivo de calificaciones
 - **Implementación:** `data/notas.lfp`
 - **Función:** `loadGrades()` en `src/FileManager.cpp` línea 238
 - **Campos:** Carnet, Código Curso, Nota, Ciclo, Año
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 **Requisito 1 - CUMPLIMIENTO TOTAL: 100%**
 
@@ -55,7 +55,7 @@ Una universidad necesita un sistema para:
   - Validación de líneas vacías, campos faltantes
   - Manejo de errores con try-catch
   - Soporte para archivos corruptos
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 2.2 "Relacionar la información entre ellos"
 - **Requisito:** Conectar datos entre los 3 archivos
@@ -70,7 +70,7 @@ Una universidad necesita un sistema para:
   - Reporte 2: línea 134-150 (búsqueda de notas por carnet)
   - Reporte 1: línea 62-68 (búsqueda de notas por curso)
   - Reporte 5: línea 282-312 (agrupación por carrera)
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 2.3 "Realizar cálculos estadísticos avanzados"
 - **Requisito:** Estadísticas complejas
@@ -86,12 +86,12 @@ Una universidad necesita un sistema para:
   - Reporte 1: Calcula para cada curso
   - Reporte 2: Calcula para cada estudiante
   - Reporte 5: Calcula para cada carrera
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 2.4 "Generar reportes analíticos"
 - **Requisito:** Reportes para análisis
 - **Implementación:** 5 reportes HTML
-- **Status:** ✅ **CUMPLE 100%** (ver REQUISITO 3)
+- **Status:** **CUMPLE 100%** (ver REQUISITO 3)
 
 **Requisito 2 - CUMPLIMIENTO TOTAL: 100%**
 
@@ -127,7 +127,7 @@ Una universidad necesita un sistema para:
   - **Gráfico:** Visualización de promedios
   - **Análisis:** Identifica cursos fáciles/difíciles
 - **Archivo generado:** `reportes/reporte_curso.html`
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 3.3 "Detectar cursos con alta reprobación"
 - **Requisito:** Identificar cursos problemáticos
@@ -143,7 +143,7 @@ Una universidad necesita un sistema para:
   - **Interpretación:** Cursos en "rojo" (problema)
 - **Archivo generado:** `reportes/reporte_reprobacion.html`
 - **Campos:** Código, Nombre Curso, Total, Aprobados, Reprobados, % Reprobación
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 3.4 "Reconocer estudiantes destacados"
 - **Requisito:** Identificar top performers
@@ -156,7 +156,7 @@ Una universidad necesita un sistema para:
   - **Gráfico:** Chart.js mostrando promedios
   - **Información:** Posición, Carnet, Nombre, Carrera, Semestre, Promedio
 - **Archivo generado:** `reportes/reporte_top10.html`
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 3.5 "Visualizar de manera clara y precisa"
 - **Requisito:** Presentación profesional y entendible
@@ -171,7 +171,7 @@ Una universidad necesita un sistema para:
     - Tipos: Bar charts interactivos
     - Características: Hover, animaciones, responsivo
   - Estructura: Clara y profesional
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 #### 3.6 "Tomar decisiones informadas"
 - **Requisito:** Información para mejorar calidad
@@ -187,7 +187,7 @@ Una universidad necesita un sistema para:
     - Implementar tutorías
     - Reconocer buenos docentes
     - Ajustar planes de estudio
-- **Status:** ✅ **CUMPLE 100%**
+- **Status:** **CUMPLE 100%**
 
 **Requisito 3 - CUMPLIMIENTO TOTAL: 100%**
 
@@ -307,7 +307,7 @@ Una universidad necesita un sistema para:
 - [x] Carrera
 - [x] Semestre
 - [x] Promedio (ordenado descendente)
-- **Total: 6 campos** ✅
+- **Total: 6 campos**
 
 **Reporte 4 - Mayor Reprobación:**
 - [x] Código del curso
@@ -316,7 +316,7 @@ Una universidad necesita un sistema para:
 - [x] Aprobados
 - [x] Reprobados
 - [x] Porcentaje de reprobación (ordenado descendente)
-- **Total: 6 campos** ✅
+- **Total: 6 campos**
 
 **Reporte 5 - Análisis por Carrera:**
 - [x] Nombre de carrera
@@ -373,21 +373,21 @@ Una universidad necesita un sistema para:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│     EVALUACIÓN DEL SISTEMA ACADÉMICO                  │
+│     EVALUACIÓN DEL SISTEMA ACADÉMICO                    │
 ├─────────────────────────────────────────────────────────┤
-│ ENTRADA DE DATOS:              5/5 ARCHIVOS        │
-│ PROCESAMIENTO:                 7/7 RELACIONES      │
-│ CÁLCULOS ESTADÍSTICOS:         6/6 FUNCIONES       │
-│ ANÁLISIS ACADÉMICO:            5/5 REPORTES        │
-│ CAMPOS DE REPORTES:           32/32 CAMPOS        │
-│ VISUALIZACIÓN:                 2/2 GRÁFICOS        │
-│ CARACTERÍSTICAS AVANZADAS:     4/4 IMPLEMENTADAS   │
-│ MANEJO DE ERRORES:             8/8 TIPOS           │
-│ ALGORITMOS EFICIENTES:         2/2 APLICADOS       │
-│ ESTRUCTURA DEL CÓDIGO:         3/3 PERSONALIZADAS  │
+│ ENTRADA DE DATOS:              5/5 ARCHIVOS             │
+│ PROCESAMIENTO:                 7/7 RELACIONES           │
+│ CÁLCULOS ESTADÍSTICOS:         6/6 FUNCIONES            │
+│ ANÁLISIS ACADÉMICO:            5/5 REPORTES             │
+│ CAMPOS DE REPORTES:           32/32 CAMPOS              │
+│ VISUALIZACIÓN:                 2/2 GRÁFICOS             │
+│ CARACTERÍSTICAS AVANZADAS:     4/4 IMPLEMENTADAS        │
+│ MANEJO DE ERRORES:             8/8 TIPOS                │ 
+│ ALGORITMOS EFICIENTES:         2/2 APLICADOS            │
+│ ESTRUCTURA DEL CÓDIGO:         3/3 PERSONALIZADAS       │
 ├─────────────────────────────────────────────────────────┤
-│         CUMPLIMIENTO TOTAL: 100%                       │
-│     PROYECTO COMPLETAMENTE FUNCIONAL                │
+│         CUMPLIMIENTO TOTAL: 100%                        │
+│     PROYECTO COMPLETAMENTE FUNCIONAL                    │
 └─────────────────────────────────────────────────────────┘
 ```
 
