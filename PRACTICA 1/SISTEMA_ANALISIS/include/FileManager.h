@@ -38,7 +38,7 @@ struct Grade {
     int codigo_curso;        // Codigo del curso
     double nota;             // Calificacion obtenida (0-100)
     std::string ciclo;       // Ciclo lectivo
-    int anio;                // Anio del ciclo
+    int anio;                // Año del ciclo
 };
 
 // FUNCIONES DE UTILIDAD Y CARGA DE DATOS

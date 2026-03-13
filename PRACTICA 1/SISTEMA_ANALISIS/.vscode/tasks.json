@@ -1,9 +1,23 @@
 {
+    // La lista de tareas definidas para VS Code. Cada entrada describe
+    // un paso que el usuario puede ejecutar desde la paleta de comandos
+    // o mediante atajos (por ejemplo Ctrl+Shift+B para la tarea de
+    // "build" por defecto).
     "tasks": [
         {
+            // Tipo integrado para compilación de C/C++.
             "type": "cppbuild",
+            // Etiqueta que se muestra en el menú de tareas.
             "label": "C/C++: gcc.exe compilar archivo activo",
+            // Ejecutable que realiza la compilación. En este caso se usa
+            // el compilador gcc proporcionado por msys2 (UCRT64).
             "command": "C:/msys64/ucrt64/bin/gcc.exe",
+            // Argumentos pasados al compilador:
+            //  - habilitar colores en diagnósticos
+            //  - incluir símbolos de depuración (-g)
+            //  - compilar el archivo actualmente abierto (${file})
+            //  - establecer el nombre de salida en el mismo directorio
+            //    con la extensión .exe
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -11,18 +25,28 @@
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
+            // Opciones de entorno/ejecución para la tarea.
             "options": {
+                // Directorio de trabajo donde se ejecuta el comando
                 "cwd": "C:/msys64/ucrt64/bin"
             },
+            // `problemMatcher` define cómo VS Code interpreta los errores
+            // que imprime el compilador. Aquí se usa el matcher estándar
+            // para gcc, de modo que los errores aparecerán en el panel
+            // de problemas y se podrán saltar con F8.
             "problemMatcher": [
                 "$gcc"
             ],
+            // Asociamos esta tarea al grupo "build" y la marcamos como
+            // predeterminada para que Ctrl+Shift+B la ejecute.
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            // Texto libre que describe el origen de la tarea.
             "detail": "Tarea generada por el depurador."
         }
     ],
+    // Versión del esquema de tasks.json que se está usando. No tocar.
     "version": "2.0.0"
 }

@@ -7,6 +7,8 @@
 //   - Generar métricas para reportes analíticos
 // ============================================================
 
+// Evita que el mismo archivo sea incluido varias veces directa 
+// o indirectamente en una unidad de traducción, lo que causaría errores de compilación.
 #pragma once
 
 #include <vector>

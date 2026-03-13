@@ -32,6 +32,14 @@
 
 using namespace std;
 
+// aqui va el cambio
+string toUpperCase(string str) {
+    for (int i = 0; i < str.length(); i++) {
+        str[i] = toupper(str[i]);
+    }
+    return str;
+}
+
 // FUNCION: split()
 // PROPOSITO: Procesar string separado por comas (CSV)
 // PARAMETROS: s = string a procesar, delim = delimitador (',')
@@ -117,8 +125,8 @@ bool loadStudents(const string &path, vector<Student> &students) {
         try {
             Student s;
             s.carnet = stoi(parts[0]);      // Convierte carnet a int
-            s.nombre = parts[1];
-            s.apellido = parts[2];
+            s.nombre = toUpperCase(parts[1]);     //mayus
+            s.apellido = toUpperCase(parts[2]);   // mayus
             s.carrera = parts[3];
             s.semestre = stoi(parts[4]);    // Convierte semestre a int
             
