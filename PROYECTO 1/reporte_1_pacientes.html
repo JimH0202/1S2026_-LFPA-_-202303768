@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reporte 1 - Historial de Pacientes</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1A4731 0%, #2E7D52 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1A4731 0%, #2E7D52 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+        .header p { font-size: 1.1em; opacity: 0.9; }
+        .content { padding: 40px; }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #1A4731;
+            border-bottom: 4px solid #2E7D52;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th {
+            background: #1A4731;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95em;
+        }
+        tr:hover { background: #f8f9fa; }
+        
+        /* Estados de Pacientes */
+        .estado-activo {
+            background: #D4EDDA;
+            color: #155724;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #C3E6CB;
+        }
+        .estado-critico {
+            background: #F8D7DA;
+            color: #721C24;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #F5C6CB;
+        }
+        .estado-sin-diag {
+            background: #FFF3CD;
+            color: #856404;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #FFEEBA;
+        }
+        
+        /* Estados de Carga */
+        .carga-baja {
+            background: #D1ECF1;
+            color: #0C5460;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #BEE5EB;
+        }
+        .carga-normal {
+            background: #D4EDDA;
+            color: #155724;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #C3E6CB;
+        }
+        .carga-alta {
+            background: #FFE5CC;
+            color: #856404;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #FFD9B3;
+        }
+        .carga-saturada {
+            background: #F8D7DA;
+            color: #721C24;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            border: 1px solid #F5C6CB;
+        }
+        
+        /* Estados de Citas */
+        .cita-confirmada {
+            background: #D4EDDA;
+            color: #155724;
+            font-weight: 600;
+        }
+        .cita-conflicto {
+            background: #F8D7DA;
+            color: #721C24;
+            font-weight: 600;
+        }
+        .cita-pendiente {
+            background: #FFF3CD;
+            color: #856404;
+            font-weight: 600;
+        }
+        
+        .stat-box {
+            display: inline-block;
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            padding: 25px;
+            margin: 10px 15px 10px 0;
+            border-radius: 10px;
+            border-left: 5px solid #2E7D52;
+            min-width: 200px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .stat-label {
+            font-size: 0.85em;
+            color: #1A4731;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .stat-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #1A4731;
+        }
+        
+        /* Barras de progreso */
+        .progress-bar {
+            width: 100%;
+            height: 24px;
+            background: #e3e6e8;
+            border-radius: 12px;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: white;
+        }
+        .progress-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #2E7D52, #4CAF50);
+            color: white;
+            font-weight: 600;
+            padding: 0 8px;
+        }
+        
+        .error-table-critical {
+            background: #F8D7DA;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        .kpi-panel {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .specialty-row {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            gap: 15px;
+        }
+        
+        .specialty-label {
+            min-width: 180px;
+            font-weight: 600;
+            color: #1A4731;
+        }
+        
+        .warning-row {
+            background: #FFF3CD !important;
+        }
+        
+        .critical-row {
+            background: #F8D7DA !important;
+        }
+    </style>
+    </head>
+<body>
+<div class="container">
+<div class="header">
+<h1>REPORTE 1 - HISTORIAL DE PACIENTES</h1>
+<p>Registro completo de todos los pacientes del hospital</p>
+</div>
+<div class="content">
+<div class="stat-box">
+<div class="stat-label">Total de Pacientes</div>
+<div class="stat-value">2</div>
+</div>
+<div class="stat-box">
+<div class="stat-label">Con Diagnóstico</div>
+<div class="stat-value">1/2</div>
+</div>
+<div class="stat-box">
+<div class="stat-label">Edad Promedio</div>
+<div class="stat-value">53.5 años</div>
+</div>
+<div class="section">
+<h2 class="section-title">Listado de Pacientes</h2>
+<table>
+<thead><tr>
+<th>Paciente</th>
+<th>Edad</th>
+<th>Sangre</th>
+<th>Hab.</th>
+<th>Diagnóstico Activo</th>
+<th>Medicamento / Dosis</th>
+<th>Estado</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>María García</strong></td>
+<td>45</td>
+<td>A+</td>
+<td>302</td>
+<td>Hipertensión Arterial</td>
+<td>Losartán 50mg / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Carlos Mendoza</strong></td>
+<td>62</td>
+<td>O-</td>
+<td>410</td>
+<td><em>Sin diagnóstico</em></td>
+<td>—</td>
+<td><span class="estado-sin-diag">SIN DIAG.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footer">
+Generado automáticamente | Sistema de Gestión Hospitalaria FASE 3
+</div>
+</div>
+</body>
+</html>

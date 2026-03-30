@@ -1,0 +1,26 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Patient1" [edad: 40, tipo_sangre: "O+", habitacion: 100],
+    paciente: "Patient2" [edad: 50, tipo_sangre: "A+", habitacion: 101],
+    paciente: "Patient3" [edad: 30, tipo_sangre: "B+", habitacion: 102],
+    paciente: "Patient4" [edad: 60, tipo_sangre: "AB+", habitacion: 103],
+  };
+
+  MEDICOS {
+    medico: "Dr. Medicinas" [especialidad: MEDICINA_GENERAL, codigo: "MED-050"],
+  };
+
+  CITAS {
+    cita: "Patient1" con "Dr. Medicinas" [fecha: 2024-06-01, hora: 09:00],
+    cita: "Patient2" con "Dr. Medicinas" [fecha: 2024-06-01, hora: 10:00],
+    cita: "Patient3" con "Dr. Medicinas" [fecha: 2024-06-01, hora: 11:00],
+    cita: "Patient4" con "Dr. Medicinas" [fecha: 2024-06-01, hora: 12:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Patient1" [condicion: "Hipertensión", medicamento: "Losartán", dosis: mg],
+    diagnostico: "Patient2" [condicion: "Diabetes", medicamento: "Insulina", dosis: UI],
+    diagnostico: "Patient3" [condicion: "Asma", medicamento: "Salbutamol", dosis: ml],
+    diagnostico: "Patient4" [condicion: "Artritis", medicamento: "Ibuprofeno", dosis: mcg],
+  };
+}

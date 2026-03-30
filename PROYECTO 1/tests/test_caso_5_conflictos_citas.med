@@ -1,0 +1,23 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Paciente A" [edad: 40, tipo_sangre: "O+", habitacion: 100],
+    paciente: "Paciente B" [edad: 35, tipo_sangre: "A+", habitacion: 101],
+    paciente: "Paciente C" [edad: 45, tipo_sangre: "B+", habitacion: 102],
+  };
+
+  MEDICOS {
+    medico: "Dr. Ocupado" [especialidad: CARDIOLOGIA, codigo: "MED-010"],
+  };
+
+  CITAS {
+    cita: "Paciente A" con "Dr. Ocupado" [fecha: 2025-06-01, hora: 10:00],
+    cita: "Paciente B" con "Dr. Ocupado" [fecha: 2025-06-01, hora: 10:00],
+    cita: "Paciente C" con "Dr. Ocupado" [fecha: 2025-06-01, hora: 10:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Paciente A" [condicion: "Hipertensión", medicamento: "Losartán", dosis: DIARIA],
+    diagnostico: "Paciente B" [condicion: "Diabetes", medicamento: "Metformina", dosis: DIARIA],
+    diagnostico: "Paciente C" [condicion: "Asma", medicamento: "Albuterol", dosis: DIARIA],
+  };
+};

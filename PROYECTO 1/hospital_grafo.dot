@@ -1,0 +1,57 @@
+digraph Hospital {
+  rankdir=LR;
+  node [shape=box, style=rounded, color="#667eea", fontname="Arial"];
+  edge [color="#666", fontname="Arial"];
+
+  hospital [label="
+HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
+
+  subgraph cluster_pacientes {
+    label="PACIENTES";
+    color="#4ecdc4";
+    style=filled;
+    fillcolor="#e8f8f5";
+    pac_2504 [label="\nMaría García\nEdad: 45\nSangre: A+"];
+    hospital -> pac_2504;
+    pac_803 [label="\nCarlos Mendoza\nEdad: 62\nSangre: O-"];
+    hospital -> pac_803;
+  }
+
+  subgraph cluster_medicos {
+    label="MÉDICOS";
+    color="#95e1d3";
+    style=filled;
+    fillcolor="#f0fdf4";
+  }
+
+  subgraph cluster_citas {
+    label="CITAS";
+    color="transparent";
+    pac_2504 -> med_9689 [label="2025-04-10 09:00", color="green", style="solid"];
+    pac_803 -> med_8193 [label="2025-04-10 11:30", color="green", style="solid"];
+  }
+
+  subgraph cluster_especialidades {
+    label="ESPECIALIDADES";
+    color="#ffeaa7";
+    style=filled;
+    fillcolor="#fffaed";
+  }
+
+  subgraph cluster_sangre {
+    label="TIPOS DE SANGRE";
+    color="#ff7675";
+    style=filled;
+    fillcolor="#ffebee";
+    sangre_9105 [label="A+", shape=oval];
+    sangre_4697 [label="O-", shape=oval];
+  }
+
+  // Leyenda
+  subgraph cluster_legend {
+    label="Leyenda";
+    color="gray";
+    ok_edge [label="Cita OK", color="green"];
+    conflict_edge [label="Cita en conflicto", color="red"];
+  }
+}

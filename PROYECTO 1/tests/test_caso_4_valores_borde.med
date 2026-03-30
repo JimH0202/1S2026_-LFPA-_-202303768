@@ -1,0 +1,20 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Paciente01" [edad: 1, tipo_sangre: "O+", habitacion: 999],
+    paciente: "Paciente02" [edad: 150, tipo_sangre: "A-", habitacion: 1],
+  };
+
+  MEDICOS {
+    medico: "Dr. Test" [especialidad: CARDIOLOGIA, codigo: "MED-999"],
+  };
+
+  CITAS {
+    cita: "Paciente01" con "Dr. Test" [fecha: 2025-01-01, hora: 00:00],
+    cita: "Paciente02" con "Dr. Test" [fecha: 2025-12-31, hora: 23:59],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Paciente01" [condicion: "Hipertensión", medicamento: "Droga", dosis: UI],
+    diagnostico: "Paciente02" [condicion: "Diabetes", medicamento: "Droga", dosis: DIARIA],
+  };
+};

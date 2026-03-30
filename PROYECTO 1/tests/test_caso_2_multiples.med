@@ -1,0 +1,25 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "María López" [edad: 32, tipo_sangre: "AB-", habitacion: 205],
+    paciente: "Carlos Rodríguez" [edad: 58, tipo_sangre: "B+", habitacion: 102],
+    paciente: "Ana Martínez" [edad: 41, tipo_sangre: "A-", habitacion: 303],
+  };
+
+  MEDICOS {
+    medico: "Dra. García" [especialidad: ENDOCRINOLOGIA, codigo: "MED-002"],
+    medico: "Dr. López" [especialidad: NEUMOLOGIA, codigo: "MED-003"],
+    medico: "Dra. Sánchez" [especialidad: NEUROLOGIA, codigo: "MED-004"],
+  };
+
+  CITAS {
+    cita: "María López" con "Dra. García" [fecha: 2025-04-15, hora: 10:30],
+    cita: "Carlos Rodríguez" con "Dr. López" [fecha: 2025-04-15, hora: 11:00],
+    cita: "Ana Martínez" con "Dra. Sánchez" [fecha: 2025-04-16, hora: 14:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "María López" [condicion: "Diabetes", medicamento: "Metformina", dosis: DIARIA],
+    diagnostico: "Carlos Rodríguez" [condicion: "Asma", medicamento: "Albuterol", dosis: DIARIA],
+    diagnostico: "Ana Martínez" [condicion: "Migraña", medicamento: "Sumatriptán", dosis: DIARIA],
+  };
+};

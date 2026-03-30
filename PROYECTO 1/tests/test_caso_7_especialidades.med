@@ -1,0 +1,33 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Cardio1" [edad: 50, tipo_sangre: "O+", habitacion: 100],
+    paciente: "Neuro1" [edad: 55, tipo_sangre: "A+", habitacion: 101],
+    paciente: "Pedia1" [edad: 5, tipo_sangre: "B+", habitacion: 102],
+    paciente: "Cirug1" [edad: 60, tipo_sangre: "AB+", habitacion: 103],
+    paciente: "Oncol1" [edad: 45, tipo_sangre: "O-", habitacion: 104],
+  };
+
+  MEDICOS {
+    medico: "Dr. Cardiólogo" [especialidad: CARDIOLOGIA, codigo: "MED-030"],
+    medico: "Dra. Neurocirujana" [especialidad: NEUROLOGIA, codigo: "MED-031"],
+    medico: "Dr. Pediatra" [especialidad: PEDIATRIA, codigo: "MED-032"],
+    medico: "Dr. Cirujano" [especialidad: CIRUGIA, codigo: "MED-033"],
+    medico: "Dra. Oncóloga" [especialidad: ONCOLOGIA, codigo: "MED-034"],
+  };
+
+  CITAS {
+    cita: "Cardio1" con "Dr. Cardiólogo" [fecha: 2025-08-01, hora: 09:00],
+    cita: "Neuro1" con "Dra. Neurocirujana" [fecha: 2025-08-01, hora: 10:00],
+    cita: "Pedia1" con "Dr. Pediatra" [fecha: 2025-08-01, hora: 11:00],
+    cita: "Cirug1" con "Dr. Cirujano" [fecha: 2025-08-01, hora: 12:00],
+    cita: "Oncol1" con "Dra. Oncóloga" [fecha: 2025-08-01, hora: 13:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Cardio1" [condicion: "Hipertensión", medicamento: "Losartán", dosis: DIARIA],
+    diagnostico: "Neuro1" [condicion: "Epilepsia", medicamento: "Levetiracetam", dosis: DIARIA],
+    diagnostico: "Pedia1" [condicion: "Varicela", medicamento: "Paracetamol", dosis: DIARIA],
+    diagnostico: "Cirug1" [condicion: "Hernia", medicamento: "Analgésico", dosis: DIARIA],
+    diagnostico: "Oncol1" [condicion: "Cáncer", medicamento: "Quimio", dosis: DIARIA],
+  };
+};

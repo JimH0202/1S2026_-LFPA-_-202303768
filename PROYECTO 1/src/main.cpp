@@ -21,19 +21,21 @@ public:
     
     void mostrarMenu() {
         std::cout << std::string(80, '=') << std::endl;
-        std::cout << "SISTEMA DE GESTIÓN HOSPITALARIA - FASE 3" << std::endl;
+        std::cout << "SISTEMA DE GESTIÓN HOSPITALARIA" << std::endl;
         std::cout << std::string(80, '=') << std::endl;
-        std::cout << "\n1. Cargar archivo (.med)\n";
+        std::cout << "1. Cargar archivo (.med)\n";
         std::cout << "2. Analizar léxico\n";
         std::cout << "3. Ver tokens\n";
         std::cout << "4. Ver errores\n";
-        std::cout << "5. Generar Reporte de Pacientes (HTML)\n";
-        std::cout << "6. Generar Reporte de Médicos (HTML)\n";
-        std::cout << "7. Generar Reporte de Citas (HTML)\n";
-        std::cout << "8. Generar Estadísticas (HTML)\n";
-        std::cout << "9. Generar Grafo (Graphviz)\n";
-        std::cout << "10. Generar TODOS los reportes\n";
-        std::cout << "11. Ver Reportes en Consola\n";
+        std::cout << "\n--- REPORTES HTML ---\n";
+        std::cout << "5. Reporte 1: Historial de Pacientes\n";
+        std::cout << "6. Reporte 2: Carga de Médicos por Especialidad\n";
+        std::cout << "7. Reporte 3: Agenda de Citas (con Conflictos)\n";
+        std::cout << "8. Reporte 4: Estadísticas Generales\n";
+        std::cout << "9. Tabla de Errores Léxicos (HTML)\n";
+        std::cout << "10. Generar Grafo (Graphviz)\n";
+        std::cout << "11. Generar TODOS los reportes\n";
+        std::cout << "12. Ver Reportes en Consola\n";
         std::cout << "0. Salir\n";
         std::cout << std::string(80, '=') << std::endl;
     }
@@ -60,8 +62,8 @@ public:
         lexer.tokenize();
         tokens = lexer.getTokens();
         
-        std::cout << "\n[✓] Archivo cargado: " << filename << std::endl;
-        std::cout << "[✓] Tokens generados: " << tokens.size() << std::endl;
+        std::cout << "\n[] Archivo cargado: " << filename << std::endl;
+        std::cout << "[] Tokens generados: " << tokens.size() << std::endl;
     }
     
     void analizarLexico() {
@@ -129,9 +131,9 @@ public:
             return;
         }
         
-        HTMLGenerator html(reportGen.getDatos());
-        if (html.generarReportePacientes("reporte_pacientes.html")) {
-            std::cout << "\n[] Reporte generado: reporte_pacientes.html\n";
+        HTMLGenerator html(reportGen.getDatos(), &errMgr);
+        if (html.generarReportePacientes("reporte_1_pacientes.html")) {
+            std::cout << "\n[] Reporte 1 generado: reporte_1_pacientes.html\n";
         } else {
             std::cout << "\n[ERROR] No se pudo generar el reporte\n";
         }
@@ -143,9 +145,9 @@ public:
             return;
         }
         
-        HTMLGenerator html(reportGen.getDatos());
-        if (html.generarReporteMedicos("reporte_medicos.html")) {
-            std::cout << "\n[] Reporte generado: reporte_medicos.html\n";
+        HTMLGenerator html(reportGen.getDatos(), &errMgr);
+        if (html.generarReporteMedicos("reporte_2_medicos.html")) {
+            std::cout << "\n[] Reporte 2 generado: reporte_2_medicos.html\n";
         } else {
             std::cout << "\n[ERROR] No se pudo generar el reporte\n";
         }
@@ -157,9 +159,9 @@ public:
             return;
         }
         
-        HTMLGenerator html(reportGen.getDatos());
-        if (html.generarReporteCitas("reporte_citas.html")) {
-            std::cout << "\n[] Reporte generado: reporte_citas.html\n";
+        HTMLGenerator html(reportGen.getDatos(), &errMgr);
+        if (html.generarReporteCitas("reporte_3_citas.html")) {
+            std::cout << "\n[] Reporte 3 generado: reporte_3_citas.html\n";
         } else {
             std::cout << "\n[ERROR] No se pudo generar el reporte\n";
         }
@@ -171,11 +173,20 @@ public:
             return;
         }
         
-        HTMLGenerator html(reportGen.getDatos());
-        if (html.generarReporteEstadisticas("reporte_estadisticas.html")) {
-            std::cout << "\n[] Reporte generado: reporte_estadisticas.html\n";
+        HTMLGenerator html(reportGen.getDatos(), &errMgr);
+        if (html.generarReporteEstadisticas("reporte_4_estadisticas.html")) {
+            std::cout << "\n[] Reporte 4 generado: reporte_4_estadisticas.html\n";
         } else {
             std::cout << "\n[ERROR] No se pudo generar el reporte\n";
+        }
+    }
+    
+    void generarReporteErrores() {
+        HTMLGenerator html(reportGen.getDatos(), &errMgr);
+        if (html.generarReporteErrores("reporte_errores.html")) {
+            std::cout << "\n[] Tabla de errores generada: reporte_errores.html\n";
+        } else {
+            std::cout << "\n[ERROR] No se pudo generar el reporte de errores\n";
         }
     }
     
@@ -202,6 +213,7 @@ public:
         generarReporteMedicos();
         generarReporteCitas();
         generarEstadisticas();
+        generarReporteErrores();
         generarGrafo();
         std::cout << "\n[] Todos los reportes han sido generados\n";
     }
@@ -234,11 +246,12 @@ public:
             else if (opcion == "6") generarReporteMedicos();
             else if (opcion == "7") generarReporteCitas();
             else if (opcion == "8") generarEstadisticas();
-            else if (opcion == "9") generarGrafo();
-            else if (opcion == "10") generarTodos();
-            else if (opcion == "11") verReportesConsola();
+            else if (opcion == "9") generarReporteErrores();
+            else if (opcion == "10") generarGrafo();
+            else if (opcion == "11") generarTodos();
+            else if (opcion == "12") verReportesConsola();
             else if (opcion == "0") {
-                std::cout << "\n[] Terminando Turno\n";
+                std::cout << "\n[] Terminando programa\n";
                 break;
             }
             else {

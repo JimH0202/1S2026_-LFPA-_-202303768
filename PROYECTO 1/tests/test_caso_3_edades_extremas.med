@@ -1,0 +1,21 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Pedro Fernández" [edad: 75, tipo_sangre: "O-", habitacion: 405],
+    paciente: "Rosa Jiménez" [edad: 62, tipo_sangre: "A+", habitacion: 201],
+  };
+
+  MEDICOS {
+    medico: "Dr. González" [especialidad: REUMATOLOGIA, codigo: "MED-005"],
+    medico: "Dr. Martín" [especialidad: NEUROLOGIA, codigo: "MED-006"],
+  };
+
+  CITAS {
+    cita: "Pedro Fernández" con "Dr. González" [fecha: 2025-05-01, hora: 08:00],
+    cita: "Rosa Jiménez" con "Dr. Martín" [fecha: 2025-05-01, hora: 09:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Pedro Fernández" [condicion: "Artritis", medicamento: "Ibuprofeno", dosis: DIARIA],
+    diagnostico: "Rosa Jiménez" [condicion: "Epilepsia", medicamento: "Levetiracetam", dosis: DIARIA],
+  };
+};

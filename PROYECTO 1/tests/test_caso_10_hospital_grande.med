@@ -1,0 +1,48 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Gran1" [edad: 25, tipo_sangre: "O+", habitacion: 1],
+    paciente: "Gran2" [edad: 35, tipo_sangre: "O-", habitacion: 2],
+    paciente: "Gran3" [edad: 45, tipo_sangre: "A+", habitacion: 3],
+    paciente: "Gran4" [edad: 55, tipo_sangre: "A-", habitacion: 4],
+    paciente: "Gran5" [edad: 65, tipo_sangre: "B+", habitacion: 5],
+    paciente: "Gran6" [edad: 75, tipo_sangre: "B-", habitacion: 6],
+    paciente: "Gran7" [edad: 85, tipo_sangre: "AB+", habitacion: 7],
+    paciente: "Gran8" [edad: 18, tipo_sangre: "AB-", habitacion: 8],
+    paciente: "Gran9" [edad: 28, tipo_sangre: "O+", habitacion: 9],
+    paciente: "Gran10" [edad: 38, tipo_sangre: "O-", habitacion: 10],
+  };
+
+  MEDICOS {
+    medico: "Dr1" [especialidad: CARDIOLOGIA, codigo: "MED-201"],
+    medico: "Dr2" [especialidad: NEUROLOGIA, codigo: "MED-202"],
+    medico: "Dr3" [especialidad: PEDIATRIA, codigo: "MED-203"],
+    medico: "Dr4" [especialidad: CIRUGIA, codigo: "MED-204"],
+    medico: "Dr5" [especialidad: MEDICINA_GENERAL, codigo: "MED-205"],
+  };
+
+  CITAS {
+    cita: "Gran1" con "Dr1" [fecha: 2024-07-01, hora: 08:00],
+    cita: "Gran2" con "Dr1" [fecha: 2024-07-01, hora: 09:00],
+    cita: "Gran3" con "Dr1" [fecha: 2024-07-01, hora: 10:00],
+    cita: "Gran4" con "Dr2" [fecha: 2024-07-02, hora: 08:00],
+    cita: "Gran5" con "Dr2" [fecha: 2024-07-02, hora: 09:00],
+    cita: "Gran6" con "Dr3" [fecha: 2024-07-03, hora: 08:00],
+    cita: "Gran7" con "Dr3" [fecha: 2024-07-03, hora: 09:00],
+    cita: "Gran8" con "Dr4" [fecha: 2024-07-04, hora: 08:00],
+    cita: "Gran9" con "Dr4" [fecha: 2024-07-04, hora: 09:00],
+    cita: "Gran10" con "Dr5" [fecha: 2024-07-05, hora: 08:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Gran1" [condicion: "Hipertensión", medicamento: "Losartán", dosis: DIARIA],
+    diagnostico: "Gran2" [condicion: "Diabetes", medicamento: "Metformina", dosis: DIARIA],
+    diagnostico: "Gran3" [condicion: "Asma", medicamento: "Salbutamol", dosis: DIARIA],
+    diagnostico: "Gran4" [condicion: "Migraña", medicamento: "Sumatriptán", dosis: DIARIA],
+    diagnostico: "Gran5" [condicion: "Epilepsia", medicamento: "Levetiracetam", dosis: DIARIA],
+    diagnostico: "Gran6" [condicion: "Artritis", medicamento: "Ibuprofeno", dosis: DIARIA],
+    diagnostico: "Gran7" [condicion: "Depresión", medicamento: "Sertralina", dosis: DIARIA],
+    diagnostico: "Gran8" [condicion: "Ansiedad", medicamento: "Lorazepam", dosis: DIARIA],
+    diagnostico: "Gran9" [condicion: "Gastritis", medicamento: "Omeprazol", dosis: DIARIA],
+    diagnostico: "Gran10" [condicion: "Influenza", medicamento: "Paracetamol", dosis: DIARIA],
+  };
+}

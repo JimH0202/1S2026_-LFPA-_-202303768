@@ -1,0 +1,38 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "P_Op" [edad: 30, tipo_sangre: "O+", habitacion: 1],
+    paciente: "P_Omenos" [edad: 31, tipo_sangre: "O-", habitacion: 2],
+    paciente: "P_Ap" [edad: 32, tipo_sangre: "A+", habitacion: 3],
+    paciente: "P_Amenos" [edad: 33, tipo_sangre: "A-", habitacion: 4],
+    paciente: "P_Bp" [edad: 34, tipo_sangre: "B+", habitacion: 5],
+    paciente: "P_Bmenos" [edad: 35, tipo_sangre: "B-", habitacion: 6],
+    paciente: "P_ABp" [edad: 36, tipo_sangre: "AB+", habitacion: 7],
+    paciente: "P_ABmenos" [edad: 37, tipo_sangre: "AB-", habitacion: 8],
+  };
+
+  MEDICOS {
+    medico: "Dr. Universal" [especialidad: MEDICINA_GENERAL, codigo: "MED-020"],
+  };
+
+  CITAS {
+    cita: "P_Op" con "Dr. Universal" [fecha: 2025-07-01, hora: 09:00],
+    cita: "P_Omenos" con "Dr. Universal" [fecha: 2025-07-01, hora: 10:00],
+    cita: "P_Ap" con "Dr. Universal" [fecha: 2025-07-01, hora: 11:00],
+    cita: "P_Amenos" con "Dr. Universal" [fecha: 2025-07-01, hora: 12:00],
+    cita: "P_Bp" con "Dr. Universal" [fecha: 2025-07-02, hora: 09:00],
+    cita: "P_Bmenos" con "Dr. Universal" [fecha: 2025-07-02, hora: 10:00],
+    cita: "P_ABp" con "Dr. Universal" [fecha: 2025-07-02, hora: 11:00],
+    cita: "P_ABmenos" con "Dr. Universal" [fecha: 2025-07-02, hora: 12:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "P_Op" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_Omenos" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_Ap" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_Amenos" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_Bp" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_Bmenos" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_ABp" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+    diagnostico: "P_ABmenos" [condicion: "Test", medicamento: "Med", dosis: DIARIA],
+  };
+};
