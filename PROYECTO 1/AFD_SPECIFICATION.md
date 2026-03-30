@@ -1,6 +1,6 @@
-# AFD (Autómata Finito Determinístico) - Motor Léxico
+# AFD (Autómata Finito Determinístico)
 
-## 🔤 ESPECIFICACIÓN DEL AFD
+ESPECIFICACIÓN DEL AFD
 
 ```
 Estado Inicial: q0
@@ -10,7 +10,7 @@ Símbolos: 0-9, a-zA-Z, _, +, -, :, ", {}, [], etc.
 
 ---
 
-## 📊 DIAGRAMA DE TRANSICIONES
+## DIAGRAMA DE TRANSICIONES
 
 ### Estado q0 (Inicial)
 ```
@@ -75,7 +75,7 @@ q9 --(para todo) --> ACEPTAR (IDENTIFIER)
 
 ---
 
-## 🔍 FUNCIONES DE VALIDACIÓN
+## FUNCIONES DE VALIDACIÓN
 
 ### `isValidDate(string date)`
 ```
@@ -132,7 +132,7 @@ Conjunto válido:
 
 ---
 
-## 🔀 LOOKAHEAD Y DESAMBIGUACIÓN
+## LOOKAHEAD Y DESAMBIGUACIÓN
 
 ### Problema: `A` vs `A+` vs `AB` vs `AB+` vs identificador
 
@@ -154,7 +154,7 @@ if (peek() == '+' || peek() == '-') {
 
 ---
 
-## 🎯 MANEJO DE ERRORES (SIN DETENCIÓN)
+## MANEJO DE ERRORES (SIN DETENCIÓN)
 
 ### Estrategia: Recuperación y Continuidad
 
@@ -177,7 +177,7 @@ Entrada: "cadena sin cerrar
 
 ---
 
-## 📈 COMPLEJIDAD
+## COMPLEJIDAD
 
 - **Tiempo**: O(n) donde n = longitud del archivo
 - **Espacio**: O(k) donde k = tokens generados
@@ -185,7 +185,7 @@ Entrada: "cadena sin cerrar
 
 ---
 
-## 🧪 CASOS DE PRUEBA
+## CASOS DE PRUEBA
 
 | Entrada | Token Esperado | Resultado |
 |---------|----------------|-----------|
@@ -201,7 +201,7 @@ Entrada: "cadena sin cerrar
 
 ---
 
-## ✨ CARACTERÍSTICAS AVANZADAS
+## CARACTERÍSTICAS AVANZADAS
 
 ### 1. Rastreo Preciso de Posición
 - Línea y columna actualizadas en cada carácter
@@ -216,6 +216,3 @@ Entrada: "cadena sin cerrar
 - Diferencia `tipo_sangre` de código `TIP-001`
 
 ---
-
-*Especificación técnica del AFD*  
-*Última revisión: 30/03/2026*
