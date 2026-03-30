@@ -18,7 +18,6 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
         
         // Buscar sección PACIENTES
         if (tok.type == TokenType::PACIENTES) {
-            std::cerr << "[DEBUG-EXTRACT] Encontrado PACIENTES en " << i << "\n";
             i++;
             while (i < tokens.size() && tokens[i].type != TokenType::MEDICOS) {
                 if (tokens[i].lexeme == "paciente" && i + 2 < tokens.size()) {
@@ -59,22 +58,21 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                 }
                 i++;
             }
+            // NO hacer i++, porque i ya está en MEDICOS
+            continue;
         }
         
         // Buscar sección MEDICOS
         else if (tokens[i].type == TokenType::MEDICOS) {
-            std::cerr << "[DEBUG-EXTRACT] Encontrado MEDICOS en " << i << "\n";
             i++;
             while (i < tokens.size() && tokens[i].type != TokenType::CITAS) {
                 if (tokens[i].lexeme == "medico" && i + 2 < tokens.size()) {
-                    std::cerr << "[DEBUG] Encontrado 'medico' en posición " << i << "\n";
                     Medico m;
                     if (tokens[i + 1].type == TokenType::SYMBOL && tokens[i + 1].lexeme == ":") {
                         i += 2;
                         if (tokens[i].type == TokenType::STRING) {
                             m.nombre = tokens[i].lexeme;
                             m.nombre = m.nombre.substr(1, m.nombre.length() - 2);
-                            std::cerr << "[DEBUG]   Nombre: " << m.nombre << "\n";
                         }
                     }
                     
@@ -82,20 +80,17 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                     while (i < tokens.size() && tokens[i].lexeme != "medico" && tokens[i].type != TokenType::CITAS) {
                         if (tokens[i].lexeme == "especialidad" && i + 2 < tokens.size() && tokens[i + 2].type == TokenType::SPECIALTY) {
                             m.especialidad = tokens[i + 2].lexeme;
-                            std::cerr << "[DEBUG]   Especialidad: " << m.especialidad << "\n";
                             i += 2;
                         } else if (tokens[i].lexeme == "codigo" && i + 2 < tokens.size()) {
                             if (tokens[i + 2].type == TokenType::STRING) {
                                 m.codigo = tokens[i + 2].lexeme;
                                 m.codigo = m.codigo.substr(1, m.codigo.length() - 2);
-                                std::cerr << "[DEBUG]   Código: " << m.codigo << "\n";
                                 i += 2;
                             }
                         }
                         i++;
                     }
                     i--;
-                    std::cerr << "[DEBUG] Push medico: " << m.nombre << "\n";
                     data.medicos.push_back(m);
                 }
                 i++;
@@ -140,6 +135,8 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                 }
                 i++;
             }
+            // NO hacer i++, porque i ya está en DIAGNOSTICOS o cierre
+            continue;
         }
         
         // Buscar sección DIAGNOSTICOS
@@ -179,6 +176,8 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                 }
                 i++;
             }
+            // NO hacer i++, porque ya estamos en cierre
+            continue;
         }
         
         i++;
