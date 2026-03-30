@@ -1,0 +1,14 @@
+HOSPITAL {
+    PACIENTES {
+        paciente: "María García [fecha sin cerrar,
+        paciente: "Carlos" [edad: 30, tipo_sangre: "O++", habitacion: 101],
+        paciente: "Ana" [edad: 25, tipo_sangre: "AB-", fecha_nacimiento: 2025-13-01],
+    };
+    MEDICOS {
+        medico: "Dr. X" [especialidad: CARDIOLOGIA, codigo: "DR-001"],
+        medico: "Dr. Y" [especialidad: ESPECIALIDAD_INVALIDA, codigo: "INVALID"],
+    };
+    CITAS {
+        cita: "Carlos" con "Dr. X" [fecha: 2025-04-15, hora: 25:00],
+    };
+};

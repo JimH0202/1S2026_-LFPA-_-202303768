@@ -36,12 +36,13 @@ private:
     bool isValidSpecialty(const std::string& sp);
     bool isValidDosis(const std::string& ds);
     bool isValidCode(const std::string& code);
+    Token scanIdentifierOrBloodType(int startLine, int startCol, const std::string& firstPart);
 
 public:
     LexicalAnalyzer(const std::string& src, ErrorManager* errMgr);
     Token nextToken();
     void tokenize();
-    const std::vector<Token>& getTokens() const;
+    std::vector<Token> getTokens() const;
     void printTokens() const;
 };
 
