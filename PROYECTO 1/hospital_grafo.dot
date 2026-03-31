@@ -11,26 +11,32 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#4ecdc4";
     style=filled;
     fillcolor="#e8f8f5";
-    pac_8589 [label="\nGran1\nEdad: 25\nSangre: O+"];
-    hospital -> pac_8589;
-    pac_8994 [label="\nGran2\nEdad: 35\nSangre: O-"];
-    hospital -> pac_8994;
-    pac_6546 [label="\nGran3\nEdad: 45\nSangre: A+"];
-    hospital -> pac_6546;
-    pac_2075 [label="\nGran4\nEdad: 55\nSangre: A-"];
-    hospital -> pac_2075;
-    pac_9594 [label="\nGran5\nEdad: 65\nSangre: B+"];
-    hospital -> pac_9594;
-    pac_5809 [label="\nGran6\nEdad: 75\nSangre: B-"];
-    hospital -> pac_5809;
-    pac_1871 [label="\nGran7\nEdad: 85\nSangre: AB+"];
-    hospital -> pac_1871;
-    pac_5426 [label="\nGran8\nEdad: 18\nSangre: AB-"];
-    hospital -> pac_5426;
-    pac_4722 [label="\nGran9\nEdad: 28\nSangre: O+"];
-    hospital -> pac_4722;
-    pac_7333 [label="\nGran10\nEdad: 38\nSangre: O-"];
-    hospital -> pac_7333;
+    pac_5264 [label="\nAna Pérez\nEdad: 27\nSangre: A+"];
+    hospital -> pac_5264;
+    pac_815 [label="\nJuan Martín\nEdad: 58\nSangre: O-"];
+    hospital -> pac_815;
+    pac_1262 [label="\nLucía Sancho\nEdad: 42\nSangre: AB+"];
+    hospital -> pac_1262;
+    pac_8162 [label="\nMónica Rojas\nEdad: 33\nSangre: B-"];
+    hospital -> pac_8162;
+    pac_8062 [label="\nRoberto Díaz\nEdad: 70\nSangre: A-"];
+    hospital -> pac_8062;
+    pac_3985 [label="\nEvelyn Torres\nEdad: 16\nSangre: O+"];
+    hospital -> pac_3985;
+    pac_5071 [label="\nPatricio Lemos\nEdad: 83\nSangre: AB-"];
+    hospital -> pac_5071;
+    pac_899 [label="\nLaura Villa\nEdad: 65\nSangre: B+"];
+    hospital -> pac_899;
+    pac_5185 [label="\nDiego Fidel\nEdad: 54\nSangre: A+"];
+    hospital -> pac_5185;
+    pac_9103 [label="\nSandra Sol\nEdad: 29\nSangre: O-"];
+    hospital -> pac_9103;
+    pac_2966 [label="\nError 1\nEdad: 41\nSangre: XX"];
+    hospital -> pac_2966;
+    pac_7103 [label="\nError 2\nEdad: 60\nSangre: AB+"];
+    hospital -> pac_7103;
+    pac_454 [label="\nError 3\nEdad: 51\nSangre: "];
+    hospital -> pac_454;
   }
 
   subgraph cluster_medicos {
@@ -38,31 +44,44 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#95e1d3";
     style=filled;
     fillcolor="#f0fdf4";
-    med_7362 [label="\nDr1\nCARDIOLOGIA\nMED-201"];
-    hospital -> med_7362;
-    med_1211 [label="\nDr2\nNEUROLOGIA\nMED-202"];
-    hospital -> med_1211;
-    med_278 [label="\nDr3\nPEDIATRIA\nMED-203"];
-    hospital -> med_278;
-    med_2311 [label="\nDr4\nCIRUGIA\nMED-204"];
-    hospital -> med_2311;
-    med_1065 [label="\nDr5\nMEDICINA_GENERAL\nMED-205"];
-    hospital -> med_1065;
+    med_7334 [label="\nDra. Vega\nNEUROLOGIA\nMED-101"];
+    hospital -> med_7334;
+    med_2023 [label="\nDr. Ortega\nCARDIOLOGIA\nMED-102"];
+    hospital -> med_2023;
+    med_2187 [label="\nDra. Paredes\nCIRUGIA\nMED-103"];
+    hospital -> med_2187;
+    med_6096 [label="\nDr. Rivas\nPEDIATRIA\nMED-104"];
+    hospital -> med_6096;
+    med_7354 [label="\nDra. Mendez\nMEDICINA_GENERAL\nMED-105"];
+    hospital -> med_7354;
+    med_5241 [label="\nDr. Castro\nENDOCRINOLOGIA\nMED-106"];
+    hospital -> med_5241;
+    med_276 [label="\nDra. Herrera\nNEUMOLOGIA\nMED-107"];
+    hospital -> med_276;
+    med_6920 [label="\nDr. Plaza\nONCOLOGIA\nMED-108"];
+    hospital -> med_6920;
+    med_6101 [label="\nErrorMed1\nCARDIOLOGIA\nmed-12"];
+    hospital -> med_6101;
+    med_9363 [label="\nErrorMed2\nNEUROLOGIA\nMED-109"];
+    hospital -> med_9363;
   }
 
   subgraph cluster_citas {
     label="CITAS";
     color="transparent";
-    pac_8589 -> med_7362 [label="2024-07-01 08:00", color="green", style="solid"];
-    pac_8994 -> med_7362 [label="2024-07-01 09:00", color="green", style="solid"];
-    pac_6546 -> med_7362 [label="2024-07-01 10:00", color="green", style="solid"];
-    pac_2075 -> med_1211 [label="2024-07-02 08:00", color="green", style="solid"];
-    pac_9594 -> med_1211 [label="2024-07-02 09:00", color="green", style="solid"];
-    pac_5809 -> med_278 [label="2024-07-03 08:00", color="green", style="solid"];
-    pac_1871 -> med_278 [label="2024-07-03 09:00", color="green", style="solid"];
-    pac_5426 -> med_2311 [label="2024-07-04 08:00", color="green", style="solid"];
-    pac_4722 -> med_2311 [label="2024-07-04 09:00", color="green", style="solid"];
-    pac_7333 -> med_1065 [label="2024-07-05 08:00", color="green", style="solid"];
+    pac_5264 -> med_7334 [label="2025-06-10 08:00", color="green", style="solid"];
+    pac_815 -> med_2023 [label="2025-06-10 08:30", color="green", style="solid"];
+    pac_1262 -> med_2187 [label="2025-06-10 09:00", color="green", style="solid"];
+    pac_8162 -> med_6096 [label="2025-06-10 09:30", color="green", style="solid"];
+    pac_8062 -> med_7354 [label="2025-06-10 10:00", color="green", style="solid"];
+    pac_3985 -> med_5241 [label="2025-06-10 10:30", color="green", style="solid"];
+    pac_5071 -> med_276 [label="2025-06-10 11:00", color="green", style="solid"];
+    pac_899 -> med_6920 [label="2025-06-10 11:30", color="green", style="solid"];
+    pac_5185 -> med_7334 [label="2025-06-10 12:00", color="green", style="solid"];
+    pac_9103 -> med_2023 [label="2025-06-10 12:30", color="green", style="solid"];
+    pac_5264 -> med_7334 [label="2025-06-10 13:00", color="red", style="bold"];
+    pac_1262 -> med_7334 [label="2025-06-10 13:00", color="red", style="bold"];
+    pac_8162 -> med_6920 [label="2025-06-10 14:00", color="green", style="solid"];
   }
 
   subgraph cluster_especialidades {
@@ -70,11 +89,14 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#ffeaa7";
     style=filled;
     fillcolor="#fffaed";
-    esp_5596 [label="CARDIOLOGIA"];
     esp_6447 [label="NEUROLOGIA"];
-    esp_5286 [label="PEDIATRIA"];
+    esp_5596 [label="CARDIOLOGIA"];
     esp_7844 [label="CIRUGIA"];
+    esp_5286 [label="PEDIATRIA"];
     esp_8316 [label="MEDICINA_GENERAL"];
+    esp_9289 [label="ENDOCRINOLOGIA"];
+    esp_9561 [label="NEUMOLOGIA"];
+    esp_9229 [label="ONCOLOGIA"];
   }
 
   subgraph cluster_sangre {
@@ -82,14 +104,16 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#ff7675";
     style=filled;
     fillcolor="#ffebee";
-    sangre_7919 [label="O+", shape=oval];
-    sangre_4697 [label="O-", shape=oval];
     sangre_9105 [label="A+", shape=oval];
-    sangre_6702 [label="A-", shape=oval];
-    sangre_4122 [label="B+", shape=oval];
-    sangre_2567 [label="B-", shape=oval];
+    sangre_4697 [label="O-", shape=oval];
     sangre_9357 [label="AB+", shape=oval];
+    sangre_2567 [label="B-", shape=oval];
+    sangre_6702 [label="A-", shape=oval];
+    sangre_7919 [label="O+", shape=oval];
     sangre_6377 [label="AB-", shape=oval];
+    sangre_4122 [label="B+", shape=oval];
+    sangre_7359 [label="XX", shape=oval];
+    sangre_3790 [label="", shape=oval];
   }
 
   // Leyenda

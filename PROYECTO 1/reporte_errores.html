@@ -242,11 +242,43 @@
 <p>Errores encontrados durante el análisis léxico</p>
 </div>
 <div class="content">
-<div class="stat-box" style="border-left-color: #28a745;">
-<div class="stat-label">✓ Sin errores</div>
-<div class="stat-value" style="color: #28a745;">0</div>
+<div class="stat-box" style="border-left-color: #dc3545;">
+<div class="stat-label">Total de Errores</div>
+<div class="stat-value" style="color: #dc3545;">2</div>
 </div>
-<p style="margin-top: 20px; font-size: 1.1em; color: #333;">El archivo fue procesado sin errores léxicos.</p>
+<div class="section">
+<table>
+<thead><tr>
+<th>No.</th>
+<th>Lexema</th>
+<th>Tipo de Error</th>
+<th>Descripción</th>
+<th>Línea</th>
+<th>Columna</th>
+<th>Gravedad</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>"2025-13-40"</code></td>
+<td>Invalid Date</td>
+<td>Bad date: 2025-13-40</td>
+<td>53</td>
+<td>49</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>"25:00"</code></td>
+<td>Invalid Time</td>
+<td>Bad time: 25:00</td>
+<td>55</td>
+<td>67</td>
+<td><strong>ERROR</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="footer">
 Análisis léxico completo | Recuperación de errores habilitada

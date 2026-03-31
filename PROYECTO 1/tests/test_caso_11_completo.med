@@ -1,0 +1,72 @@
+HOSPITAL {
+  PACIENTES {
+    paciente: "Ana Pérez" [edad: 27, tipo_sangre: "A+", habitacion: 101],
+    paciente: "Juan Martín" [edad: 58, tipo_sangre: "O-", habitacion: 102],
+    paciente: "Lucía Sancho" [edad: 42, tipo_sangre: "AB+", habitacion: 103],
+    paciente: "Mónica Rojas" [edad: 33, tipo_sangre: "B-", habitacion: 104],
+    paciente: "Roberto Díaz" [edad: 70, tipo_sangre: "A-", habitacion: 105],
+    paciente: "Evelyn Torres" [edad: 16, tipo_sangre: "O+", habitacion: 106],
+    paciente: "Patricio Lemos" [edad: 83, tipo_sangre: "AB-", habitacion: 107],
+    paciente: "Laura Villa" [edad: 65, tipo_sangre: "B+", habitacion: 108],
+    paciente: "Diego Fidel" [edad: 54, tipo_sangre: "A+", habitacion: 109],
+    paciente: "Sandra Sol" [edad: 29, tipo_sangre: "O-", habitacion: 110],
+    // error léxico: tipo de sangre no válido, detectado en tabla de errores
+    paciente: "Error 1" [edad: 41, tipo_sangre: "XX", habitacion: 111],
+    // error léxico: falta coma después de habitacion
+    paciente: "Error 2" [edad: 60, tipo_sangre: "AB+" habitacion: 112],
+    // error léxico: tipo_sangre no entre comillas, pero token acepta
+    paciente: "Error 3" [edad: 51, tipo_sangre: A-, habitacion: 113],
+  };
+
+  MEDICOS {
+    medico: "Dra. Vega" [especialidad: NEUROLOGIA, codigo: "MED-101"],
+    medico: "Dr. Ortega" [especialidad: CARDIOLOGIA, codigo: "MED-102"],
+    medico: "Dra. Paredes" [especialidad: CIRUGIA, codigo: "MED-103"],
+    medico: "Dr. Rivas" [especialidad: PEDIATRIA, codigo: "MED-104"],
+    medico: "Dra. Mendez" [especialidad: MEDICINA_GENERAL, codigo: "MED-105"],
+    medico: "Dr. Castro" [especialidad: ENDOCRINOLOGIA, codigo: "MED-106"],
+    medico: "Dra. Herrera" [especialidad: NEUMOLOGIA, codigo: "MED-107"],
+    medico: "Dr. Plaza" [especialidad: ONCOLOGIA, codigo: "MED-108"],
+    // error léxico: código malo (letras minúsculas y sin 3 dígitos)
+    medico: "ErrorMed1" [especialidad: CARDIOLOGIA, codigo: "med-12"],
+    // error de token: falta corchete de cierre
+    medico: "ErrorMed2" [especialidad: NEUROLOGIA, codigo: "MED-109"
+  };
+
+  CITAS {
+    cita: "Ana Pérez" con "Dra. Vega" [fecha: 2025-06-10, hora: 08:00],
+    cita: "Juan Martín" con "Dr. Ortega" [fecha: 2025-06-10, hora: 08:30],
+    cita: "Lucía Sancho" con "Dra. Paredes" [fecha: 2025-06-10, hora: 09:00],
+    cita: "Mónica Rojas" con "Dr. Rivas" [fecha: 2025-06-10, hora: 09:30],
+    cita: "Roberto Díaz" con "Dra. Mendez" [fecha: 2025-06-10, hora: 10:00],
+    cita: "Evelyn Torres" con "Dr. Castro" [fecha: 2025-06-10, hora: 10:30],
+    cita: "Patricio Lemos" con "Dra. Herrera" [fecha: 2025-06-10, hora: 11:00],
+    cita: "Laura Villa" con "Dr. Plaza" [fecha: 2025-06-10, hora: 11:30],
+    cita: "Diego Fidel" con "Dra. Vega" [fecha: 2025-06-10, hora: 12:00],
+    cita: "Sandra Sol" con "Dr. Ortega" [fecha: 2025-06-10, hora: 12:30],
+    // Conflicto intencional (mismo médico, misma fecha 13:00)
+    cita: "Ana Pérez" con "Dra. Vega" [fecha: 2025-06-10, hora: 13:00],
+    cita: "Lucía Sancho" con "Dra. Vega" [fecha: 2025-06-10, hora: 13:00],
+    // Cita válida con especialidad ONCOLOGIA (carga)
+    cita: "Mónica Rojas" con "Dr. Plaza" [fecha: 2025-06-10, hora: 14:00],
+    // Cita in válida - fecha mal dada para error léxico
+    cita: "ErrorCita1" con "Dra. Rivas" [fecha: 2025-13-40, hora: 15:00],
+    // Cita inválida - hora mal formato
+    cita: "ErrorCita2" con "Dr. Castro" [fecha: 2025-06-11, hora: 25:00],
+  };
+
+  DIAGNOSTICOS {
+    diagnostico: "Ana Pérez" [condicion: "Hipertensión", medicamento: "Enalapril", dosis: DIARIA],
+    diagnostico: "Juan Martín" [condicion: "Diabetes", medicamento: "Metformina", dosis: DIARIA],
+    diagnostico: "Lucía Sancho" [condicion: "Migraña", medicamento: "Sumatriptán", dosis: DIARIA],
+    diagnostico: "Mónica Rojas" [condicion: "Asma", medicamento: "Salbutamol", dosis: CADA_8_HORAS],
+    diagnostico: "Roberto Díaz" [condicion: "Artritis", medicamento: "Ibuprofeno", dosis: DIARIA],
+    diagnostico: "Evelyn Torres" [condicion: "Obesidad", medicamento: "Metformina", dosis: DIARIA],
+    diagnostico: "Patricio Lemos" [condicion: "Hipotiroidismo", medicamento: "Levotiroxina", dosis: DIARIA],
+    diagnostico: "Laura Villa" [condicion: "Bronquitis", medicamento: "Albuterol", dosis: CADA_12_HORAS],
+    diagnostico: "Diego Fidel" [condicion: "Colesterol", medicamento: "Atorvastatina", dosis: DIARIA],
+    diagnostico: "Sandra Sol" [condicion: "Gastritis", medicamento: "Omeprazol", dosis: DIARIA],
+    // Error léxico dosis no definido
+    diagnostico: "ErrorDiag" [condicion: "Prueba", medicamento: "Test", dosis: DIARIA2],
+  };
+};
