@@ -656,7 +656,36 @@ bool HTMLGenerator::generarReporteEstadisticas(const std::string& filename) {
             }
         }
     }
-    
+
+    // Especialidad y médico con mayor carga de citas
+    std::map<std::string, int> citasPorMedico;
+    for (const auto& c : data.citas) {
+        citasPorMedico[c.medico]++;
+    }
+
+    std::string especialidadMayorCarga = "N/A";
+    std::string medicoMayorCarga = "N/A";
+    int maxCitasEspecialidad = 0;
+    int maxCitasMedico = 0;
+
+    for (const auto& espec : especialidades) {
+        int citasEspec = espec.second.first;
+        if (citasEspec > maxCitasEspecialidad) {
+            maxCitasEspecialidad = citasEspec;
+            especialidadMayorCarga = espec.first;
+        }
+    }
+
+    for (const auto& med : data.medicos) {
+        if (med.especialidad == especialidadMayorCarga) {
+            int citasMed = citasPorMedico[med.nombre];
+            if (citasMed > maxCitasMedico) {
+                maxCitasMedico = citasMed;
+                medicoMayorCarga = med.nombre;
+            }
+        }
+    }
+
     file << "<div class=\"kpi-panel\">\n";
     file << "<table style=\"width: auto;\">\n";
     
@@ -666,6 +695,8 @@ bool HTMLGenerator::generarReporteEstadisticas(const std::string& filename) {
     file << "<tr><td><strong>Citas con conflicto de horario</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #dc3545;\">" << conflictos << "</td></tr>\n";
     file << "<tr><td><strong>Pacientes con diagnóstico activo</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << pacientesConDiag << " de " << data.totalPacientes() << " (" << (data.totalPacientes() > 0 ? (pacientesConDiag * 100 / data.totalPacientes()) : 0) << "%)</td></tr>\n";
     file << "<tr><td><strong>Medicamento más prescrito</strong></td><td style=\"text-align: right; font-size: 1.1em; font-weight: 600; color: #1A4731;\">" << medMasPrescrito << "</td></tr>\n";
+    file << "<tr><td><strong>Especialidad con mayor carga de citas</strong></td><td style=\"text-align: right; font-size: 1.1em; font-weight: 600; color: #2E7D52;\">" << especialidadMayorCarga << " (" << maxCitasEspecialidad << " citas)</td></tr>\n";
+    file << "<tr><td><strong>Médico con mayor carga de citas</strong></td><td style=\"text-align: right; font-size: 1.1em; font-weight: 600; color: #2E7D52;\">" << medicoMayorCarga << " (" << maxCitasMedico << " citas)</td></tr>\n";
     file << "<tr><td><strong>Promedio de edad de pacientes</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << std::fixed << std::setprecision(1) << data.edadPromedio() << " años</td></tr>\n";
     
     file << "</table>\n";
@@ -753,7 +784,7 @@ bool HTMLGenerator::generarReporteErrores(const std::string& filename) {
         const auto& errors = errMgr->getErrors();
         
         file << "<div class=\"stat-box\" style=\"border-left-color: #dc3545;\">\n";
-        file << "<div class=\"stat-label\">⚠ Total de Errores</div>\n";
+        file << "<div class=\"stat-label\">Total de Errores</div>\n";
         file << "<div class=\"stat-value\" style=\"color: #dc3545;\">" << errors.size() << "</div>\n";
         file << "</div>\n";
         
