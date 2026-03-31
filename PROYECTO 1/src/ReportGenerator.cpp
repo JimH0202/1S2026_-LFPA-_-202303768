@@ -95,6 +95,8 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                 }
                 i++;
             }
+            // NO hacer i++, porque i ya está en MEDICOS o CITAS
+            continue;
         }
         
         // Buscar sección CITAS

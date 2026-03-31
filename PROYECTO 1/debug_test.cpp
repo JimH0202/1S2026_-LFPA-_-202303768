@@ -1,26 +1,26 @@
 #include "src/LexicalAnalyzer.h"
 #include "src/ReportGenerator.h"
 #include "src/ErrorManager.h"
-#include <fstream>
 #include <iostream>
+#include <fstream>
+#include <iomanip>
 
 int main() {
-    // Leer el archivo de prueba
-    std::ifstream file("tests/test_caso_1_basico.med");
+    // Cargar test 10
+    std::ifstream file("tests/test_caso_10_hospital_grande.med");
     if (!file.is_open()) {
-        std::cerr << "[ERROR] No se pudo abrir el archivo\n";
+        std::cerr << "[ERROR] No se pudo abrir test_caso_10_hospital_grande.med\n";
         return 1;
     }
     
     std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
     file.close();
     
-    // Crear analizador léxico
+    // Análisis léxico
     ErrorManager errMgr;
     LexicalAnalyzer lexer(content, &errMgr);
     lexer.tokenize();
-    
-    auto tokens = lexer.getTokens();
+    std::vector<Token> tokens = lexer.getTokens();
     
     std::cout << "=== TOKENS ===\n";
     std::cout << "Total tokens: " << tokens.size() << "\n\n";
@@ -32,19 +32,28 @@ int main() {
                   << " | Lexeme: '" << tok.lexeme << "'\n";
     }
     
-    std::cout << "\n=== DEBUG: BUSCANDO MEDICOS ===\n";
+    std::cout << "\n=== PROCESAMIENTO MANUAL DE CITAS ===\n";
     
-    // Buscar tokens MEDICOS
+    // Buscar posición de CITAS
+    int citasPos = -1;
     for (size_t i = 0; i < tokens.size(); i++) {
-        if (tokens[i].type == TokenType::MEDICOS) {
-            std::cout << "[" << i << "] Encontrado token MEDICOS\n";
-            
-            // Mirar los siguientes tokens
-            for (size_t j = i; j < std::min(i + 20, tokens.size()); j++) {
-                std::cout << "  [" << j << "] Type:" << static_cast<int>(tokens[j].type) 
-                          << " Lexeme:'" << tokens[j].lexeme << "'\n";
-            }
+        if (tokens[i].type == TokenType::CITAS) {
+            citasPos = i;
             break;
+        }
+    }
+    
+    if (citasPos != -1) {
+        std::cout << "Token CITAS en posición: " << citasPos << "\n";
+        std::cout << "\nAnalizando tokens 240-390:\n";
+        for (int i = 240; i < 390 && i < tokens.size(); i++) {
+            if (tokens[i].lexeme == "cita" || tokens[i].lexeme == "con" || 
+                tokens[i].lexeme == "fecha" || tokens[i].lexeme == "hora" ||
+                tokens[i].type == TokenType::STRING || tokens[i].type == TokenType::DATE || 
+                tokens[i].type == TokenType::TIME) {
+                std::cout << "[" << i << "] Type:" << static_cast<int>(tokens[i].type) 
+                          << " Lexeme:'" << tokens[i].lexeme << "'\n";
+            }
         }
     }
     
