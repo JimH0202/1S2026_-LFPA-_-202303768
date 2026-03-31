@@ -251,9 +251,9 @@ std::string HTMLGenerator::getProgressBar(int valor, int maximo) {
     std::stringstream ss;
     ss << "<div class=\"progress-bar\">";
     ss << "<div class=\"progress-fill\" style=\"width: " << porcentaje << "%;\">";
-    ss << "█";
+    ss << "";
     for (int i = porcentaje; i < 100; i += 10) {
-        ss << "░";
+        ss << "";
     }
     ss << " " << porcentaje << "%";
     ss << "</div></div>";
@@ -663,7 +663,7 @@ bool HTMLGenerator::generarReporteEstadisticas(const std::string& filename) {
     file << "<tr><td><strong>Total de pacientes registrados</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << data.totalPacientes() << "</td></tr>\n";
     file << "<tr><td><strong>Total de médicos activos</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << data.totalMedicos() << "</td></tr>\n";
     file << "<tr><td><strong>Total de citas programadas</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << data.totalCitas() << "</td></tr>\n";
-    file << "<tr><td><strong>⚠ Citas con conflicto de horario</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #dc3545;\">" << conflictos << "</td></tr>\n";
+    file << "<tr><td><strong>Citas con conflicto de horario</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #dc3545;\">" << conflictos << "</td></tr>\n";
     file << "<tr><td><strong>Pacientes con diagnóstico activo</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << pacientesConDiag << " de " << data.totalPacientes() << " (" << (data.totalPacientes() > 0 ? (pacientesConDiag * 100 / data.totalPacientes()) : 0) << "%)</td></tr>\n";
     file << "<tr><td><strong>Medicamento más prescrito</strong></td><td style=\"text-align: right; font-size: 1.1em; font-weight: 600; color: #1A4731;\">" << medMasPrescrito << "</td></tr>\n";
     file << "<tr><td><strong>Promedio de edad de pacientes</strong></td><td style=\"text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;\">" << std::fixed << std::setprecision(1) << data.edadPromedio() << " años</td></tr>\n";

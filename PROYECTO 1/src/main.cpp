@@ -24,15 +24,15 @@ public:
         std::cout << "SISTEMA DE GESTIÓN HOSPITALARIA" << std::endl;
         std::cout << std::string(80, '=') << std::endl;
         std::cout << "1. Cargar archivo (.med)\n";
-        std::cout << "2. Analizar léxico\n";
+        std::cout << "2. Analizar lexico\n";
         std::cout << "3. Ver tokens\n";
         std::cout << "4. Ver errores\n";
         std::cout << "\n--- REPORTES HTML ---\n";
         std::cout << "5. Reporte 1: Historial de Pacientes\n";
-        std::cout << "6. Reporte 2: Carga de Médicos por Especialidad\n";
+        std::cout << "6. Reporte 2: Carga de Medicos por Especialidad\n";
         std::cout << "7. Reporte 3: Agenda de Citas (con Conflictos)\n";
-        std::cout << "8. Reporte 4: Estadísticas Generales\n";
-        std::cout << "9. Tabla de Errores Léxicos (HTML)\n";
+        std::cout << "8. Reporte 4: Estadisticas Generales\n";
+        std::cout << "9. Tabla de Errores Lexicos (HTML)\n";
         std::cout << "10. Generar Grafo (Graphviz)\n";
         std::cout << "11. Generar TODOS los reportes\n";
         std::cout << "12. Ver Reportes en Consola\n";
@@ -73,14 +73,14 @@ public:
         }
         
         reportGen.procesarTokens(tokens);
-        std::cout << "\n[] Análisis completado\n";
+        std::cout << "\n[] Analisis completado\n";
         std::cout << "[] Datos extraídos:\n";
         
         auto& data = reportGen.getDatos();
         std::cout << "    - Pacientes: " << data.totalPacientes() << "\n";
-        std::cout << "    - Médicos: " << data.totalMedicos() << "\n";
+        std::cout << "    - Medicos: " << data.totalMedicos() << "\n";
         std::cout << "    - Citas: " << data.totalCitas() << "\n";
-        std::cout << "    - Diagnósticos: " << data.diagnosticos.size() << "\n";
+        std::cout << "    - Diagnosticos: " << data.diagnosticos.size() << "\n";
     }
     
     void verTokens() {
@@ -112,7 +112,7 @@ public:
         }
         
         if (tokens.size() > 50) {
-            std::cout << "\n... y " << (tokens.size() - 50) << " tokens más\n";
+            std::cout << "\n... y " << (tokens.size() - 50) << " tokens mas\n";
         }
     }
     
@@ -127,7 +127,7 @@ public:
     
     void generarReportePacientes() {
         if (reportGen.getDatos().totalPacientes() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -141,7 +141,7 @@ public:
     
     void generarReporteMedicos() {
         if (reportGen.getDatos().totalMedicos() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -155,7 +155,7 @@ public:
     
     void generarReporteCitas() {
         if (reportGen.getDatos().totalCitas() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -169,7 +169,7 @@ public:
     
     void generarEstadisticas() {
         if (reportGen.getDatos().totalPacientes() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -192,7 +192,7 @@ public:
     
     void generarGrafo() {
         if (reportGen.getDatos().totalPacientes() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -220,7 +220,7 @@ public:
     
     void verReportesConsola() {
         if (reportGen.getDatos().totalPacientes() == 0) {
-            std::cout << "\n[ERROR] Primero analiza un archivo (opción 2)\n";
+            std::cout << "\n[ERROR] Primero analiza un archivo (opcion 2)\n";
             return;
         }
         
@@ -235,7 +235,7 @@ public:
         
         while (true) {
             mostrarMenu();
-            std::cout << "\nOpción: ";
+            std::cout << "\nOpcion: ";
             std::getline(std::cin, opcion);
             
             if (opcion == "1") cargarArchivo();
