@@ -18,7 +18,7 @@ private:
 
     // Helper sets for validation
     std::set<std::string> keywords = {"HOSPITAL", "PACIENTES", "MEDICOS", "CITAS", "DIAGNOSTICOS"};
-    std::set<std::string> specialties = {"CARDIOLOGIA", "NEUROLOGIA", "PEDIATRIA", "CIRUGIA", "MEDICINA_GENERAL", "ONCOLOGIA"};
+    std::set<std::string> specialties = {"CARDIOLOGIA", "NEUROLOGIA", "PEDIATRIA", "CIRUGIA", "MEDICINA_GENERAL", "ONCOLOGIA", "ENDOCRINOLOGIA", "NEUMOLOGIA"};
     std::set<std::string> dosis = {"DIARIA", "CADA_8_HORAS", "CADA_12_HORAS", "SEMANAL"};
     std::set<std::string> bloodTypes = {"A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"};
 

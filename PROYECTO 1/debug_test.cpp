@@ -6,8 +6,8 @@
 #include <iomanip>
 
 int main() {
-    // Cargar test 10
-    std::ifstream file("tests/test_caso_10_hospital_grande.med");
+    // Cargar test 2
+    std::ifstream file("tests/test_caso_2_multiples.med");
     if (!file.is_open()) {
         std::cerr << "[ERROR] No se pudo abrir test_caso_10_hospital_grande.med\n";
         return 1;

@@ -78,7 +78,8 @@ void ReportGenerator::extraerDatos(const std::vector<Token>& tokens) {
                     
                     i++;
                     while (i < tokens.size() && tokens[i].lexeme != "medico" && tokens[i].type != TokenType::CITAS) {
-                        if (tokens[i].lexeme == "especialidad" && i + 2 < tokens.size() && tokens[i + 2].type == TokenType::SPECIALTY) {
+                        if (tokens[i].lexeme == "especialidad" && i + 2 < tokens.size() &&
+                            (tokens[i + 2].type == TokenType::SPECIALTY || tokens[i + 2].type == TokenType::IDENTIFIER)) {
                             m.especialidad = tokens[i + 2].lexeme;
                             i += 2;
                         } else if (tokens[i].lexeme == "codigo" && i + 2 < tokens.size()) {
