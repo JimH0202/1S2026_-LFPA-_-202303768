@@ -1,0 +1,26 @@
+HOSPITAL {
+    PACIENTES {
+        paciente: "Ana López" [edad: 34, tipo_sangre: "O+", habitacion: 101],
+        paciente: "Juan Pérez" [edad: 50, tipo_sangre: "B-", habitacion: 205],
+        paciente: "Laura Díaz" [edad: 28, tipo_sangre: "A+", habitacion: 310],
+    };
+
+    MEDICOS {
+        medico: "Dr. Carlos Ruiz" [especialidad: CARDIOLOGIA, codigo: "MED-001"],
+        medico: "Dra. María Solís" [especialidad: NEUROLOGIA, codigo: "MED-002"],
+    };
+
+    CITAS {
+        cita: "Ana López" con "Dr. Carlos Ruiz" [fecha: 2025-04-10, hora: 09:00],
+        cita: "Juan Pérez" con "Dra. María Solís" [fecha: 2025-04-11, hora: 14:30],
+        cita: "Laura Díaz" con "Dr. Carlos Ruiz" [fecha: 2025-04-12, hora: 10:00],
+    };
+
+    DIAGNOSTICOS {
+        diagnostico: "Ana López" [condicion: "Hipertensión Arterial", medicamento: "Losartán 50mg", dosis: DIARIA],
+        diagnostico: "Juan Pérez" [condicion: "Migraña Crónica", medicamento: "Topiramato 25mg", dosis: CADA_12_HORAS],
+    };
+};
+
+
+

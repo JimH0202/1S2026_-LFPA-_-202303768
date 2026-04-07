@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reporte 4 - Estadísticas Generales</title>
+<title>Reporte 1 - Historial de Pacientes</title>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -238,57 +238,158 @@
 <body>
 <div class="container">
 <div class="header">
-<h1>REPORTE 4 - ESTADÍSTICAS GENERALES</h1>
-<p>Indicadores clave (KPIs) del hospital</p>
+<h1>REPORTE 1 - HISTORIAL DE PACIENTES</h1>
+<p>Registro completo de todos los pacientes del hospital</p>
 </div>
 <div class="content">
-<div class="section">
-<h2 class="section-title">Sección A - Panel de Indicadores Clave (KPIs)</h2>
-<div class="kpi-panel">
-<table style="width: auto;">
-<tr><td><strong>Total de pacientes registrados</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;">3</td></tr>
-<tr><td><strong>Total de médicos activos</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;">2</td></tr>
-<tr><td><strong>Total de citas programadas</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;">3</td></tr>
-<tr><td><strong>Citas con conflicto de horario</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #dc3545;">0</td></tr>
-<tr><td><strong>Pacientes con diagnóstico activo</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;">2 de 3 (66%)</td></tr>
-<tr><td><strong>Medicamento más prescrito</strong></td><td style="text-align: right; font-size: 1.1em; font-weight: 600; color: #1A4731;">Losartán 50mg (1 pacientes)</td></tr>
-<tr><td><strong>Especialidad con mayor carga de citas</strong></td><td style="text-align: right; font-size: 1.1em; font-weight: 600; color: #2E7D52;">CARDIOLOGIA (2 citas)</td></tr>
-<tr><td><strong>Médico con mayor carga de citas</strong></td><td style="text-align: right; font-size: 1.1em; font-weight: 600; color: #2E7D52;">Dr. Carlos Ruiz (2 citas)</td></tr>
-<tr><td><strong>Promedio de edad de pacientes</strong></td><td style="text-align: right; font-size: 1.3em; font-weight: 700; color: #1A4731;">37.3 años</td></tr>
-</table>
+<div class="stat-box">
+<div class="stat-label">Total de Pacientes</div>
+<div class="stat-value">13</div>
 </div>
+<div class="stat-box">
+<div class="stat-label">Con Diagnóstico</div>
+<div class="stat-value">10/13</div>
+</div>
+<div class="stat-box">
+<div class="stat-label">Edad Promedio</div>
+<div class="stat-value">48.4 años</div>
 </div>
 <div class="section">
-<h2 class="section-title">Sección B - Distribución de Carga por Especialidad</h2>
+<h2 class="section-title">Listado de Pacientes</h2>
 <table>
 <thead><tr>
-<th>Especialidad</th>
-<th>Médicos</th>
-<th>Citas</th>
-<th>Pacientes</th>
-<th>Barra de Ocupación</th>
+<th>Paciente</th>
+<th>Edad</th>
+<th>Sangre</th>
+<th>Hab.</th>
+<th>Diagnóstico Activo</th>
+<th>Medicamento / Dosis</th>
+<th>Estado</th>
 </tr></thead>
 <tbody>
 <tr>
-<td><strong>CARDIOLOGIA</strong></td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-<td><div class="progress-bar"><div class="progress-fill" style="width: 66%;"> 66%</div></div></td>
+<td><strong>Ana Pérez</strong></td>
+<td>27</td>
+<td>A+</td>
+<td>101</td>
+<td>Hipertensión</td>
+<td>Enalapril / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
 </tr>
 <tr>
-<td><strong>NEUROLOGIA</strong></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td><div class="progress-bar"><div class="progress-fill" style="width: 33%;"> 33%</div></div></td>
+<td><strong>Juan Martín</strong></td>
+<td>58</td>
+<td>O-</td>
+<td>102</td>
+<td>Diabetes</td>
+<td>Metformina / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Lucía Sancho</strong></td>
+<td>42</td>
+<td>AB+</td>
+<td>103</td>
+<td>Migraña</td>
+<td>Sumatriptán / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Mónica Rojas</strong></td>
+<td>33</td>
+<td>B-</td>
+<td>104</td>
+<td>Asma</td>
+<td>Salbutamol / CADA_8_HORAS</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Roberto Díaz</strong></td>
+<td>70</td>
+<td>A-</td>
+<td>105</td>
+<td>Artritis</td>
+<td>Ibuprofeno / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Evelyn Torres</strong></td>
+<td>16</td>
+<td>O+</td>
+<td>106</td>
+<td>Obesidad</td>
+<td>Metformina / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Patricio Lemos</strong></td>
+<td>83</td>
+<td>AB-</td>
+<td>107</td>
+<td>Hipotiroidismo</td>
+<td>Levotiroxina / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Laura Villa</strong></td>
+<td>65</td>
+<td>B+</td>
+<td>108</td>
+<td>Bronquitis</td>
+<td>Albuterol / CADA_12_HORAS</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Diego Fidel</strong></td>
+<td>54</td>
+<td>A+</td>
+<td>109</td>
+<td>Colesterol</td>
+<td>Atorvastatina / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Sandra Sol</strong></td>
+<td>29</td>
+<td>O-</td>
+<td>110</td>
+<td>Gastritis</td>
+<td>Omeprazol / DIARIA</td>
+<td><span class="estado-activo">ACTIVO</span></td>
+</tr>
+<tr>
+<td><strong>Error 1</strong></td>
+<td>41</td>
+<td>XX</td>
+<td>111</td>
+<td><em>Sin diagnóstico</em></td>
+<td>—</td>
+<td><span class="estado-sin-diag">SIN DIAG.</span></td>
+</tr>
+<tr>
+<td><strong>Error 2</strong></td>
+<td>60</td>
+<td>AB+</td>
+<td>112</td>
+<td><em>Sin diagnóstico</em></td>
+<td>—</td>
+<td><span class="estado-sin-diag">SIN DIAG.</span></td>
+</tr>
+<tr>
+<td><strong>Error 3</strong></td>
+<td>51</td>
+<td></td>
+<td>113</td>
+<td><em>Sin diagnóstico</em></td>
+<td>—</td>
+<td><span class="estado-sin-diag">SIN DIAG.</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="footer">
-Alerta: Especialidades con ocupación > 80% están marcadas en naranja
+Generado automáticamente | Sistema de Gestión Hospitalaria FASE 3
 </div>
 </div>
 </body>
