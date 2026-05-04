@@ -585,6 +585,7 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/
   C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
@@ -605,6 +606,7 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/
   C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
@@ -622,7 +624,10 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
@@ -646,6 +651,7 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/
   C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
   C:/msys64/mingw64/include/c++/15.2.0/exception \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
@@ -656,6 +662,7 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/
   C:/msys64/mingw64/include/c++/15.2.0/ios \
   C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
   C:/msys64/mingw64/include/c++/15.2.0/istream \
+  C:/msys64/mingw64/include/c++/15.2.0/map \
   C:/msys64/mingw64/include/c++/15.2.0/new \
   C:/msys64/mingw64/include/c++/15.2.0/ostream \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
@@ -1063,6 +1070,8 @@ CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.obj: C:/Users/jimhu/Desktop/1S2026
   C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TokenType.h \
   C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TreeNode.h
 
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
@@ -1474,6 +1483,8 @@ C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmak
 
 C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/map:
+
 C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake:
@@ -1588,6 +1599,8 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc:
 
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/type_traits:
 
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
@@ -1625,6 +1638,8 @@ C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
 
 TestAnalyzer_autogen/mocs_compilation.cpp:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h:
 
 C:/msys64/mingw64/include/_mingw_mac.h:
 
@@ -1780,6 +1795,8 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h:
@@ -1792,9 +1809,13 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/msys64/mingw64/include/c++/15.2.0/cwctype:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h:
 

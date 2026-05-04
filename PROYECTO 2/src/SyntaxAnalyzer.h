@@ -8,6 +8,8 @@ class SyntaxAnalyzer {
 private:
     LexicalAnalyzer* lexer;
     ErrorManager* errorManager;
+    std::vector<Token> tokens;
+    int tokenIndex; // ← Agregar índice
 
     Token currentToken;
 
@@ -43,4 +45,6 @@ public:
     int nodeCounter;
 
     const Board& getBoard() const { return board; }
+    const std::vector<Token>& getTokens() const { return tokens; }
+    const std::vector<ErrorInfo>& getErrors() const { return errorManager->getErrors(); }
 };

@@ -1,6 +1,9 @@
 #pragma once
 #include <string>
+#include <vector>
 #include "BoardModel.h"
+#include "Token.h"
+#include "ErrorManager.h"
 
 struct ResponsableStats {
     int total = 0;
@@ -18,4 +21,7 @@ public:
 
     void generateKanbanReport(const std::string& filename);
     void generateResponsableReport(const std::string& filename);
+    void generateTokenErrorReport(const std::string& filename,
+                                  const std::vector<Token>& tokens,
+                                  const std::vector<ErrorInfo>& errors);
 };

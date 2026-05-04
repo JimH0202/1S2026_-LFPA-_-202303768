@@ -13,6 +13,7 @@ private:
     int tokenCounter;
 
     ErrorManager* errorManager;
+    std::vector<Token> tokens; // ← Agregar vector para almacenar tokens
 
     char peek() const;
     char advance();
@@ -167,4 +168,5 @@ fecha_invalida:
     return Token(tokenCounter++, lex, TokenType::ERROR, line, column - 1);
 }
 
+    const std::vector<Token>& getTokens() const { return tokens; }
 };

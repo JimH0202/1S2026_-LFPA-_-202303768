@@ -100,12 +100,15 @@ CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
- C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\BoardModel.h \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\BoardModel.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\Token.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\TokenType.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\ErrorManager.h \
  C:/msys64/mingw64/include/c++/15.2.0/fstream \
  C:/msys64/mingw64/include/c++/15.2.0/istream \
  C:/msys64/mingw64/include/c++/15.2.0/ios \

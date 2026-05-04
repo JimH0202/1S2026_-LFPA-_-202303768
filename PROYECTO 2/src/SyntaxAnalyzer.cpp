@@ -2,8 +2,15 @@
 #include <fstream>
 
 SyntaxAnalyzer::SyntaxAnalyzer(LexicalAnalyzer* lexer, ErrorManager* errorManager)
-    : lexer(lexer), errorManager(errorManager), board(), currentColumn(), currentTask(), root(nullptr), nodeCounter(1) {
-    currentToken = lexer->nextToken();
+    : lexer(lexer), errorManager(errorManager), board(), currentColumn(), currentTask(), root(nullptr), nodeCounter(1), tokenIndex(0) {
+    // Tokenizar todo el input
+    Token t;
+    do {
+        t = lexer->nextToken();
+        tokens.push_back(t);
+    } while (t.getType() != TokenType::END_OF_FILE);
+
+    currentToken = tokens[tokenIndex];
 }
 
 void SyntaxAnalyzer::parse() {
@@ -20,7 +27,10 @@ void SyntaxAnalyzer::parse() {
 }
 
 void SyntaxAnalyzer::advance() {
-    currentToken = lexer->nextToken();
+    tokenIndex++;
+    if (tokenIndex < tokens.size()) {
+        currentToken = tokens[tokenIndex];
+    }
 }
 
 bool SyntaxAnalyzer::match(TokenType expected) {

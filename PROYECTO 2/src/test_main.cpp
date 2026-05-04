@@ -34,5 +34,9 @@ int main() {
     reportGen.generateResponsableReport("responsable_report.html");
     std::cout << "Reporte por Responsable generado en 'responsable_report.html'" << std::endl;
 
+    // Generar reporte de tokens y errores
+    reportGen.generateTokenErrorReport("token_error_report.html", parser.getTokens(), parser.getErrors());
+    std::cout << "Reporte de Tokens y Errores generado en 'token_error_report.html'" << std::endl;
+
     return 0;
 }
