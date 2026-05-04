@@ -2,6 +2,7 @@
 #include "LexicalAnalyzer.h"
 #include "ErrorManager.h"
 #include "BoardModel.h"
+#include "TreeNode.h"
 
 class SyntaxAnalyzer {
 private:
@@ -16,13 +17,18 @@ private:
 
     // Reglas de la gramática
     void programa();
-    void columnas();
-    void columna();
-    void tareas();
-    void tarea();
-    void atributos();
-    void atributo();
-    void prioridad();
+    void columnas(TreeNode* parent);
+    void columna(TreeNode* parent);
+    void tareas(TreeNode* parent);
+    void tarea(TreeNode* parent);
+    void atributos(TreeNode* parent);
+    void atributo(TreeNode* parent);
+    void prioridad(TreeNode* parent);
+
+    // Árbol de derivación
+    TreeNode* createNode(const std::string& label, bool isTerminal);
+    void addChild(TreeNode* parent, TreeNode* child);
+    void exportTree(TreeNode* node, std::ofstream& out);
 
 public:
     SyntaxAnalyzer(LexicalAnalyzer* lexer, ErrorManager* errorManager);
@@ -32,4 +38,7 @@ public:
     Board board; // ← el modelo final
     Column currentColumn;
     Task currentTask;
+
+    TreeNode* root;
+    int nodeCounter;
 };

@@ -129,6 +129,19 @@ TaskScriptAnalyzer/fast:
 .PHONY : TaskScriptAnalyzer/fast
 
 #=============================================================================
+# Target rules for targets named TestAnalyzer
+
+# Build rule for target.
+TestAnalyzer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestAnalyzer
+.PHONY : TestAnalyzer
+
+# fast build rule for target.
+TestAnalyzer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/build
+.PHONY : TestAnalyzer/fast
+
+#=============================================================================
 # Target rules for targets named TaskScriptAnalyzer_autogen_timestamp_deps
 
 # Build rule for target.
@@ -154,6 +167,32 @@ TaskScriptAnalyzer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer_autogen.dir\build.make CMakeFiles/TaskScriptAnalyzer_autogen.dir/build
 .PHONY : TaskScriptAnalyzer_autogen/fast
 
+#=============================================================================
+# Target rules for targets named TestAnalyzer_autogen_timestamp_deps
+
+# Build rule for target.
+TestAnalyzer_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestAnalyzer_autogen_timestamp_deps
+.PHONY : TestAnalyzer_autogen_timestamp_deps
+
+# fast build rule for target.
+TestAnalyzer_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer_autogen_timestamp_deps.dir\build.make CMakeFiles/TestAnalyzer_autogen_timestamp_deps.dir/build
+.PHONY : TestAnalyzer_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named TestAnalyzer_autogen
+
+# Build rule for target.
+TestAnalyzer_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestAnalyzer_autogen
+.PHONY : TestAnalyzer_autogen
+
+# fast build rule for target.
+TestAnalyzer_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer_autogen.dir\build.make CMakeFiles/TestAnalyzer_autogen.dir/build
+.PHONY : TestAnalyzer_autogen/fast
+
 TaskScriptAnalyzer_autogen/mocs_compilation.obj: TaskScriptAnalyzer_autogen/mocs_compilation.cpp.obj
 .PHONY : TaskScriptAnalyzer_autogen/mocs_compilation.obj
 
@@ -178,12 +217,37 @@ TaskScriptAnalyzer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/TaskScriptAnalyzer_autogen/mocs_compilation.cpp.s
 .PHONY : TaskScriptAnalyzer_autogen/mocs_compilation.cpp.s
 
+TestAnalyzer_autogen/mocs_compilation.obj: TestAnalyzer_autogen/mocs_compilation.cpp.obj
+.PHONY : TestAnalyzer_autogen/mocs_compilation.obj
+
+# target to build an object file
+TestAnalyzer_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.obj
+.PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.obj
+
+TestAnalyzer_autogen/mocs_compilation.i: TestAnalyzer_autogen/mocs_compilation.cpp.i
+.PHONY : TestAnalyzer_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TestAnalyzer_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.i
+.PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.i
+
+TestAnalyzer_autogen/mocs_compilation.s: TestAnalyzer_autogen/mocs_compilation.cpp.s
+.PHONY : TestAnalyzer_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TestAnalyzer_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.s
+.PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.s
+
 src/BoardModel.obj: src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.obj
 
 # target to build an object file
 src/BoardModel.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.cpp.obj
 
 src/BoardModel.i: src/BoardModel.cpp.i
@@ -192,6 +256,7 @@ src/BoardModel.i: src/BoardModel.cpp.i
 # target to preprocess a source file
 src/BoardModel.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.i
 .PHONY : src/BoardModel.cpp.i
 
 src/BoardModel.s: src/BoardModel.cpp.s
@@ -200,6 +265,7 @@ src/BoardModel.s: src/BoardModel.cpp.s
 # target to generate assembly for a file
 src/BoardModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.s
 .PHONY : src/BoardModel.cpp.s
 
 src/ErrorManager.obj: src/ErrorManager.cpp.obj
@@ -208,6 +274,7 @@ src/ErrorManager.obj: src/ErrorManager.cpp.obj
 # target to build an object file
 src/ErrorManager.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.obj
 .PHONY : src/ErrorManager.cpp.obj
 
 src/ErrorManager.i: src/ErrorManager.cpp.i
@@ -216,6 +283,7 @@ src/ErrorManager.i: src/ErrorManager.cpp.i
 # target to preprocess a source file
 src/ErrorManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.i
 .PHONY : src/ErrorManager.cpp.i
 
 src/ErrorManager.s: src/ErrorManager.cpp.s
@@ -224,6 +292,7 @@ src/ErrorManager.s: src/ErrorManager.cpp.s
 # target to generate assembly for a file
 src/ErrorManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.s
 .PHONY : src/ErrorManager.cpp.s
 
 src/LexicalAnalyzer.obj: src/LexicalAnalyzer.cpp.obj
@@ -232,6 +301,7 @@ src/LexicalAnalyzer.obj: src/LexicalAnalyzer.cpp.obj
 # target to build an object file
 src/LexicalAnalyzer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.obj
 .PHONY : src/LexicalAnalyzer.cpp.obj
 
 src/LexicalAnalyzer.i: src/LexicalAnalyzer.cpp.i
@@ -240,6 +310,7 @@ src/LexicalAnalyzer.i: src/LexicalAnalyzer.cpp.i
 # target to preprocess a source file
 src/LexicalAnalyzer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.i
 .PHONY : src/LexicalAnalyzer.cpp.i
 
 src/LexicalAnalyzer.s: src/LexicalAnalyzer.cpp.s
@@ -248,6 +319,7 @@ src/LexicalAnalyzer.s: src/LexicalAnalyzer.cpp.s
 # target to generate assembly for a file
 src/LexicalAnalyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.s
 .PHONY : src/LexicalAnalyzer.cpp.s
 
 src/MainWindow.obj: src/MainWindow.cpp.obj
@@ -280,6 +352,7 @@ src/ReportGenerator.obj: src/ReportGenerator.cpp.obj
 # target to build an object file
 src/ReportGenerator.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj
 .PHONY : src/ReportGenerator.cpp.obj
 
 src/ReportGenerator.i: src/ReportGenerator.cpp.i
@@ -288,6 +361,7 @@ src/ReportGenerator.i: src/ReportGenerator.cpp.i
 # target to preprocess a source file
 src/ReportGenerator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.i
 .PHONY : src/ReportGenerator.cpp.i
 
 src/ReportGenerator.s: src/ReportGenerator.cpp.s
@@ -296,6 +370,7 @@ src/ReportGenerator.s: src/ReportGenerator.cpp.s
 # target to generate assembly for a file
 src/ReportGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.s
 .PHONY : src/ReportGenerator.cpp.s
 
 src/SyntaxAnalyzer.obj: src/SyntaxAnalyzer.cpp.obj
@@ -304,6 +379,7 @@ src/SyntaxAnalyzer.obj: src/SyntaxAnalyzer.cpp.obj
 # target to build an object file
 src/SyntaxAnalyzer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj
 .PHONY : src/SyntaxAnalyzer.cpp.obj
 
 src/SyntaxAnalyzer.i: src/SyntaxAnalyzer.cpp.i
@@ -312,6 +388,7 @@ src/SyntaxAnalyzer.i: src/SyntaxAnalyzer.cpp.i
 # target to preprocess a source file
 src/SyntaxAnalyzer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.i
 .PHONY : src/SyntaxAnalyzer.cpp.i
 
 src/SyntaxAnalyzer.s: src/SyntaxAnalyzer.cpp.s
@@ -320,6 +397,7 @@ src/SyntaxAnalyzer.s: src/SyntaxAnalyzer.cpp.s
 # target to generate assembly for a file
 src/SyntaxAnalyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.s
 .PHONY : src/SyntaxAnalyzer.cpp.s
 
 src/Token.obj: src/Token.cpp.obj
@@ -328,6 +406,7 @@ src/Token.obj: src/Token.cpp.obj
 # target to build an object file
 src/Token.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.obj
 .PHONY : src/Token.cpp.obj
 
 src/Token.i: src/Token.cpp.i
@@ -336,6 +415,7 @@ src/Token.i: src/Token.cpp.i
 # target to preprocess a source file
 src/Token.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.i
 .PHONY : src/Token.cpp.i
 
 src/Token.s: src/Token.cpp.s
@@ -344,6 +424,7 @@ src/Token.s: src/Token.cpp.s
 # target to generate assembly for a file
 src/Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.s
 .PHONY : src/Token.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -370,6 +451,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/test_main.obj: src/test_main.cpp.obj
+.PHONY : src/test_main.obj
+
+# target to build an object file
+src/test_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.obj
+.PHONY : src/test_main.cpp.obj
+
+src/test_main.i: src/test_main.cpp.i
+.PHONY : src/test_main.i
+
+# target to preprocess a source file
+src/test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.i
+.PHONY : src/test_main.cpp.i
+
+src/test_main.s: src/test_main.cpp.s
+.PHONY : src/test_main.s
+
+# target to generate assembly for a file
+src/test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.s
+.PHONY : src/test_main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -380,10 +485,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... TaskScriptAnalyzer_autogen
 	@echo ... TaskScriptAnalyzer_autogen_timestamp_deps
+	@echo ... TestAnalyzer_autogen
+	@echo ... TestAnalyzer_autogen_timestamp_deps
 	@echo ... TaskScriptAnalyzer
+	@echo ... TestAnalyzer
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.obj
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.i
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.s
+	@echo ... TestAnalyzer_autogen/mocs_compilation.obj
+	@echo ... TestAnalyzer_autogen/mocs_compilation.i
+	@echo ... TestAnalyzer_autogen/mocs_compilation.s
 	@echo ... src/BoardModel.obj
 	@echo ... src/BoardModel.i
 	@echo ... src/BoardModel.s
@@ -408,6 +519,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/test_main.obj
+	@echo ... src/test_main.i
+	@echo ... src/test_main.s
 .PHONY : help
 
 

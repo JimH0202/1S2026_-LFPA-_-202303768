@@ -1,5 +1,8 @@
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TaskScriptAnalyzer.dir
+C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TestAnalyzer.dir
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/edit_cache.dir
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/rebuild_cache.dir
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TaskScriptAnalyzer_autogen_timestamp_deps.dir
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TaskScriptAnalyzer_autogen.dir
+C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TestAnalyzer_autogen_timestamp_deps.dir
+C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TestAnalyzer_autogen.dir
