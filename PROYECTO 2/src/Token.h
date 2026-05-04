@@ -11,6 +11,9 @@ private:
     int column;
 
 public:
+    Token()
+        : number(0), lexeme(""), type(TokenType::END_OF_FILE), line(0), column(0) {}
+
     Token(int number, const std::string& lexeme, TokenType type, int line, int column)
         : number(number), lexeme(lexeme), type(type), line(line), column(column) {}
 

@@ -28,4 +28,8 @@ public:
     SyntaxAnalyzer(LexicalAnalyzer* lexer, ErrorManager* errorManager);
 
     void parse();
+
+    Board board; // ← el modelo final
+    Column currentColumn;
+    Task currentTask;
 };

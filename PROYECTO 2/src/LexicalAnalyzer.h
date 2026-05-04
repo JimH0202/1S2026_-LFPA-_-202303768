@@ -21,7 +21,7 @@ private:
 public:
     LexicalAnalyzer(const std::string& text, ErrorManager* errorManager);
 
-  Token LexicalAnalyzer::nextToken() {
+    Token nextToken() {
     // 1. Saltar espacios y saltos de línea
     while (!isAtEnd()) {
         char c = peek();
