@@ -277,6 +277,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnaly
  C:/msys64/mingw64/include/qt6/QtCore/q20utility.h
  C:/msys64/mingw64/include/qt6/QtCore/q23type_traits.h
  C:/msys64/mingw64/include/qt6/QtCore/q23utility.h
+ C:/msys64/mingw64/include/qt6/QtCore/qabstractitemmodel.h
  C:/msys64/mingw64/include/qt6/QtCore/qalgorithms.h
  C:/msys64/mingw64/include/qt6/QtCore/qalloc.h
  C:/msys64/mingw64/include/qt6/QtCore/qanystringview.h
@@ -320,11 +321,13 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnaly
  C:/msys64/mingw64/include/qt6/QtCore/qhash.h
  C:/msys64/mingw64/include/qt6/QtCore/qhashfunctions.h
  C:/msys64/mingw64/include/qt6/QtCore/qiodevicebase.h
+ C:/msys64/mingw64/include/qt6/QtCore/qitemselectionmodel.h
  C:/msys64/mingw64/include/qt6/QtCore/qiterable.h
  C:/msys64/mingw64/include/qt6/QtCore/qiterator.h
  C:/msys64/mingw64/include/qt6/QtCore/qlatin1stringview.h
  C:/msys64/mingw64/include/qt6/QtCore/qline.h
  C:/msys64/mingw64/include/qt6/QtCore/qlist.h
+ C:/msys64/mingw64/include/qt6/QtCore/qlocale.h
  C:/msys64/mingw64/include/qt6/QtCore/qlogging.h
  C:/msys64/mingw64/include/qt6/QtCore/qmalloc.h
  C:/msys64/mingw64/include/qt6/QtCore/qmap.h
@@ -345,6 +348,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnaly
  C:/msys64/mingw64/include/qt6/QtCore/qprocessordetection.h
  C:/msys64/mingw64/include/qt6/QtCore/qrect.h
  C:/msys64/mingw64/include/qt6/QtCore/qrefcount.h
+ C:/msys64/mingw64/include/qt6/QtCore/qregularexpression.h
  C:/msys64/mingw64/include/qt6/QtCore/qscopedpointer.h
  C:/msys64/mingw64/include/qt6/QtCore/qscopeguard.h
  C:/msys64/mingw64/include/qt6/QtCore/qset.h
@@ -390,6 +394,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnaly
  C:/msys64/mingw64/include/qt6/QtCore/qtversionchecks.h
  C:/msys64/mingw64/include/qt6/QtCore/qtypeinfo.h
  C:/msys64/mingw64/include/qt6/QtCore/qtypes.h
+ C:/msys64/mingw64/include/qt6/QtCore/qurl.h
  C:/msys64/mingw64/include/qt6/QtCore/qutf8stringview.h
  C:/msys64/mingw64/include/qt6/QtCore/qvariant.h
  C:/msys64/mingw64/include/qt6/QtCore/qvarlengtharray.h
@@ -410,22 +415,48 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnaly
  C:/msys64/mingw64/include/qt6/QtGui/qkeysequence.h
  C:/msys64/mingw64/include/qt6/QtGui/qpaintdevice.h
  C:/msys64/mingw64/include/qt6/QtGui/qpalette.h
+ C:/msys64/mingw64/include/qt6/QtGui/qpen.h
  C:/msys64/mingw64/include/qt6/QtGui/qpixelformat.h
  C:/msys64/mingw64/include/qt6/QtGui/qpixmap.h
  C:/msys64/mingw64/include/qt6/QtGui/qpolygon.h
  C:/msys64/mingw64/include/qt6/QtGui/qregion.h
  C:/msys64/mingw64/include/qt6/QtGui/qrgb.h
  C:/msys64/mingw64/include/qt6/QtGui/qrgba64.h
+ C:/msys64/mingw64/include/qt6/QtGui/qtextcursor.h
+ C:/msys64/mingw64/include/qt6/QtGui/qtextdocument.h
+ C:/msys64/mingw64/include/qt6/QtGui/qtextformat.h
+ C:/msys64/mingw64/include/qt6/QtGui/qtextoption.h
  C:/msys64/mingw64/include/qt6/QtGui/qtgui-config.h
  C:/msys64/mingw64/include/qt6/QtGui/qtguiexports.h
  C:/msys64/mingw64/include/qt6/QtGui/qtguiglobal.h
  C:/msys64/mingw64/include/qt6/QtGui/qtransform.h
+ C:/msys64/mingw64/include/qt6/QtGui/qvalidator.h
  C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h
  C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h
  C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow
+ C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTableWidget
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTextEdit
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemdelegate.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemview.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractscrollarea.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractslider.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractspinbox.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qrubberband.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qslider.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyle.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyleoption.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtabbar.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtableview.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtablewidget.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtextedit.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgets-config.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgetsexports.h
  C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgetsglobal.h
@@ -1941,14 +1972,11 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
@@ -1958,7 +1986,6 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h
@@ -1966,12 +1993,9 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/hashtable_policy.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/list.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc
- C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h
@@ -1980,8 +2004,6 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h
- C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h
@@ -2048,7 +2070,6 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/ctime
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
- C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/15.2.0/exception
@@ -2059,13 +2080,9 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h
- C:/msys64/mingw64/include/c++/15.2.0/fstream
  C:/msys64/mingw64/include/c++/15.2.0/functional
  C:/msys64/mingw64/include/c++/15.2.0/initializer_list
- C:/msys64/mingw64/include/c++/15.2.0/ios
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd
- C:/msys64/mingw64/include/c++/15.2.0/iostream
- C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/iterator
  C:/msys64/mingw64/include/c++/15.2.0/limits
  C:/msys64/mingw64/include/c++/15.2.0/list
@@ -2074,7 +2091,6 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/numeric
  C:/msys64/mingw64/include/c++/15.2.0/optional
- C:/msys64/mingw64/include/c++/15.2.0/ostream
  C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h
  C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h
  C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h
@@ -2110,14 +2126,10 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/version
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h
@@ -2338,7 +2350,6 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/include/time.h
  C:/msys64/mingw64/include/vadefs.h
  C:/msys64/mingw64/include/wchar.h
- C:/msys64/mingw64/include/wctype.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h
@@ -2346,12 +2357,5 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/BoardModel.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/ErrorManager.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/LexicalAnalyzer.h
  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/MainWindow.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/SyntaxAnalyzer.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/Token.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/TokenType.h
- C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/src/TreeNode.h
 

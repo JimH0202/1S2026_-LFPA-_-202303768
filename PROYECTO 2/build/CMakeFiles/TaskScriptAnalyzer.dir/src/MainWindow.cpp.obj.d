@@ -387,4 +387,99 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/MainWindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h \
  C:/msys64/mingw64/include/qt6/QtGui/qcursor.h \
  C:/msys64/mingw64/include/qt6/QtGui/qbitmap.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTextEdit \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtextedit.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractscrollarea.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextdocument.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qurl.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextoption.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextcursor.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextformat.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpen.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTableWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtablewidget.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtableview.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemview.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qabstractitemmodel.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qitemselectionmodel.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyleoption.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qlocale.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractspinbox.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qvalidator.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qregularexpression.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qslider.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractslider.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyle.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtabbar.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qrubberband.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QHBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qgridlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QFileDialog \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qfiledialog.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdir.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdirlisting.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qfiledevice.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
+ C:/msys64/mingw64/include/c++/15.2.0/filesystem \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/fs_path.h \
+ C:/msys64/mingw64/include/c++/15.2.0/locale \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h \
+ C:/msys64/mingw64/include/c++/15.2.0/cwctype \
+ C:/msys64/mingw64/include/wctype.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_conv.h \
+ C:/msys64/mingw64/include/c++/15.2.0/iomanip \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/quoted_string.h \
+ C:/msys64/mingw64/include/c++/15.2.0/sstream \
+ C:/msys64/mingw64/include/c++/15.2.0/istream \
+ C:/msys64/mingw64/include/c++/15.2.0/ios \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/ostream \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/codecvt \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/fs_dir.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdatetime.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qcalendar.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qfile.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qfileinfo.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qtimezone.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qdialog.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QFile \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMessageBox \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmessagebox.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ C:/msys64/mingw64/include/qt6/QtGui/QDesktopServices \
+ C:/msys64/mingw64/include/qt6/QtGui/qdesktopservices.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QUrl \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\LexicalAnalyzer.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\Token.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\TokenType.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\ErrorManager.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\SyntaxAnalyzer.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\BoardModel.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\TreeNode.h \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\ReportGenerator.h

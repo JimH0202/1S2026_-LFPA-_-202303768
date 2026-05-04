@@ -389,6 +389,37 @@ CMakeFiles/TaskScriptAnalyzer.dir/TaskScriptAnalyzer_autogen/mocs_compilation.cp
  C:/msys64/mingw64/include/qt6/QtGui/qcursor.h \
  C:/msys64/mingw64/include/qt6/QtGui/qbitmap.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTextEdit \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtextedit.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractscrollarea.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextdocument.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qurl.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextoption.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextcursor.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextformat.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpen.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTableWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtablewidget.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtableview.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemview.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qabstractitemmodel.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qitemselectionmodel.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyleoption.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qlocale.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractspinbox.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qvalidator.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qregularexpression.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qslider.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractslider.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstyle.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qtabbar.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qrubberband.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
  C:/msys64/mingw64/include/qt6/QtCore/qtmochelpers.h \
  C:/msys64/mingw64/include/qt6/QtCore/qtmocconstants.h \
  C:/msys64/mingw64/include/qt6/QtCore/q20algorithm.h
