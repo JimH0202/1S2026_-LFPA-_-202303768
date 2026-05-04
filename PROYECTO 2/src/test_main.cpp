@@ -3,6 +3,7 @@
 #include "LexicalAnalyzer.h"
 #include "SyntaxAnalyzer.h"
 #include "ErrorManager.h"
+#include "ReportGenerator.h"
 
 int main() {
     // Prueba del análisis sintáctico y generación del árbol
@@ -23,6 +24,11 @@ int main() {
     parser.parse();
 
     std::cout << "Análisis completado. Árbol generado en 'arbol.dot'" << std::endl;
+
+    // Generar reporte Kanban
+    ReportGenerator reportGen(parser.getBoard());
+    reportGen.generateKanbanReport("kanban_report.html");
+    std::cout << "Reporte Kanban generado en 'kanban_report.html'" << std::endl;
 
     return 0;
 }

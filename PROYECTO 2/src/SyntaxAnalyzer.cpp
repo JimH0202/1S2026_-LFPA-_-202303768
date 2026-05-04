@@ -92,19 +92,15 @@ void SyntaxAnalyzer::programa() {
     TreeNode* node = createNode("<programa>", false);
     root = node;
 
-    if (match(TokenType::TABLERO)) {
-        if (currentToken.getType() == TokenType::CADENA) {
-            board = Board();
-            board.name = currentToken.getLexeme();
-        }
-        TreeNode* t1 = createNode("TABLERO", true);
-        addChild(node, t1);
-        match(TokenType::CADENA);
+    TreeNode* t1 = createNode("TABLERO", true);
+    addChild(node, t1);
+    match(TokenType::TABLERO);
 
-        TreeNode* t2 = createNode("CADENA", true);
-        addChild(node, t2);
-        match(TokenType::CADENA);
-    }
+    board = Board();
+    board.name = currentToken.getLexeme();
+    TreeNode* t2 = createNode("CADENA", true);
+    addChild(node, t2);
+    match(TokenType::CADENA);
 
     TreeNode* t3 = createNode("{", true);
     addChild(node, t3);
@@ -142,10 +138,8 @@ void SyntaxAnalyzer::columna(TreeNode* parent) {
     addChild(node, t1);
     match(TokenType::COLUMNA);
 
-    if (currentToken.getType() == TokenType::CADENA) {
-        currentColumn = Column();
-        currentColumn.name = currentToken.getLexeme();
-    }
+    currentColumn = Column();
+    currentColumn.name = currentToken.getLexeme();
 
     TreeNode* t2 = createNode("CADENA", true);
     addChild(node, t2);
@@ -196,10 +190,8 @@ void SyntaxAnalyzer::tarea(TreeNode* parent) {
     addChild(node, t2);
     match(TokenType::DOS_PUNTOS);
 
-    if (currentToken.getType() == TokenType::CADENA) {
-        currentTask = Task();
-        currentTask.name = currentToken.getLexeme();
-    }
+    currentTask = Task();
+    currentTask.name = currentToken.getLexeme();
 
     TreeNode* t3 = createNode("CADENA", true);
     addChild(node, t3);

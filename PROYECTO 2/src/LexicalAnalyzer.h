@@ -85,9 +85,8 @@ public:
     if (upper == "MEDIA") return Token(tokenCounter++, lexema, TokenType::MEDIA, line, column - lexema.size());
     if (upper == "BAJA") return Token(tokenCounter++, lexema, TokenType::BAJA, line, column - lexema.size());
 
-    // Si no coincide con ninguna palabra reservada → error
-    errorManager->addLexicalError(lexema, "Identificador no válido en TaskScript", line, column - lexema.size());
-    return Token(tokenCounter++, lexema, TokenType::ERROR, line, column - lexema.size());
+    // Si no coincide con ninguna palabra reservada → CADENA
+    return Token(tokenCounter++, lexema, TokenType::CADENA, line, column - lexema.size());
 }
     
 

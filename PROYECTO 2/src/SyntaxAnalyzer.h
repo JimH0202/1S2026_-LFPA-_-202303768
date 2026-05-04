@@ -41,4 +41,6 @@ public:
 
     TreeNode* root;
     int nodeCounter;
+
+    const Board& getBoard() const { return board; }
 };

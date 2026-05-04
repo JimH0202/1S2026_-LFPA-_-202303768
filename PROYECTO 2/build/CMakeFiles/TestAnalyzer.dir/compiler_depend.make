@@ -228,12 +228,857 @@ TestAnalyzer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
   C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake
 
+CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.obj: TestAnalyzer_autogen/mocs_compilation.cpp
+
+CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.h
+
+CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.h
+
+CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TokenType.h
+
+CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ReportGenerator.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/_timeval.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/cwctype \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/exception \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/fstream \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/ios \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/istream \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/ostream \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/streambuf \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/system_error \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/typeinfo \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_startup.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/process.h \
+  C:/msys64/mingw64/include/pthread.h \
+  C:/msys64/mingw64/include/pthread_compat.h \
+  C:/msys64/mingw64/include/pthread_signal.h \
+  C:/msys64/mingw64/include/pthread_time.h \
+  C:/msys64/mingw64/include/pthread_unistd.h \
+  C:/msys64/mingw64/include/sched.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/signal.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/sys/timeb.h \
+  C:/msys64/mingw64/include/sys/types.h \
+  C:/msys64/mingw64/include/time.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ReportGenerator.h
+
+CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/_timeval.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/cwctype \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/exception \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/fstream \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/ios \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/istream \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/ostream \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/streambuf \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/system_error \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/typeinfo \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_startup.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/process.h \
+  C:/msys64/mingw64/include/pthread.h \
+  C:/msys64/mingw64/include/pthread_compat.h \
+  C:/msys64/mingw64/include/pthread_signal.h \
+  C:/msys64/mingw64/include/pthread_time.h \
+  C:/msys64/mingw64/include/pthread_unistd.h \
+  C:/msys64/mingw64/include/sched.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/signal.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/sys/timeb.h \
+  C:/msys64/mingw64/include/sys/types.h \
+  C:/msys64/mingw64/include/time.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TokenType.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TreeNode.h
+
+CMakeFiles/TestAnalyzer.dir/src/Token.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.cpp
+
+CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/test_main.cpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/_timeval.h \
+  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bit \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/15.2.0/cctype \
+  C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+  C:/msys64/mingw64/include/c++/15.2.0/clocale \
+  C:/msys64/mingw64/include/c++/15.2.0/concepts \
+  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+  C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/15.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/15.2.0/cwctype \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/15.2.0/exception \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/15.2.0/fstream \
+  C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/15.2.0/ios \
+  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/15.2.0/iostream \
+  C:/msys64/mingw64/include/c++/15.2.0/istream \
+  C:/msys64/mingw64/include/c++/15.2.0/new \
+  C:/msys64/mingw64/include/c++/15.2.0/ostream \
+  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
+  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/15.2.0/streambuf \
+  C:/msys64/mingw64/include/c++/15.2.0/string \
+  C:/msys64/mingw64/include/c++/15.2.0/string_view \
+  C:/msys64/mingw64/include/c++/15.2.0/system_error \
+  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/15.2.0/typeinfo \
+  C:/msys64/mingw64/include/c++/15.2.0/vector \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_startup.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wconio.h \
+  C:/msys64/mingw64/include/corecrt_wctype.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/ctype.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/process.h \
+  C:/msys64/mingw64/include/pthread.h \
+  C:/msys64/mingw64/include/pthread_compat.h \
+  C:/msys64/mingw64/include/pthread_signal.h \
+  C:/msys64/mingw64/include/pthread_time.h \
+  C:/msys64/mingw64/include/pthread_unistd.h \
+  C:/msys64/mingw64/include/sched.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/mingw64/include/sec_api/wchar_s.h \
+  C:/msys64/mingw64/include/sec_api/wconio_s.h \
+  C:/msys64/mingw64/include/signal.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/sys/timeb.h \
+  C:/msys64/mingw64/include/sys/types.h \
+  C:/msys64/mingw64/include/time.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ReportGenerator.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TokenType.h \
+  C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TreeNode.h
+
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+C:/msys64/mingw64/include/corecrt_startup.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake:
+
+C:/msys64/mingw64/include/swprintf.inl:
+
+C:/msys64/mingw64/include/c++/15.2.0/cerrno:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake:
 
@@ -255,6 +1100,8 @@ C:/Program\ Files/CMake/bin/cmake.exe:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/stdlib.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeGenericSystem.cmake:
@@ -265,17 +1112,25 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cma
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/CMakeLists.txt:
 
+C:/msys64/mingw64/include/c++/15.2.0/cstdio:
+
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeRCInformation.cmake:
 
 CMakeFiles/4.3.2/CMakeRCCompiler.cmake:
+
+C:/msys64/mingw64/include/locale.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-C.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/exception:
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.h:
 
@@ -287,6 +1142,8 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/istream:
+
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake:
@@ -294,6 +1151,8 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake:
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake:
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.cpp:
+
+C:/msys64/mingw64/include/c++/15.2.0/initializer_list:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake:
 
@@ -304,6 +1163,8 @@ C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-C.cmake:
+
+C:/msys64/mingw64/include/corecrt.h:
 
 CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
@@ -333,6 +1194,8 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cm
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-C-ABI.cmake:
@@ -349,9 +1212,15 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformati
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake:
+
+C:/msys64/mingw64/include/corecrt_stdio_config.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckFlagCommonConfig.cmake:
 
@@ -361,7 +1230,11 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Linker/GNU.cmake:
 
+C:/msys64/mingw64/include/malloc.h:
+
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake:
 
@@ -370,6 +1243,8 @@ C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-C.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake:
+
+C:/msys64/mingw64/include/pthread.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake:
 
@@ -383,7 +1258,13 @@ C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
+
 CMakeFiles/4.3.2/CMakeCXXCompiler.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/cctype:
 
 CMakeFiles/4.3.2/CMakeSystem.cmake:
 
@@ -391,7 +1272,11 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.h:
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.cpp:
 
+C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h:
+
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/typeinfo:
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.h:
 
@@ -402,6 +1287,8 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TreeNode.h:
 
 C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/test_main.cpp:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
 
@@ -420,6 +1307,8 @@ C:/msys64/mingw64/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/concepts:
 
 C:/msys64/mingw64/lib/cmake/Qt6/Qt6Dependencies.cmake:
 
@@ -443,9 +1332,13 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/string:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 
@@ -455,6 +1348,8 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/iosfwd:
+
 C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
@@ -463,9 +1358,13 @@ C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-rel
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake:
 
@@ -473,11 +1372,15 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
 
+C:/msys64/mingw64/include/_mingw.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
+
+C:/msys64/mingw64/include/corecrt_wstdlib.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
 
@@ -486,6 +1389,8 @@ C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
+
+C:/msys64/mingw64/include/corecrt_wconio.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
 
@@ -511,13 +1416,19 @@ C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
+C:/msys64/mingw64/include/pthread_compat.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
 
@@ -525,7 +1436,15 @@ C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
 
+C:/msys64/mingw64/include/sec_api/wchar_s.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake:
+
+C:/msys64/mingw64/include/stdlib.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/cstdlib:
 
 C:/msys64/mingw64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
@@ -537,9 +1456,13 @@ C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/version.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+
+C:/msys64/mingw64/include/pthread_time.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake:
 
@@ -565,6 +1488,8 @@ C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc:
+
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
@@ -574,6 +1499,8 @@ C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake:
 
@@ -598,6 +1525,8 @@ C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake:
 
@@ -629,7 +1558,11 @@ C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cma
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake:
 
@@ -638,6 +1571,8 @@ C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cm
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake:
 
@@ -649,7 +1584,11 @@ C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc:
+
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
+
+C:/msys64/mingw64/include/c++/15.2.0/type_traits:
 
 C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
@@ -658,6 +1597,8 @@ C:/msys64/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake:
+
+C:/msys64/mingw64/include/ctype.h:
 
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
 
@@ -671,6 +1612,8 @@ C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake:
 
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
+
 C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
@@ -680,3 +1623,217 @@ C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
 C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
+
+TestAnalyzer_autogen/mocs_compilation.cpp:
+
+C:/msys64/mingw64/include/_mingw_mac.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
+
+C:/msys64/mingw64/include/_mingw_off_t.h:
+
+C:/msys64/mingw64/include/_mingw_secapi.h:
+
+C:/msys64/mingw64/include/_mingw_stat64.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bit:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h:
+
+C:/msys64/mingw64/include/time.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/move.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/clocale:
+
+C:/msys64/mingw64/include/c++/15.2.0/vector:
+
+C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/cstddef:
+
+C:/msys64/mingw64/include/sec_api/stdlib_s.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/cwchar:
+
+C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
+
+C:/msys64/mingw64/include/limits.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/new:
+
+C:/msys64/mingw64/include/c++/15.2.0/string_view:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/tuple:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/msys64/mingw64/include/corecrt_wctype.h:
+
+C:/msys64/mingw64/include/crtdefs.h:
+
+C:/msys64/mingw64/include/errno.h:
+
+C:/msys64/mingw64/include/sdks/_mingw_ddk.h:
+
+C:/msys64/mingw64/include/sec_api/stdio_s.h:
+
+C:/msys64/mingw64/include/sec_api/wconio_s.h:
+
+C:/msys64/mingw64/include/stddef.h:
+
+C:/msys64/mingw64/include/stdio.h:
+
+C:/msys64/mingw64/include/vadefs.h:
+
+C:/msys64/mingw64/include/wchar.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/TokenType.h:
+
+C:/msys64/mingw64/include/_timeval.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/cwctype:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h:
+
+C:/msys64/mingw64/include/sched.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/fstream:
+
+C:/msys64/mingw64/include/c++/15.2.0/ios:
+
+C:/msys64/mingw64/include/c++/15.2.0/ostream:
+
+C:/msys64/mingw64/include/c++/15.2.0/stdexcept:
+
+C:/msys64/mingw64/include/c++/15.2.0/streambuf:
+
+C:/msys64/mingw64/include/c++/15.2.0/system_error:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h:
+
+C:/msys64/mingw64/include/process.h:
+
+C:/msys64/mingw64/include/pthread_signal.h:
+
+C:/msys64/mingw64/include/pthread_unistd.h:
+
+C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
+
+C:/msys64/mingw64/include/signal.h:
+
+C:/msys64/mingw64/include/sys/timeb.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/iostream:
+
+C:/msys64/mingw64/include/sys/types.h:
+
+C:/msys64/mingw64/include/wctype.h:

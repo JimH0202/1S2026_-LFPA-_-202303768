@@ -1,9 +1,8 @@
-TABLERO "Mi Tablero" {
-    COLUMNA "Pendientes" {
-        TAREA: "Implementar login" [PRIORIDAD: ALTA, RESPONSABLE: "Juan", FECHA_LIMITE: 2024-12-31],
-        TAREA: "Diseñar UI" [PRIORIDAD: MEDIA, RESPONSABLE: "Maria"]
-    };
-    COLUMNA "En Progreso" {
-        TAREA: "Backend API" [PRIORIDAD: ALTA, RESPONSABLE: "Pedro", FECHA_LIMITE: 2024-11-15]
-    };
+TABLERO MiTablero {
+COLUMNA Pendientes {
+TAREA: Login [PRIORIDAD: ALTA, RESPONSABLE: Juan]
+};
+COLUMNA Progreso {
+TAREA: API [PRIORIDAD: MEDIA, RESPONSABLE: Maria, FECHA_LIMITE: 2024-12-31]
+};
 };
