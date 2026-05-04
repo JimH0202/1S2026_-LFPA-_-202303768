@@ -242,11 +242,88 @@
 <p>Errores encontrados durante el análisis léxico</p>
 </div>
 <div class="content">
-<div class="stat-box" style="border-left-color: #28a745;">
-<div class="stat-label">✓ Sin errores</div>
-<div class="stat-value" style="color: #28a745;">0</div>
+<div class="stat-box" style="border-left-color: #dc3545;">
+<div class="stat-label">Total de Errores</div>
+<div class="stat-value" style="color: #dc3545;">7</div>
 </div>
-<p style="margin-top: 20px; font-size: 1.1em; color: #333;">El archivo fue procesado sin errores léxicos.</p>
+<div class="section">
+<table>
+<thead><tr>
+<th>No.</th>
+<th>Lexema</th>
+<th>Tipo de Error</th>
+<th>Descripción</th>
+<th>Línea</th>
+<th>Columna</th>
+<th>Gravedad</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>"", habitacion: 312],"</code></td>
+<td>Unclosed String</td>
+<td>Not closed</td>
+<td>11</td>
+<td>61</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>"2025-13-01"</code></td>
+<td>Invalid Date</td>
+<td>Bad date: 2025-13-01</td>
+<td>36</td>
+<td>65</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>"25:00"</code></td>
+<td>Invalid Time</td>
+<td>Bad time: 25:00</td>
+<td>37</td>
+<td>80</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>"2025-00-10"</code></td>
+<td>Invalid Date</td>
+<td>Bad date: 2025-00-10</td>
+<td>40</td>
+<td>62</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>"10:60"</code></td>
+<td>Invalid Time</td>
+<td>Bad time: 10:60</td>
+<td>41</td>
+<td>80</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>"2025-04-32"</code></td>
+<td>Invalid Date</td>
+<td>Bad date: 2025-04-32</td>
+<td>42</td>
+<td>62</td>
+<td><strong>ERROR</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>""Ceftriaxona 1g, dosis: DIARIA],"</code></td>
+<td>Unclosed String</td>
+<td>Not closed</td>
+<td>58</td>
+<td>88</td>
+<td><strong>ERROR</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="footer">
 Análisis léxico completo | Recuperación de errores habilitada

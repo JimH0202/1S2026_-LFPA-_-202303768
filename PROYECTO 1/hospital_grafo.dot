@@ -11,12 +11,30 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#4ecdc4";
     style=filled;
     fillcolor="#e8f8f5";
-    pac_8501 [label="\nAna López\nEdad: 34\nSangre: O+"];
-    hospital -> pac_8501;
-    pac_4856 [label="\nJuan Pérez\nEdad: 50\nSangre: B-"];
-    hospital -> pac_4856;
-    pac_4897 [label="\nLaura Díaz\nEdad: 28\nSangre: A+"];
-    hospital -> pac_4897;
+    pac_2504 [label="\nMaría García\nEdad: 45\nSangre: A+"];
+    hospital -> pac_2504;
+    pac_803 [label="\nCarlos Mendoza\nEdad: 62\nSangre: O-"];
+    hospital -> pac_803;
+    pac_3488 [label="\nSofía Ramírez\nEdad: 29\nSangre: B+"];
+    hospital -> pac_3488;
+    pac_3316 [label="\nPedro Castillo\nEdad: 71\nSangre: AB-"];
+    hospital -> pac_3316;
+    pac_1877 [label="\nElena Morales\nEdad: 38\nSangre: O++"];
+    hospital -> pac_1877;
+    pac_3132 [label="\nRoberto Flores\nEdad: 55\nSangre: A-"];
+    hospital -> pac_3132;
+    pac_9789 [label="\nLucía Hernández\nEdad: 42\nSangre: C+"];
+    hospital -> pac_9789;
+    pac_3348 [label="\nFernando Rivas\nEdad: 33\nSangre: AB+"];
+    hospital -> pac_3348;
+    pac_9266 [label="\nAndrea Pineda [edad: 27, tipo_sangre: \nEdad: 0\nSangre: "];
+    hospital -> pac_9266;
+    pac_8433 [label="\nMiguel Torres\nEdad: 58\nSangre: O+"];
+    hospital -> pac_8433;
+    pac_5212 [label="\nGabriela Ruiz\nEdad: 19\nSangre: A+"];
+    hospital -> pac_5212;
+    pac_2603 [label="\nRaúl Domínguez\nEdad: 66\nSangre: XY"];
+    hospital -> pac_2603;
   }
 
   subgraph cluster_medicos {
@@ -24,18 +42,39 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#95e1d3";
     style=filled;
     fillcolor="#f0fdf4";
-    med_7785 [label="\nDr. Carlos Ruiz\nCARDIOLOGIA\nMED-001"];
-    hospital -> med_7785;
-    med_1231 [label="\nDra. María Solís\nNEUROLOGIA\nMED-002"];
-    hospital -> med_1231;
+    med_9689 [label="\nDr. Roberto Juárez\nCARDIOLOGIA\nMED-001"];
+    hospital -> med_9689;
+    med_8193 [label="\nDra. Ana Solís\nNEUROLOGIA\nMED-002"];
+    hospital -> med_8193;
+    med_8537 [label="\nDr. Luis Herrera\nPEDIATRIA\nMED-003"];
+    hospital -> med_8537;
+    med_7589 [label="\nDra. Carmen Vega\nCIRUGIA\nMED-004"];
+    hospital -> med_7589;
+    med_7184 [label="\nDr. Marcos León\nMEDICINA_GENERAL\nMED-005"];
+    hospital -> med_7184;
+    med_8053 [label="\nDra. Patricia Reyes\nONCOLOGIA\nMED-006"];
+    hospital -> med_8053;
+    med_7772 [label="\nDr. Enrique Paz\nTRAUMATOLOGIA\nMED-007"];
+    hospital -> med_7772;
+    med_8616 [label="\nDra. Isabel Cruz\nCARDIOLOGIA\nMED-008"];
+    hospital -> med_8616;
   }
 
   subgraph cluster_citas {
     label="CITAS";
     color="transparent";
-    pac_8501 -> med_7785 [label="2025-04-10 09:00", color="green", style="solid"];
-    pac_4856 -> med_1231 [label="2025-04-11 14:30", color="green", style="solid"];
-    pac_4897 -> med_7785 [label="2025-04-12 10:00", color="green", style="solid"];
+    pac_2504 -> med_9689 [label="2025-04-10 09:00", color="red", style="bold"];
+    pac_3316 -> med_9689 [label="2025-04-10 09:00", color="red", style="bold"];
+    pac_803 -> med_8193 [label="2025-04-10 11:30", color="green", style="solid"];
+    pac_3488 -> med_8537 [label="2025-04-11 08:00", color="green", style="solid"];
+    pac_1877 -> med_7589 [label="2025-04-11 14:00", color="red", style="bold"];
+    pac_3132 -> med_9689 [label="2025-04-12 10:00", color="green", style="solid"];
+    pac_3348 -> med_7184 [label="2025-04-12 16:00", color="red", style="bold"];
+    pac_9789 -> med_7589 [label="2025-04-11 14:00", color="red", style="bold"];
+    pac_2603 -> med_7184 [label="2025-04-12 16:00", color="red", style="bold"];
+    pac_3488 -> med_8053 [label="2025-04-18 09:00", color="green", style="solid"];
+    pac_3316 -> med_8616 [label="2025-04-19 15:30", color="green", style="solid"];
+    pac_8433 -> med_9689 [label="2025-04-10 09:00", color="red", style="bold"];
   }
 
   subgraph cluster_especialidades {
@@ -45,6 +84,11 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     fillcolor="#fffaed";
     esp_5596 [label="CARDIOLOGIA"];
     esp_6447 [label="NEUROLOGIA"];
+    esp_5286 [label="PEDIATRIA"];
+    esp_7844 [label="CIRUGIA"];
+    esp_8316 [label="MEDICINA_GENERAL"];
+    esp_9229 [label="ONCOLOGIA"];
+    esp_6606 [label="TRAUMATOLOGIA"];
   }
 
   subgraph cluster_sangre {
@@ -52,9 +96,17 @@ HOSPITAL", shape=ellipse, color="#ff6b6b", fontcolor=white, style=filled];
     color="#ff7675";
     style=filled;
     fillcolor="#ffebee";
-    sangre_7919 [label="O+", shape=oval];
-    sangre_2567 [label="B-", shape=oval];
     sangre_9105 [label="A+", shape=oval];
+    sangre_4697 [label="O-", shape=oval];
+    sangre_4122 [label="B+", shape=oval];
+    sangre_6377 [label="AB-", shape=oval];
+    sangre_239 [label="O++", shape=oval];
+    sangre_6702 [label="A-", shape=oval];
+    sangre_3722 [label="C+", shape=oval];
+    sangre_9357 [label="AB+", shape=oval];
+    sangre_3790 [label="", shape=oval];
+    sangre_7919 [label="O+", shape=oval];
+    sangre_753 [label="XY", shape=oval];
   }
 
   // Leyenda
