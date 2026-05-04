@@ -30,5 +30,9 @@ int main() {
     reportGen.generateKanbanReport("kanban_report.html");
     std::cout << "Reporte Kanban generado en 'kanban_report.html'" << std::endl;
 
+    // Generar reporte por responsable
+    reportGen.generateResponsableReport("responsable_report.html");
+    std::cout << "Reporte por Responsable generado en 'responsable_report.html'" << std::endl;
+
     return 0;
 }

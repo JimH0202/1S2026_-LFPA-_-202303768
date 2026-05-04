@@ -1,5 +1,6 @@
 #include "ReportGenerator.h"
 #include <fstream>
+#include <map>
 
 ReportGenerator::ReportGenerator(const Board& board)
     : board(board) {}
@@ -54,5 +55,73 @@ void ReportGenerator::generateKanbanReport(const std::string& filename) {
     }
 
     out << "</div>\n</body></html>";
+    out.close();
+}
+
+void ReportGenerator::generateResponsableReport(const std::string& filename) {
+    std::ofstream out(filename);
+
+    // 1. Agrupar tareas por responsable
+    std::map<std::string, ResponsableStats> stats;
+    int totalTareas = 0;
+
+    for (const Column& col : board.columns) {
+        for (const Task& task : col.tasks) {
+            auto& r = stats[task.responsible];
+            r.total++;
+            totalTareas++;
+
+            if (task.priority == "ALTA") r.alta++;
+            else if (task.priority == "MEDIA") r.media++;
+            else if (task.priority == "BAJA") r.baja++;
+        }
+    }
+
+    // 2. HTML + CSS
+    out << "<!DOCTYPE html>\n<html>\n<head>\n<meta charset='UTF-8'>\n";
+    out << "<title>Reporte por Responsable</title>\n";
+
+    out << "<style>\n"
+        "body { font-family: Arial; background: #f0f0f0; padding: 20px; }\n"
+        "table { width: 100%; border-collapse: collapse; background: white; }\n"
+        "th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }\n"
+        "th { background: #333; color: white; }\n"
+        ".bar-container { width: 100%; background: #ddd; border-radius: 5px; }\n"
+        ".bar { height: 20px; border-radius: 5px; }\n"
+        "</style>\n";
+
+    out << "</head><body>\n";
+
+    out << "<h1 style='text-align:center;'>Carga por Responsable</h1>\n";
+
+    out << "<table>\n";
+    out << "<tr><th>Responsable</th><th>Total</th><th>ALTA</th><th>MEDIA</th><th>BAJA</th><th>Distribución</th></tr>\n";
+
+    // 3. Llenar tabla
+    for (const auto& entry : stats) {
+        const std::string& nombre = entry.first;
+        const ResponsableStats& r = entry.second;
+
+        double porcentaje = (double)r.total / totalTareas * 100.0;
+
+        out << "<tr>\n";
+        out << "<td>" << nombre << "</td>\n";
+        out << "<td>" << r.total << "</td>\n";
+        out << "<td>" << r.alta << "</td>\n";
+        out << "<td>" << r.media << "</td>\n";
+        out << "<td>" << r.baja << "</td>\n";
+
+        // Barra de progreso
+        out << "<td>\n";
+        out << "<div class='bar-container'>\n";
+        out << "<div class='bar' style='width:" << porcentaje << "%; background: #4CAF50;'></div>\n";
+        out << "</div>\n";
+        out << porcentaje << "%\n";
+        out << "</td>\n";
+
+        out << "</tr>\n";
+    }
+
+    out << "</table>\n</body></html>";
     out.close();
 }
