@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -66,8 +66,8 @@ CMAKE_BINARY_DIR = "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\b
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:\Program Files\CMake\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -129,6 +129,19 @@ TaskScriptAnalyzer/fast:
 .PHONY : TaskScriptAnalyzer/fast
 
 #=============================================================================
+# Target rules for targets named launcher
+
+# Build rule for target.
+launcher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher
+.PHONY : launcher
+
+# fast build rule for target.
+launcher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/build
+.PHONY : launcher/fast
+
+#=============================================================================
 # Target rules for targets named ConsoleAnalyzer
 
 # Build rule for target.
@@ -140,19 +153,6 @@ ConsoleAnalyzer: cmake_check_build_system
 ConsoleAnalyzer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/build
 .PHONY : ConsoleAnalyzer/fast
-
-#=============================================================================
-# Target rules for targets named TestQt
-
-# Build rule for target.
-TestQt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt
-.PHONY : TestQt
-
-# fast build rule for target.
-TestQt/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/build
-.PHONY : TestQt/fast
 
 #=============================================================================
 # Target rules for targets named TestAnalyzer
@@ -194,6 +194,32 @@ TaskScriptAnalyzer_autogen/fast:
 .PHONY : TaskScriptAnalyzer_autogen/fast
 
 #=============================================================================
+# Target rules for targets named launcher_autogen_timestamp_deps
+
+# Build rule for target.
+launcher_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher_autogen_timestamp_deps
+.PHONY : launcher_autogen_timestamp_deps
+
+# fast build rule for target.
+launcher_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher_autogen_timestamp_deps.dir\build.make CMakeFiles/launcher_autogen_timestamp_deps.dir/build
+.PHONY : launcher_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named launcher_autogen
+
+# Build rule for target.
+launcher_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher_autogen
+.PHONY : launcher_autogen
+
+# fast build rule for target.
+launcher_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher_autogen.dir\build.make CMakeFiles/launcher_autogen.dir/build
+.PHONY : launcher_autogen/fast
+
+#=============================================================================
 # Target rules for targets named ConsoleAnalyzer_autogen_timestamp_deps
 
 # Build rule for target.
@@ -218,32 +244,6 @@ ConsoleAnalyzer_autogen: cmake_check_build_system
 ConsoleAnalyzer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer_autogen.dir\build.make CMakeFiles/ConsoleAnalyzer_autogen.dir/build
 .PHONY : ConsoleAnalyzer_autogen/fast
-
-#=============================================================================
-# Target rules for targets named TestQt_autogen_timestamp_deps
-
-# Build rule for target.
-TestQt_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt_autogen_timestamp_deps
-.PHONY : TestQt_autogen_timestamp_deps
-
-# fast build rule for target.
-TestQt_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt_autogen_timestamp_deps.dir\build.make CMakeFiles/TestQt_autogen_timestamp_deps.dir/build
-.PHONY : TestQt_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named TestQt_autogen
-
-# Build rule for target.
-TestQt_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt_autogen
-.PHONY : TestQt_autogen
-
-# fast build rule for target.
-TestQt_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt_autogen.dir\build.make CMakeFiles/TestQt_autogen.dir/build
-.PHONY : TestQt_autogen/fast
 
 #=============================================================================
 # Target rules for targets named TestAnalyzer_autogen_timestamp_deps
@@ -343,29 +343,29 @@ TestAnalyzer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.s
 .PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.s
 
-TestQt_autogen/mocs_compilation.obj: TestQt_autogen/mocs_compilation.cpp.obj
-.PHONY : TestQt_autogen/mocs_compilation.obj
+launcher_autogen/mocs_compilation.obj: launcher_autogen/mocs_compilation.cpp.obj
+.PHONY : launcher_autogen/mocs_compilation.obj
 
 # target to build an object file
-TestQt_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.obj
-.PHONY : TestQt_autogen/mocs_compilation.cpp.obj
+launcher_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.obj
+.PHONY : launcher_autogen/mocs_compilation.cpp.obj
 
-TestQt_autogen/mocs_compilation.i: TestQt_autogen/mocs_compilation.cpp.i
-.PHONY : TestQt_autogen/mocs_compilation.i
+launcher_autogen/mocs_compilation.i: launcher_autogen/mocs_compilation.cpp.i
+.PHONY : launcher_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-TestQt_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.i
-.PHONY : TestQt_autogen/mocs_compilation.cpp.i
+launcher_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.i
+.PHONY : launcher_autogen/mocs_compilation.cpp.i
 
-TestQt_autogen/mocs_compilation.s: TestQt_autogen/mocs_compilation.cpp.s
-.PHONY : TestQt_autogen/mocs_compilation.s
+launcher_autogen/mocs_compilation.s: launcher_autogen/mocs_compilation.cpp.s
+.PHONY : launcher_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-TestQt_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.s
-.PHONY : TestQt_autogen/mocs_compilation.cpp.s
+launcher_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.s
+.PHONY : launcher_autogen/mocs_compilation.cpp.s
 
 src/BoardModel.obj: src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.obj
@@ -643,30 +643,6 @@ src/test_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.s
 .PHONY : src/test_main.cpp.s
 
-test_qt.obj: test_qt.cpp.obj
-.PHONY : test_qt.obj
-
-# target to build an object file
-test_qt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.obj
-.PHONY : test_qt.cpp.obj
-
-test_qt.i: test_qt.cpp.i
-.PHONY : test_qt.i
-
-# target to preprocess a source file
-test_qt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.i
-.PHONY : test_qt.cpp.i
-
-test_qt.s: test_qt.cpp.s
-.PHONY : test_qt.s
-
-# target to generate assembly for a file
-test_qt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.s
-.PHONY : test_qt.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -681,12 +657,12 @@ help:
 	@echo ... TaskScriptAnalyzer_autogen_timestamp_deps
 	@echo ... TestAnalyzer_autogen
 	@echo ... TestAnalyzer_autogen_timestamp_deps
-	@echo ... TestQt_autogen
-	@echo ... TestQt_autogen_timestamp_deps
+	@echo ... launcher_autogen
+	@echo ... launcher_autogen_timestamp_deps
 	@echo ... ConsoleAnalyzer
 	@echo ... TaskScriptAnalyzer
 	@echo ... TestAnalyzer
-	@echo ... TestQt
+	@echo ... launcher
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.obj
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.i
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.s
@@ -696,9 +672,9 @@ help:
 	@echo ... TestAnalyzer_autogen/mocs_compilation.obj
 	@echo ... TestAnalyzer_autogen/mocs_compilation.i
 	@echo ... TestAnalyzer_autogen/mocs_compilation.s
-	@echo ... TestQt_autogen/mocs_compilation.obj
-	@echo ... TestQt_autogen/mocs_compilation.i
-	@echo ... TestQt_autogen/mocs_compilation.s
+	@echo ... launcher_autogen/mocs_compilation.obj
+	@echo ... launcher_autogen/mocs_compilation.i
+	@echo ... launcher_autogen/mocs_compilation.s
 	@echo ... src/BoardModel.obj
 	@echo ... src/BoardModel.i
 	@echo ... src/BoardModel.s
@@ -729,9 +705,6 @@ help:
 	@echo ... src/test_main.obj
 	@echo ... src/test_main.i
 	@echo ... src/test_main.s
-	@echo ... test_qt.obj
-	@echo ... test_qt.i
-	@echo ... test_qt.s
 .PHONY : help
 
 

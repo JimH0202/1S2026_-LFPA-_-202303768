@@ -1,136 +1,4 @@
 TaskScriptAnalyzer_autogen/timestamp: \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCCompiler.cmake.in \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCompilerIdDetection.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerSupport.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeGenericSystem.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeMinGWFindMake.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeParseImplicitLinkInfo.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeParseLibraryArchitecture.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeRCCompiler.cmake.in \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeRCInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeSystem.cmake.in \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeTestRCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckIncludeFile.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Borland-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Diab-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-C.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Renesas-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/TI-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindPackageMessage.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCLinkerInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeInspectCLinker.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CMakeInspectCXXLinker.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckFlagCommonConfig.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/FeatureTesting.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Linker/GNU-C.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Linker/GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-C.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-Determine-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-C-ABI.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-C.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake \
 	C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/CMakeLists.txt \
 	C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/CMakeFiles/4.3.2/CMakeCCompiler.cmake \
 	C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/CMakeFiles/4.3.2/CMakeCXXCompiler.cmake \
@@ -162,177 +30,182 @@ TaskScriptAnalyzer_autogen/timestamp: \
 	C:/msys64/mingw64/include/_mingw_stdarg.h \
 	C:/msys64/mingw64/include/_timeval.h \
 	C:/msys64/mingw64/include/assert.h \
-	C:/msys64/mingw64/include/c++/15.2.0/algorithm \
-	C:/msys64/mingw64/include/c++/15.2.0/array \
-	C:/msys64/mingw64/include/c++/15.2.0/atomic \
-	C:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bit \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/align.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/hashtable.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/hashtable_policy.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/list.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/move.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/node_handle.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/specfun.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_list.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multiset.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_numeric.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_set.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stream_iterator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/unordered_map.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/unordered_set.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
-	C:/msys64/mingw64/include/c++/15.2.0/cassert \
-	C:/msys64/mingw64/include/c++/15.2.0/cctype \
-	C:/msys64/mingw64/include/c++/15.2.0/cerrno \
-	C:/msys64/mingw64/include/c++/15.2.0/chrono \
-	C:/msys64/mingw64/include/c++/15.2.0/climits \
-	C:/msys64/mingw64/include/c++/15.2.0/clocale \
-	C:/msys64/mingw64/include/c++/15.2.0/cmath \
-	C:/msys64/mingw64/include/c++/15.2.0/compare \
-	C:/msys64/mingw64/include/c++/15.2.0/concepts \
-	C:/msys64/mingw64/include/c++/15.2.0/cstddef \
-	C:/msys64/mingw64/include/c++/15.2.0/cstdint \
-	C:/msys64/mingw64/include/c++/15.2.0/cstdio \
-	C:/msys64/mingw64/include/c++/15.2.0/cstdlib \
-	C:/msys64/mingw64/include/c++/15.2.0/cstring \
-	C:/msys64/mingw64/include/c++/15.2.0/ctime \
-	C:/msys64/mingw64/include/c++/15.2.0/cwchar \
-	C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
-	C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
-	C:/msys64/mingw64/include/c++/15.2.0/exception \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
-	C:/msys64/mingw64/include/c++/15.2.0/functional \
-	C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
-	C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
-	C:/msys64/mingw64/include/c++/15.2.0/iterator \
-	C:/msys64/mingw64/include/c++/15.2.0/limits \
-	C:/msys64/mingw64/include/c++/15.2.0/list \
-	C:/msys64/mingw64/include/c++/15.2.0/map \
-	C:/msys64/mingw64/include/c++/15.2.0/memory \
-	C:/msys64/mingw64/include/c++/15.2.0/new \
-	C:/msys64/mingw64/include/c++/15.2.0/numeric \
-	C:/msys64/mingw64/include/c++/15.2.0/optional \
-	C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
-	C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
-	C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
-	C:/msys64/mingw64/include/c++/15.2.0/ratio \
-	C:/msys64/mingw64/include/c++/15.2.0/set \
-	C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
-	C:/msys64/mingw64/include/c++/15.2.0/streambuf \
-	C:/msys64/mingw64/include/c++/15.2.0/string \
-	C:/msys64/mingw64/include/c++/15.2.0/string_view \
-	C:/msys64/mingw64/include/c++/15.2.0/system_error \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
-	C:/msys64/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
-	C:/msys64/mingw64/include/c++/15.2.0/tuple \
-	C:/msys64/mingw64/include/c++/15.2.0/type_traits \
-	C:/msys64/mingw64/include/c++/15.2.0/typeinfo \
-	C:/msys64/mingw64/include/c++/15.2.0/unordered_map \
-	C:/msys64/mingw64/include/c++/15.2.0/unordered_set \
-	C:/msys64/mingw64/include/c++/15.2.0/utility \
-	C:/msys64/mingw64/include/c++/15.2.0/variant \
-	C:/msys64/mingw64/include/c++/15.2.0/vector \
-	C:/msys64/mingw64/include/c++/15.2.0/version \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
-	C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+	C:/msys64/mingw64/include/c++/16.1.0/algorithm \
+	C:/msys64/mingw64/include/c++/16.1.0/array \
+	C:/msys64/mingw64/include/c++/16.1.0/atomic \
+	C:/msys64/mingw64/include/c++/16.1.0/backward/auto_ptr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/backward/binders.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bit \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/algorithmfwd.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/align.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/alloc_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/allocated_ptr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/allocator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/atomic_base.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/atomic_lockfree_defines.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/basic_string.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/basic_string.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/char_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/charconv.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/chrono.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/concept_check.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/cpp_type_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/cxxabi_forced.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/cxxabi_init_exception.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/enable_special_members.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/erase_if.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/exception.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/exception_defines.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/exception_ptr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/functexcept.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/functional_hash.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/hash_bytes.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/hashtable.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/hashtable_policy.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/invoke.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/ios_base.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/list.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/locale_classes.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/locale_classes.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/localefwd.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/memory_resource.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/memoryfwd.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/move.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/nested_exception.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/new_allocator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/new_except.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/new_throw.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/node_handle.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/ostream_insert.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/parse_numbers.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/postypes.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/predefined_ops.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/ptr_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/range_access.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/refwrap.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/shared_ptr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/shared_ptr_atomic.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/shared_ptr_base.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/specfun.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/std_abs.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/std_function.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stdexcept_except.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stdexcept_throw.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stdexcept_throwfwd.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_algo.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_algobase.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_bvector.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_construct.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_function.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_heap.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_iterator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_iterator_base_types.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_list.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_map.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_multimap.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_multiset.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_numeric.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_pair.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_raw_storage_iter.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_relops.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_set.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_tempbuf.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_tree.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_uninitialized.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stl_vector.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stream_iterator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/streambuf.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/streambuf_iterator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/string_view.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/stringfwd.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/uniform_int_dist.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/unique_ptr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/unordered_map.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/unordered_set.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/utility.h \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/vector.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/bits/version.h \
+	C:/msys64/mingw64/include/c++/16.1.0/cassert \
+	C:/msys64/mingw64/include/c++/16.1.0/cctype \
+	C:/msys64/mingw64/include/c++/16.1.0/cerrno \
+	C:/msys64/mingw64/include/c++/16.1.0/chrono \
+	C:/msys64/mingw64/include/c++/16.1.0/climits \
+	C:/msys64/mingw64/include/c++/16.1.0/clocale \
+	C:/msys64/mingw64/include/c++/16.1.0/cmath \
+	C:/msys64/mingw64/include/c++/16.1.0/compare \
+	C:/msys64/mingw64/include/c++/16.1.0/concepts \
+	C:/msys64/mingw64/include/c++/16.1.0/cstddef \
+	C:/msys64/mingw64/include/c++/16.1.0/cstdint \
+	C:/msys64/mingw64/include/c++/16.1.0/cstdio \
+	C:/msys64/mingw64/include/c++/16.1.0/cstdlib \
+	C:/msys64/mingw64/include/c++/16.1.0/cstring \
+	C:/msys64/mingw64/include/c++/16.1.0/ctime \
+	C:/msys64/mingw64/include/c++/16.1.0/cwchar \
+	C:/msys64/mingw64/include/c++/16.1.0/debug/assertions.h \
+	C:/msys64/mingw64/include/c++/16.1.0/debug/debug.h \
+	C:/msys64/mingw64/include/c++/16.1.0/exception \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/aligned_buffer.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/alloc_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/atomicity.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/concurrence.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/numeric_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/string_conversions.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ext/type_traits.h \
+	C:/msys64/mingw64/include/c++/16.1.0/functional \
+	C:/msys64/mingw64/include/c++/16.1.0/initializer_list \
+	C:/msys64/mingw64/include/c++/16.1.0/iosfwd \
+	C:/msys64/mingw64/include/c++/16.1.0/iterator \
+	C:/msys64/mingw64/include/c++/16.1.0/limits \
+	C:/msys64/mingw64/include/c++/16.1.0/list \
+	C:/msys64/mingw64/include/c++/16.1.0/map \
+	C:/msys64/mingw64/include/c++/16.1.0/memory \
+	C:/msys64/mingw64/include/c++/16.1.0/new \
+	C:/msys64/mingw64/include/c++/16.1.0/numeric \
+	C:/msys64/mingw64/include/c++/16.1.0/optional \
+	C:/msys64/mingw64/include/c++/16.1.0/pstl/execution_defs.h \
+	C:/msys64/mingw64/include/c++/16.1.0/pstl/glue_numeric_defs.h \
+	C:/msys64/mingw64/include/c++/16.1.0/pstl/pstl_config.h \
+	C:/msys64/mingw64/include/c++/16.1.0/ratio \
+	C:/msys64/mingw64/include/c++/16.1.0/set \
+	C:/msys64/mingw64/include/c++/16.1.0/stdexcept \
+	C:/msys64/mingw64/include/c++/16.1.0/streambuf \
+	C:/msys64/mingw64/include/c++/16.1.0/string \
+	C:/msys64/mingw64/include/c++/16.1.0/string_view \
+	C:/msys64/mingw64/include/c++/16.1.0/system_error \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/bessel_function.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/beta_function.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/ell_integral.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/exp_integral.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/gamma.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/hypergeometric.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/legendre_function.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/modified_bessel_func.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/poly_hermite.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/poly_laguerre.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/riemann_zeta.tcc \
+	C:/msys64/mingw64/include/c++/16.1.0/tr1/special_function_util.h \
+	C:/msys64/mingw64/include/c++/16.1.0/tuple \
+	C:/msys64/mingw64/include/c++/16.1.0/type_traits \
+	C:/msys64/mingw64/include/c++/16.1.0/typeinfo \
+	C:/msys64/mingw64/include/c++/16.1.0/unordered_map \
+	C:/msys64/mingw64/include/c++/16.1.0/unordered_set \
+	C:/msys64/mingw64/include/c++/16.1.0/utility \
+	C:/msys64/mingw64/include/c++/16.1.0/variant \
+	C:/msys64/mingw64/include/c++/16.1.0/vector \
+	C:/msys64/mingw64/include/c++/16.1.0/version \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/atomic_word.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr.h \
+	C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/os_defines.h \
 	C:/msys64/mingw64/include/corecrt.h \
 	C:/msys64/mingw64/include/corecrt_startup.h \
 	C:/msys64/mingw64/include/corecrt_stdio_config.h \
@@ -554,7 +427,6 @@ TaskScriptAnalyzer_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgetsglobal.h \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qwidget.h \
 	C:/msys64/mingw64/include/sched.h \
-	C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
 	C:/msys64/mingw64/include/sec_api/stdio_s.h \
 	C:/msys64/mingw64/include/sec_api/stdlib_s.h \
 	C:/msys64/mingw64/include/sec_api/string_s.h \
@@ -664,11 +536,21 @@ TaskScriptAnalyzer_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICNSPluginTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake \
@@ -679,16 +561,56 @@ TaskScriptAnalyzer_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMngPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QMngPluginTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTgaPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTiffPluginTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWbmpPluginTargetsPrecheck.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake \
@@ -733,6 +655,138 @@ TaskScriptAnalyzer_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
-	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
-	C:/Program\ Files/CMake/bin/cmake.exe
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+	C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCCompiler.cmake.in \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompiler.cmake.in \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeMinGWFindMake.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CheckCSourceCompiles.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CheckIncludeFile.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/CheckLibraryExists.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/FindVulkan.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake \
+	C:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake \
+	C:/msys64/mingw64/bin/cmake.exe

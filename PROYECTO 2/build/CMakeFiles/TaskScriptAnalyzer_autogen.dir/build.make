@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -70,8 +70,8 @@ CMakeFiles/TaskScriptAnalyzer_autogen: TaskScriptAnalyzer_autogen/timestamp
 TaskScriptAnalyzer_autogen/timestamp: C:/msys64/mingw64/share/qt6/bin/moc.exe
 TaskScriptAnalyzer_autogen/timestamp: CMakeFiles/TaskScriptAnalyzer_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target TaskScriptAnalyzer"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TaskScriptAnalyzer_autogen.dir/AutogenInfo.json" ""
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnalyzer_autogen/timestamp"
+	C:\msys64\mingw64\bin\cmake.exe -E cmake_autogen "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/TaskScriptAnalyzer_autogen.dir/AutogenInfo.json" ""
+	C:\msys64\mingw64\bin\cmake.exe -E touch "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/TaskScriptAnalyzer_autogen/timestamp"
 
 CMakeFiles/TaskScriptAnalyzer_autogen.dir/codegen:
 .PHONY : CMakeFiles/TaskScriptAnalyzer_autogen.dir/codegen

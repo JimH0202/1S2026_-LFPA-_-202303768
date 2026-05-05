@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,8 +71,8 @@ include CMakeFiles/ConsoleAnalyzer.dir/flags.make
 ConsoleAnalyzer_autogen/timestamp: C:/msys64/mingw64/share/qt6/bin/moc.exe
 ConsoleAnalyzer_autogen/timestamp: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target ConsoleAnalyzer"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/ConsoleAnalyzer_autogen.dir/AutogenInfo.json" ""
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/ConsoleAnalyzer_autogen/timestamp"
+	C:\msys64\mingw64\bin\cmake.exe -E cmake_autogen "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/CMakeFiles/ConsoleAnalyzer_autogen.dir/AutogenInfo.json" ""
+	C:\msys64\mingw64\bin\cmake.exe -E touch "C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build/ConsoleAnalyzer_autogen/timestamp"
 
 CMakeFiles/ConsoleAnalyzer.dir/codegen:
 .PHONY : CMakeFiles/ConsoleAnalyzer.dir/codegen
@@ -82,120 +82,120 @@ CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj:
 CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj: ConsoleAnalyzer_autogen/mocs_compilation.cpp
 CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp" > CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp" > CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\ConsoleAnalyzer_autogen\mocs_compilation.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\ConsoleAnalyzer_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/console_main.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\console_main.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\console_main.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/Token.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\Token.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\Token.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/LexicalAnalyzer.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\LexicalAnalyzer.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\LexicalAnalyzer.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/SyntaxAnalyzer.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\SyntaxAnalyzer.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\SyntaxAnalyzer.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ErrorManager.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ErrorManager.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\ErrorManager.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/ReportGenerator.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\ReportGenerator.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\ReportGenerator.cpp.s
 
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/flags.make
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/includes_CXX.rsp
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj: C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/src/BoardModel.cpp
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj: CMakeFiles/ConsoleAnalyzer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj -MF CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.obj.d -o CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.obj -c "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp"
 
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp" > CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.i
 
 CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\src\BoardModel.cpp" -o CMakeFiles\ConsoleAnalyzer.dir\src\BoardModel.cpp.s
 
 # Object files for target ConsoleAnalyzer
 ConsoleAnalyzer_OBJECTS = \

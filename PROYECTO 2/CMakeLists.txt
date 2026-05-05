@@ -37,6 +37,8 @@ qt_add_executable(TaskScriptAnalyzer
 
 target_link_libraries(TaskScriptAnalyzer PRIVATE Qt6::Widgets)
 
+add_executable(launcher src/launcher_main.cpp)
+
 add_executable(ConsoleAnalyzer
     src/console_main.cpp
     src/Token.cpp
@@ -47,9 +49,6 @@ add_executable(ConsoleAnalyzer
     src/BoardModel.cpp
     src/TreeNode.h
 )
-
-add_executable(TestQt test_qt.cpp)
-target_link_libraries(TestQt PRIVATE Qt6::Widgets)
 
 add_executable(TestAnalyzer
     src/test_main.cpp
