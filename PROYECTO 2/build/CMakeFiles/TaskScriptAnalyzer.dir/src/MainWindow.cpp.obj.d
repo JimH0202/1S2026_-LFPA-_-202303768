@@ -474,6 +474,8 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/MainWindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/qdialogbuttonbox.h \
  C:/msys64/mingw64/include/qt6/QtGui/QDesktopServices \
  C:/msys64/mingw64/include/qt6/QtGui/qdesktopservices.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QHeaderView \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qheaderview.h \
  C:/msys64/mingw64/include/qt6/QtCore/QUrl \
  C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\LexicalAnalyzer.h \
  C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\Token.h \

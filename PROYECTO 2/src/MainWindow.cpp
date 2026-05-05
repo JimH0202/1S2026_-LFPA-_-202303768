@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QDesktopServices>
+#include <QHeaderView>
 #include <QUrl>
 #include "LexicalAnalyzer.h"
 #include "SyntaxAnalyzer.h"
@@ -68,9 +69,21 @@ void MainWindow::setupUI() {
 void MainWindow::setupTables() {
     tokenTable->setColumnCount(5);
     tokenTable->setHorizontalHeaderLabels({"No.", "Lexema", "Tipo", "Línea", "Columna"});
+    tokenTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    tokenTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    tokenTable->setSelectionBehavior(QAbstractItemView::SelectRows);
+    tokenTable->setAlternatingRowColors(true);
+    tokenTable->verticalHeader()->setVisible(false);
+    tokenTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     errorTable->setColumnCount(7);
     errorTable->setHorizontalHeaderLabels({"No.", "Lexema", "Tipo", "Descripción", "Línea", "Columna", "Gravedad"});
+    errorTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    errorTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    errorTable->setSelectionBehavior(QAbstractItemView::SelectRows);
+    errorTable->setAlternatingRowColors(true);
+    errorTable->verticalHeader()->setVisible(false);
+    errorTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 }
 
 void MainWindow::loadFile() {
@@ -94,30 +107,70 @@ void MainWindow::analyze() {
 
     parser.parse();
 
+    // Limpiar tablas antes de llenarlas
+    tokenTable->clearContents();
+    errorTable->clearContents();
+
     // Llenar tablas
     const auto& tokens = lexer.getTokens();
     tokenTable->setRowCount(tokens.size());
     for (size_t i = 0; i < tokens.size(); ++i) {
         const Token& t = tokens[i];
-        tokenTable->setItem(i, 0, new QTableWidgetItem(QString::number(t.getNumber())));
-        tokenTable->setItem(i, 1, new QTableWidgetItem(QString::fromStdString(t.getLexeme())));
-        tokenTable->setItem(i, 2, new QTableWidgetItem(QString::number((int)t.getType())));
-        tokenTable->setItem(i, 3, new QTableWidgetItem(QString::number(t.getLine())));
-        tokenTable->setItem(i, 4, new QTableWidgetItem(QString::number(t.getColumn())));
+        auto* item0 = new QTableWidgetItem(QString::number(t.getNumber()));
+        item0->setTextAlignment(Qt::AlignCenter);
+        tokenTable->setItem(i, 0, item0);
+
+        auto* item1 = new QTableWidgetItem(QString::fromStdString(t.getLexeme()));
+        item1->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        tokenTable->setItem(i, 1, item1);
+
+        auto* item2 = new QTableWidgetItem(QString::number((int)t.getType()));
+        item2->setTextAlignment(Qt::AlignCenter);
+        tokenTable->setItem(i, 2, item2);
+
+        auto* item3 = new QTableWidgetItem(QString::number(t.getLine()));
+        item3->setTextAlignment(Qt::AlignCenter);
+        tokenTable->setItem(i, 3, item3);
+
+        auto* item4 = new QTableWidgetItem(QString::number(t.getColumn()));
+        item4->setTextAlignment(Qt::AlignCenter);
+        tokenTable->setItem(i, 4, item4);
     }
+    tokenTable->resizeRowsToContents();
 
     const auto& errorList = errors.getErrors();
     errorTable->setRowCount(errorList.size());
     for (size_t i = 0; i < errorList.size(); ++i) {
         const ErrorInfo& e = errorList[i];
-        errorTable->setItem(i, 0, new QTableWidgetItem(QString::number(e.number)));
-        errorTable->setItem(i, 1, new QTableWidgetItem(QString::fromStdString(e.lexeme)));
-        errorTable->setItem(i, 2, new QTableWidgetItem(e.type == ErrorType::LEXICO ? "Léxico" : "Sintáctico"));
-        errorTable->setItem(i, 3, new QTableWidgetItem(QString::fromStdString(e.description)));
-        errorTable->setItem(i, 4, new QTableWidgetItem(QString::number(e.line)));
-        errorTable->setItem(i, 5, new QTableWidgetItem(QString::number(e.column)));
-        errorTable->setItem(i, 6, new QTableWidgetItem(e.severity == ErrorSeverity::ERROR ? "ERROR" : "CRITICO"));
+        auto* item0 = new QTableWidgetItem(QString::number(e.number));
+        item0->setTextAlignment(Qt::AlignCenter);
+        errorTable->setItem(i, 0, item0);
+
+        auto* item1 = new QTableWidgetItem(QString::fromStdString(e.lexeme));
+        item1->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        errorTable->setItem(i, 1, item1);
+
+        auto* item2 = new QTableWidgetItem(e.type == ErrorType::LEXICO ? "Léxico" : "Sintáctico");
+        item2->setTextAlignment(Qt::AlignCenter);
+        errorTable->setItem(i, 2, item2);
+
+        auto* item3 = new QTableWidgetItem(QString::fromStdString(e.description));
+        item3->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        errorTable->setItem(i, 3, item3);
+
+        auto* item4 = new QTableWidgetItem(QString::number(e.line));
+        item4->setTextAlignment(Qt::AlignCenter);
+        errorTable->setItem(i, 4, item4);
+
+        auto* item5 = new QTableWidgetItem(QString::number(e.column));
+        item5->setTextAlignment(Qt::AlignCenter);
+        errorTable->setItem(i, 5, item5);
+
+        auto* item6 = new QTableWidgetItem(e.severity == ErrorSeverity::ERROR ? "ERROR" : "CRITICO");
+        item6->setTextAlignment(Qt::AlignCenter);
+        errorTable->setItem(i, 6, item6);
     }
+    errorTable->resizeRowsToContents();
 
     // Generar reportes si no hay errores
     if (!errors.hasErrors()) {
