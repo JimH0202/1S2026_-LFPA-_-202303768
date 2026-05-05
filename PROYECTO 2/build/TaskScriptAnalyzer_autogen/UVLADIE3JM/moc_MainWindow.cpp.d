@@ -5,6 +5,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/_mingw_off_t.h \
   C:/msys64/mingw64/include/_mingw_secapi.h \
   C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/_mingw_stdarg.h \
   C:/msys64/mingw64/include/_timeval.h \
   C:/msys64/mingw64/include/assert.h \
   C:/msys64/mingw64/include/c++/15.2.0/algorithm \
@@ -144,7 +145,6 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/c++/15.2.0/ratio \
   C:/msys64/mingw64/include/c++/15.2.0/set \
   C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
-  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/15.2.0/streambuf \
   C:/msys64/mingw64/include/c++/15.2.0/string \
   C:/msys64/mingw64/include/c++/15.2.0/string_view \
@@ -188,7 +188,9 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/crtdefs.h \
   C:/msys64/mingw64/include/ctype.h \
   C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
   C:/msys64/mingw64/include/locale.h \
+  C:/msys64/mingw64/include/malloc.h \
   C:/msys64/mingw64/include/process.h \
   C:/msys64/mingw64/include/pthread.h \
   C:/msys64/mingw64/include/pthread_compat.h \
@@ -247,6 +249,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/qt6/QtCore/qglobalstatic.h \
   C:/msys64/mingw64/include/qt6/QtCore/qhash.h \
   C:/msys64/mingw64/include/qt6/QtCore/qhashfunctions.h \
+  C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
   C:/msys64/mingw64/include/qt6/QtCore/qiodevicebase.h \
   C:/msys64/mingw64/include/qt6/QtCore/qitemselectionmodel.h \
   C:/msys64/mingw64/include/qt6/QtCore/qiterable.h \
@@ -328,6 +331,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/qt6/QtCore/qversiontagging.h \
   C:/msys64/mingw64/include/qt6/QtCore/qxptype_traits.h \
   C:/msys64/mingw64/include/qt6/QtCore/qyieldcpu.h \
+  C:/msys64/mingw64/include/qt6/QtGui/QAction \
   C:/msys64/mingw64/include/qt6/QtGui/qaction.h \
   C:/msys64/mingw64/include/qt6/QtGui/qbitmap.h \
   C:/msys64/mingw64/include/qt6/QtGui/qbrush.h \
@@ -343,6 +347,7 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/qt6/QtGui/qpaintdevice.h \
   C:/msys64/mingw64/include/qt6/QtGui/qpalette.h \
   C:/msys64/mingw64/include/qt6/QtGui/qpen.h \
+  C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
   C:/msys64/mingw64/include/qt6/QtGui/qpixelformat.h \
   C:/msys64/mingw64/include/qt6/QtGui/qpixmap.h \
   C:/msys64/mingw64/include/qt6/QtGui/qpolygon.h \
@@ -360,8 +365,11 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/qt6/QtGui/qvalidator.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
   C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QMenu \
   C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QStatusBar \
   C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
   C:/msys64/mingw64/include/qt6/QtWidgets/QTableWidget \
   C:/msys64/mingw64/include/qt6/QtWidgets/QTextEdit \
@@ -372,11 +380,14 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/qt6/QtWidgets/qabstractslider.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qabstractspinbox.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qmenu.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qrubberband.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qslider.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qstatusbar.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qstyle.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qstyleoption.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qtabbar.h \
@@ -391,12 +402,17 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/sched.h \
   C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
   C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
   C:/msys64/mingw64/include/sec_api/string_s.h \
   C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
   C:/msys64/mingw64/include/sec_api/wchar_s.h \
   C:/msys64/mingw64/include/sec_api/wconio_s.h \
   C:/msys64/mingw64/include/signal.h \
+  C:/msys64/mingw64/include/stdarg.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdint.h \
   C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
   C:/msys64/mingw64/include/string.h \
   C:/msys64/mingw64/include/swprintf.inl \
   C:/msys64/mingw64/include/sys/timeb.h \
@@ -404,9 +420,5 @@ C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO\ 2/build/TaskScriptAnal
   C:/msys64/mingw64/include/time.h \
   C:/msys64/mingw64/include/vadefs.h \
   C:/msys64/mingw64/include/wchar.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h

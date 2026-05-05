@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_TaskScriptAnalyzer_FILE C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build_test/TaskScriptAnalyzer.exe)
+set(__QT_DEPLOY_TARGET_TaskScriptAnalyzer_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_TaskScriptAnalyzer_RUNTIME_DLLS C:/msys64/mingw64/bin/Qt6Widgets.dll;C:/msys64/mingw64/bin/Qt6Gui.dll;C:/msys64/mingw64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_TestAnalyzer_FILE C:/Users/jimhu/Desktop/1S2026_-LFPA-_-202303768/PROYECTO 2/build_test/TestAnalyzer.exe)
+set(__QT_DEPLOY_TARGET_TestAnalyzer_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_TestAnalyzer_RUNTIME_DLLS )

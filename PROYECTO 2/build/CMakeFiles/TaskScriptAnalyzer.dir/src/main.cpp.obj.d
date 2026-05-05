@@ -386,9 +386,9 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qvarlengtharray.h \
  C:/msys64/mingw64/include/qt6/QtCore/qalloc.h \
  C:/msys64/mingw64/include/qt6/QtGui/qguiapplication_platform.h \
- C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\MainWindow.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
- C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMessageBox \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmessagebox.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qdialog.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qwidget.h \
  C:/msys64/mingw64/include/qt6/QtGui/qaction.h \
  C:/msys64/mingw64/include/qt6/QtGui/qkeysequence.h \
@@ -401,6 +401,26 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtGui/qfontinfo.h \
  C:/msys64/mingw64/include/qt6/QtGui/qfontvariableaxis.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QDebug \
+ C:/msys64/mingw64/include/c++/15.2.0/iostream \
+ C:/msys64/mingw64/include/c++/15.2.0/ostream \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
+ C:/msys64/mingw64/include/c++/15.2.0/ios \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h \
+ C:/msys64/mingw64/include/c++/15.2.0/cwctype \
+ C:/msys64/mingw64/include/wctype.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/istream \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\MainWindow.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QTextEdit \
  C:/msys64/mingw64/include/qt6/QtWidgets/qtextedit.h \
@@ -431,4 +451,13 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
  C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget
+ C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMenu \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmenu.h \
+ C:/msys64/mingw64/include/qt6/QtGui/QAction \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QStatusBar \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstatusbar.h

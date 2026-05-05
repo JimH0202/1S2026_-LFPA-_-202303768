@@ -419,18 +419,43 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/MainWindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMenu \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmenu.h \
+ C:/msys64/mingw64/include/qt6/QtGui/QAction \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QStatusBar \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstatusbar.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QApplication \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qapplication.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qcoreapplication.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qcoreevent.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qbasictimer.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qabstracteventdispatcher.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qeventloop.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdeadlinetimer.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qnativeinterface.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qcoreapplication_platform.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qguiapplication.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qinputmethod.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qguiapplication_platform.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QHBoxLayout \
  C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qlayout.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qgridlayout.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QSplitter \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qsplitter.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QGroupBox \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qgroupbox.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QFileDialog \
  C:/msys64/mingw64/include/qt6/QtWidgets/qfiledialog.h \
  C:/msys64/mingw64/include/qt6/QtCore/qdir.h \
  C:/msys64/mingw64/include/qt6/QtCore/qdirlisting.h \
  C:/msys64/mingw64/include/qt6/QtCore/qfiledevice.h \
- C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
  C:/msys64/mingw64/include/c++/15.2.0/filesystem \
  C:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/fs_path.h \
@@ -476,7 +501,11 @@ CMakeFiles/TaskScriptAnalyzer.dir/src/MainWindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtGui/qdesktopservices.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QHeaderView \
  C:/msys64/mingw64/include/qt6/QtWidgets/qheaderview.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMenuBar \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmenubar.h \
  C:/msys64/mingw64/include/qt6/QtCore/QUrl \
+ C:/msys64/mingw64/include/qt6/QtGui/QFont \
+ C:/msys64/mingw64/include/qt6/QtCore/QFileInfo \
  C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\LexicalAnalyzer.h \
  C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\Token.h \
  C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO\ 2\src\TokenType.h \

@@ -420,6 +420,15 @@ CMakeFiles/TaskScriptAnalyzer.dir/TaskScriptAnalyzer_autogen/mocs_compilation.cp
  C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QTabWidget \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qiodevice.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMenu \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qmenu.h \
+ C:/msys64/mingw64/include/qt6/QtGui/QAction \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QStatusBar \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qstatusbar.h \
  C:/msys64/mingw64/include/qt6/QtCore/qtmochelpers.h \
  C:/msys64/mingw64/include/qt6/QtCore/qtmocconstants.h \
  C:/msys64/mingw64/include/qt6/QtCore/q20algorithm.h

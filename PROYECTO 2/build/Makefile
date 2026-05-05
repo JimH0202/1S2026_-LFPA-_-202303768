@@ -129,6 +129,32 @@ TaskScriptAnalyzer/fast:
 .PHONY : TaskScriptAnalyzer/fast
 
 #=============================================================================
+# Target rules for targets named ConsoleAnalyzer
+
+# Build rule for target.
+ConsoleAnalyzer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ConsoleAnalyzer
+.PHONY : ConsoleAnalyzer
+
+# fast build rule for target.
+ConsoleAnalyzer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/build
+.PHONY : ConsoleAnalyzer/fast
+
+#=============================================================================
+# Target rules for targets named TestQt
+
+# Build rule for target.
+TestQt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt
+.PHONY : TestQt
+
+# fast build rule for target.
+TestQt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/build
+.PHONY : TestQt/fast
+
+#=============================================================================
 # Target rules for targets named TestAnalyzer
 
 # Build rule for target.
@@ -168,6 +194,58 @@ TaskScriptAnalyzer_autogen/fast:
 .PHONY : TaskScriptAnalyzer_autogen/fast
 
 #=============================================================================
+# Target rules for targets named ConsoleAnalyzer_autogen_timestamp_deps
+
+# Build rule for target.
+ConsoleAnalyzer_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ConsoleAnalyzer_autogen_timestamp_deps
+.PHONY : ConsoleAnalyzer_autogen_timestamp_deps
+
+# fast build rule for target.
+ConsoleAnalyzer_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer_autogen_timestamp_deps.dir\build.make CMakeFiles/ConsoleAnalyzer_autogen_timestamp_deps.dir/build
+.PHONY : ConsoleAnalyzer_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named ConsoleAnalyzer_autogen
+
+# Build rule for target.
+ConsoleAnalyzer_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ConsoleAnalyzer_autogen
+.PHONY : ConsoleAnalyzer_autogen
+
+# fast build rule for target.
+ConsoleAnalyzer_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer_autogen.dir\build.make CMakeFiles/ConsoleAnalyzer_autogen.dir/build
+.PHONY : ConsoleAnalyzer_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TestQt_autogen_timestamp_deps
+
+# Build rule for target.
+TestQt_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt_autogen_timestamp_deps
+.PHONY : TestQt_autogen_timestamp_deps
+
+# fast build rule for target.
+TestQt_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt_autogen_timestamp_deps.dir\build.make CMakeFiles/TestQt_autogen_timestamp_deps.dir/build
+.PHONY : TestQt_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named TestQt_autogen
+
+# Build rule for target.
+TestQt_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestQt_autogen
+.PHONY : TestQt_autogen
+
+# fast build rule for target.
+TestQt_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt_autogen.dir\build.make CMakeFiles/TestQt_autogen.dir/build
+.PHONY : TestQt_autogen/fast
+
+#=============================================================================
 # Target rules for targets named TestAnalyzer_autogen_timestamp_deps
 
 # Build rule for target.
@@ -192,6 +270,30 @@ TestAnalyzer_autogen: cmake_check_build_system
 TestAnalyzer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer_autogen.dir\build.make CMakeFiles/TestAnalyzer_autogen.dir/build
 .PHONY : TestAnalyzer_autogen/fast
+
+ConsoleAnalyzer_autogen/mocs_compilation.obj: ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.obj
+
+# target to build an object file
+ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.cpp.obj
+
+ConsoleAnalyzer_autogen/mocs_compilation.i: ConsoleAnalyzer_autogen/mocs_compilation.cpp.i
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ConsoleAnalyzer_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.i
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.cpp.i
+
+ConsoleAnalyzer_autogen/mocs_compilation.s: ConsoleAnalyzer_autogen/mocs_compilation.cpp.s
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ConsoleAnalyzer_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/ConsoleAnalyzer_autogen/mocs_compilation.cpp.s
+.PHONY : ConsoleAnalyzer_autogen/mocs_compilation.cpp.s
 
 TaskScriptAnalyzer_autogen/mocs_compilation.obj: TaskScriptAnalyzer_autogen/mocs_compilation.cpp.obj
 .PHONY : TaskScriptAnalyzer_autogen/mocs_compilation.obj
@@ -241,12 +343,37 @@ TestAnalyzer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.s
 .PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.s
 
+TestQt_autogen/mocs_compilation.obj: TestQt_autogen/mocs_compilation.cpp.obj
+.PHONY : TestQt_autogen/mocs_compilation.obj
+
+# target to build an object file
+TestQt_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.obj
+.PHONY : TestQt_autogen/mocs_compilation.cpp.obj
+
+TestQt_autogen/mocs_compilation.i: TestQt_autogen/mocs_compilation.cpp.i
+.PHONY : TestQt_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TestQt_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.i
+.PHONY : TestQt_autogen/mocs_compilation.cpp.i
+
+TestQt_autogen/mocs_compilation.s: TestQt_autogen/mocs_compilation.cpp.s
+.PHONY : TestQt_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TestQt_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/TestQt_autogen/mocs_compilation.cpp.s
+.PHONY : TestQt_autogen/mocs_compilation.cpp.s
+
 src/BoardModel.obj: src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.obj
 
 # target to build an object file
 src/BoardModel.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.cpp.obj
 
@@ -256,6 +383,7 @@ src/BoardModel.i: src/BoardModel.cpp.i
 # target to preprocess a source file
 src/BoardModel.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.i
 .PHONY : src/BoardModel.cpp.i
 
@@ -265,6 +393,7 @@ src/BoardModel.s: src/BoardModel.cpp.s
 # target to generate assembly for a file
 src/BoardModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/BoardModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/BoardModel.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/BoardModel.cpp.s
 .PHONY : src/BoardModel.cpp.s
 
@@ -274,6 +403,7 @@ src/ErrorManager.obj: src/ErrorManager.cpp.obj
 # target to build an object file
 src/ErrorManager.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.obj
 .PHONY : src/ErrorManager.cpp.obj
 
@@ -283,6 +413,7 @@ src/ErrorManager.i: src/ErrorManager.cpp.i
 # target to preprocess a source file
 src/ErrorManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.i
 .PHONY : src/ErrorManager.cpp.i
 
@@ -292,6 +423,7 @@ src/ErrorManager.s: src/ErrorManager.cpp.s
 # target to generate assembly for a file
 src/ErrorManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ErrorManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ErrorManager.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ErrorManager.cpp.s
 .PHONY : src/ErrorManager.cpp.s
 
@@ -301,6 +433,7 @@ src/LexicalAnalyzer.obj: src/LexicalAnalyzer.cpp.obj
 # target to build an object file
 src/LexicalAnalyzer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.obj
 .PHONY : src/LexicalAnalyzer.cpp.obj
 
@@ -310,6 +443,7 @@ src/LexicalAnalyzer.i: src/LexicalAnalyzer.cpp.i
 # target to preprocess a source file
 src/LexicalAnalyzer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.i
 .PHONY : src/LexicalAnalyzer.cpp.i
 
@@ -319,6 +453,7 @@ src/LexicalAnalyzer.s: src/LexicalAnalyzer.cpp.s
 # target to generate assembly for a file
 src/LexicalAnalyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/LexicalAnalyzer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/LexicalAnalyzer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/LexicalAnalyzer.cpp.s
 .PHONY : src/LexicalAnalyzer.cpp.s
 
@@ -352,6 +487,7 @@ src/ReportGenerator.obj: src/ReportGenerator.cpp.obj
 # target to build an object file
 src/ReportGenerator.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.obj
 .PHONY : src/ReportGenerator.cpp.obj
 
@@ -361,6 +497,7 @@ src/ReportGenerator.i: src/ReportGenerator.cpp.i
 # target to preprocess a source file
 src/ReportGenerator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.i
 .PHONY : src/ReportGenerator.cpp.i
 
@@ -370,6 +507,7 @@ src/ReportGenerator.s: src/ReportGenerator.cpp.s
 # target to generate assembly for a file
 src/ReportGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/ReportGenerator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/ReportGenerator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/ReportGenerator.cpp.s
 .PHONY : src/ReportGenerator.cpp.s
 
@@ -379,6 +517,7 @@ src/SyntaxAnalyzer.obj: src/SyntaxAnalyzer.cpp.obj
 # target to build an object file
 src/SyntaxAnalyzer.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.obj
 .PHONY : src/SyntaxAnalyzer.cpp.obj
 
@@ -388,6 +527,7 @@ src/SyntaxAnalyzer.i: src/SyntaxAnalyzer.cpp.i
 # target to preprocess a source file
 src/SyntaxAnalyzer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.i
 .PHONY : src/SyntaxAnalyzer.cpp.i
 
@@ -397,6 +537,7 @@ src/SyntaxAnalyzer.s: src/SyntaxAnalyzer.cpp.s
 # target to generate assembly for a file
 src/SyntaxAnalyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/SyntaxAnalyzer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/SyntaxAnalyzer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/SyntaxAnalyzer.cpp.s
 .PHONY : src/SyntaxAnalyzer.cpp.s
 
@@ -406,6 +547,7 @@ src/Token.obj: src/Token.cpp.obj
 # target to build an object file
 src/Token.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.obj
 .PHONY : src/Token.cpp.obj
 
@@ -415,6 +557,7 @@ src/Token.i: src/Token.cpp.i
 # target to preprocess a source file
 src/Token.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.i
 .PHONY : src/Token.cpp.i
 
@@ -424,8 +567,33 @@ src/Token.s: src/Token.cpp.s
 # target to generate assembly for a file
 src/Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer.dir\build.make CMakeFiles/TaskScriptAnalyzer.dir/src/Token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/Token.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/Token.cpp.s
 .PHONY : src/Token.cpp.s
+
+src/console_main.obj: src/console_main.cpp.obj
+.PHONY : src/console_main.obj
+
+# target to build an object file
+src/console_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.obj
+.PHONY : src/console_main.cpp.obj
+
+src/console_main.i: src/console_main.cpp.i
+.PHONY : src/console_main.i
+
+# target to preprocess a source file
+src/console_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.i
+.PHONY : src/console_main.cpp.i
+
+src/console_main.s: src/console_main.cpp.s
+.PHONY : src/console_main.s
+
+# target to generate assembly for a file
+src/console_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ConsoleAnalyzer.dir\build.make CMakeFiles/ConsoleAnalyzer.dir/src/console_main.cpp.s
+.PHONY : src/console_main.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -475,6 +643,30 @@ src/test_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/src/test_main.cpp.s
 .PHONY : src/test_main.cpp.s
 
+test_qt.obj: test_qt.cpp.obj
+.PHONY : test_qt.obj
+
+# target to build an object file
+test_qt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.obj
+.PHONY : test_qt.cpp.obj
+
+test_qt.i: test_qt.cpp.i
+.PHONY : test_qt.i
+
+# target to preprocess a source file
+test_qt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.i
+.PHONY : test_qt.cpp.i
+
+test_qt.s: test_qt.cpp.s
+.PHONY : test_qt.s
+
+# target to generate assembly for a file
+test_qt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestQt.dir\build.make CMakeFiles/TestQt.dir/test_qt.cpp.s
+.PHONY : test_qt.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -483,18 +675,30 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... ConsoleAnalyzer_autogen
+	@echo ... ConsoleAnalyzer_autogen_timestamp_deps
 	@echo ... TaskScriptAnalyzer_autogen
 	@echo ... TaskScriptAnalyzer_autogen_timestamp_deps
 	@echo ... TestAnalyzer_autogen
 	@echo ... TestAnalyzer_autogen_timestamp_deps
+	@echo ... TestQt_autogen
+	@echo ... TestQt_autogen_timestamp_deps
+	@echo ... ConsoleAnalyzer
 	@echo ... TaskScriptAnalyzer
 	@echo ... TestAnalyzer
+	@echo ... TestQt
+	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.obj
+	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.i
+	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.s
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.obj
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.i
 	@echo ... TaskScriptAnalyzer_autogen/mocs_compilation.s
 	@echo ... TestAnalyzer_autogen/mocs_compilation.obj
 	@echo ... TestAnalyzer_autogen/mocs_compilation.i
 	@echo ... TestAnalyzer_autogen/mocs_compilation.s
+	@echo ... TestQt_autogen/mocs_compilation.obj
+	@echo ... TestQt_autogen/mocs_compilation.i
+	@echo ... TestQt_autogen/mocs_compilation.s
 	@echo ... src/BoardModel.obj
 	@echo ... src/BoardModel.i
 	@echo ... src/BoardModel.s
@@ -516,12 +720,18 @@ help:
 	@echo ... src/Token.obj
 	@echo ... src/Token.i
 	@echo ... src/Token.s
+	@echo ... src/console_main.obj
+	@echo ... src/console_main.i
+	@echo ... src/console_main.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
 	@echo ... src/test_main.obj
 	@echo ... src/test_main.i
 	@echo ... src/test_main.s
+	@echo ... test_qt.obj
+	@echo ... test_qt.i
+	@echo ... test_qt.s
 .PHONY : help
 
 

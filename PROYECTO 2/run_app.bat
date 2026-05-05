@@ -1,10 +1,7 @@
 @echo off
-REM Ejecutar TaskScriptAnalyzer desde MSYS2
-REM Agrega las DLLs de MSYS2 MinGW al PATH
+REM ============================================================
+REM TaskScriptAnalyzer - Launcher Script
+REM Uses native Windows launcher for proper DLL loading
+REM ============================================================
 
-SET PATH=C:\msys64\mingw64\bin;C:\msys64\mingw64\lib;%PATH%
-
-cd /d "C:\Users\jimhu\Desktop\1S2026_-LFPA-_-202303768\PROYECTO 2\build"
-.\TaskScriptAnalyzer.exe
-
-pause
+"%~dp0launcher.exe"
