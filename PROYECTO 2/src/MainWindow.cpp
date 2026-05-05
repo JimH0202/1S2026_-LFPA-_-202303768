@@ -95,7 +95,7 @@ void MainWindow::analyze() {
     parser.parse();
 
     // Llenar tablas
-    const auto& tokens = parser.getTokens();
+    const auto& tokens = lexer.getTokens();
     tokenTable->setRowCount(tokens.size());
     for (size_t i = 0; i < tokens.size(); ++i) {
         const Token& t = tokens[i];
@@ -106,7 +106,7 @@ void MainWindow::analyze() {
         tokenTable->setItem(i, 4, new QTableWidgetItem(QString::number(t.getColumn())));
     }
 
-    const auto& errorList = parser.getErrors();
+    const auto& errorList = errors.getErrors();
     errorTable->setRowCount(errorList.size());
     for (size_t i = 0; i < errorList.size(); ++i) {
         const ErrorInfo& e = errorList[i];

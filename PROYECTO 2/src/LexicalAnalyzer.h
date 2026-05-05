@@ -15,6 +15,11 @@ private:
     ErrorManager* errorManager;
     std::vector<Token> tokens; // ← Agregar vector para almacenar tokens
 
+    Token addToken(const Token& token) {
+        tokens.push_back(token);
+        return token;
+    }
+
     char peek() const;
     char advance();
     bool isAtEnd() const;
@@ -44,20 +49,20 @@ public:
 
     // 2. Fin de archivo
     if (isAtEnd()) {
-        return Token(tokenCounter++, "EOF", TokenType::END_OF_FILE, line, column);
+        return addToken(Token(tokenCounter++, "EOF", TokenType::END_OF_FILE, line, column));
     }
 
     char c = advance();
 
     // 3. Delimitadores
     switch (c) {
-        case '{': return Token(tokenCounter++, "{", TokenType::LLAVE_ABRE, line, column - 1);
-        case '}': return Token(tokenCounter++, "}", TokenType::LLAVE_CIERRA, line, column - 1);
-        case '[': return Token(tokenCounter++, "[", TokenType::CORCHETE_ABRE, line, column - 1);
-        case ']': return Token(tokenCounter++, "]", TokenType::CORCHETE_CIERRA, line, column - 1);
-        case ':': return Token(tokenCounter++, ":", TokenType::DOS_PUNTOS, line, column - 1);
-        case ',': return Token(tokenCounter++, ",", TokenType::COMA, line, column - 1);
-        case ';': return Token(tokenCounter++, ";", TokenType::PUNTO_Y_COMA, line, column - 1);
+        case '{': return addToken(Token(tokenCounter++, "{", TokenType::LLAVE_ABRE, line, column - 1));
+        case '}': return addToken(Token(tokenCounter++, "}", TokenType::LLAVE_CIERRA, line, column - 1));
+        case '[': return addToken(Token(tokenCounter++, "[", TokenType::CORCHETE_ABRE, line, column - 1));
+        case ']': return addToken(Token(tokenCounter++, "]", TokenType::CORCHETE_CIERRA, line, column - 1));
+        case ':': return addToken(Token(tokenCounter++, ":", TokenType::DOS_PUNTOS, line, column - 1));
+        case ',': return addToken(Token(tokenCounter++, ",", TokenType::COMA, line, column - 1));
+        case ';': return addToken(Token(tokenCounter++, ";", TokenType::PUNTO_Y_COMA, line, column - 1));
     }
 
     // 4. Palabras reservadas o literales (se implementará en la siguiente fase)
@@ -74,20 +79,20 @@ public:
     for (auto &ch : upper) ch = std::toupper(ch);
 
     // Palabras reservadas
-    if (upper == "TABLERO") return Token(tokenCounter++, lexema, TokenType::TABLERO, line, column - lexema.size());
-    if (upper == "COLUMNA") return Token(tokenCounter++, lexema, TokenType::COLUMNA, line, column - lexema.size());
-    if (upper == "TAREA") return Token(tokenCounter++, lexema, TokenType::TAREA, line, column - lexema.size());
-    if (upper == "PRIORIDAD") return Token(tokenCounter++, lexema, TokenType::PRIORIDAD, line, column - lexema.size());
-    if (upper == "RESPONSABLE") return Token(tokenCounter++, lexema, TokenType::RESPONSABLE, line, column - lexema.size());
-    if (upper == "FECHA_LIMITE") return Token(tokenCounter++, lexema, TokenType::FECHA_LIMITE, line, column - lexema.size());
+    if (upper == "TABLERO") return addToken(Token(tokenCounter++, lexema, TokenType::TABLERO, line, column - lexema.size()));
+    if (upper == "COLUMNA") return addToken(Token(tokenCounter++, lexema, TokenType::COLUMNA, line, column - lexema.size()));
+    if (upper == "TAREA") return addToken(Token(tokenCounter++, lexema, TokenType::TAREA, line, column - lexema.size()));
+    if (upper == "PRIORIDAD") return addToken(Token(tokenCounter++, lexema, TokenType::PRIORIDAD, line, column - lexema.size()));
+    if (upper == "RESPONSABLE") return addToken(Token(tokenCounter++, lexema, TokenType::RESPONSABLE, line, column - lexema.size()));
+    if (upper == "FECHA_LIMITE") return addToken(Token(tokenCounter++, lexema, TokenType::FECHA_LIMITE, line, column - lexema.size()));
 
     // Prioridades
-    if (upper == "ALTA") return Token(tokenCounter++, lexema, TokenType::ALTA, line, column - lexema.size());
-    if (upper == "MEDIA") return Token(tokenCounter++, lexema, TokenType::MEDIA, line, column - lexema.size());
-    if (upper == "BAJA") return Token(tokenCounter++, lexema, TokenType::BAJA, line, column - lexema.size());
+    if (upper == "ALTA") return addToken(Token(tokenCounter++, lexema, TokenType::ALTA, line, column - lexema.size()));
+    if (upper == "MEDIA") return addToken(Token(tokenCounter++, lexema, TokenType::MEDIA, line, column - lexema.size()));
+    if (upper == "BAJA") return addToken(Token(tokenCounter++, lexema, TokenType::BAJA, line, column - lexema.size()));
 
     // Si no coincide con ninguna palabra reservada → CADENA
-    return Token(tokenCounter++, lexema, TokenType::CADENA, line, column - lexema.size());
+    return addToken(Token(tokenCounter++, lexema, TokenType::CADENA, line, column - lexema.size()));
 }
     
 
@@ -102,7 +107,7 @@ public:
 
         if (ch == '"') {
             // Cadena cerrada correctamente
-            return Token(tokenCounter++, lexema, TokenType::CADENA, line, startColumn);
+            return addToken(Token(tokenCounter++, lexema, TokenType::CADENA, line, startColumn));
         }
 
         if (ch == '\n') {
@@ -113,7 +118,7 @@ public:
 
     // Fin de archivo sin cerrar cadena
     errorManager->addLexicalError(lexema, "Cadena no cerrada antes del fin del archivo", line, startColumn);
-    return Token(tokenCounter++, lexema, TokenType::ERROR, line, startColumn);
+    return addToken(Token(tokenCounter++, lexema, TokenType::ERROR, line, startColumn));
 }
 
     // 6. Números (enteros o fechas)
@@ -149,15 +154,15 @@ public:
         else goto fecha_invalida;
 
         // Fecha válida
-        return Token(tokenCounter++, lexema, TokenType::FECHA, line, startColumn);
+        return addToken(Token(tokenCounter++, lexema, TokenType::FECHA, line, startColumn));
 
 fecha_invalida:
         errorManager->addLexicalError(lexema, "Formato de fecha inválido, se esperaba AAAA-MM-DD", line, startColumn);
-        return Token(tokenCounter++, lexema, TokenType::ERROR, line, startColumn);
+        return addToken(Token(tokenCounter++, lexema, TokenType::ERROR, line, startColumn));
     }
 
     // Si no es fecha → entero
-    return Token(tokenCounter++, lexema, TokenType::ENTERO, line, startColumn);
+    return addToken(Token(tokenCounter++, lexema, TokenType::ENTERO, line, startColumn));
 }
 
 
@@ -165,7 +170,7 @@ fecha_invalida:
     std::string lex(1, c);
     errorManager->addLexicalError(lex, "Carácter no reconocido", line, column - 1);
 
-    return Token(tokenCounter++, lex, TokenType::ERROR, line, column - 1);
+    return addToken(Token(tokenCounter++, lex, TokenType::ERROR, line, column - 1));
 }
 
     const std::vector<Token>& getTokens() const { return tokens; }
