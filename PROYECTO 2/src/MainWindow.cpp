@@ -156,7 +156,14 @@ void MainWindow::setupTables() {
     errorTable->setSelectionMode(QAbstractItemView::NoSelection);
     errorTable->setFocusPolicy(Qt::NoFocus);
     errorTable->setHorizontalHeaderLabels({"No.", "Lexema", "Tipo", "Descripción", "Línea", "Columna", "Gravedad"});
-    errorTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    errorTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+    errorTable->setColumnWidth(0, 50);
+    errorTable->setColumnWidth(1, 50);
+    errorTable->setColumnWidth(2, 80);
+    errorTable->setColumnWidth(3, 120);
+    errorTable->setColumnWidth(4, 50);
+    errorTable->setColumnWidth(5, 70);
+    errorTable->setColumnWidth(6, 80);
     errorTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
     errorTable->setSelectionBehavior(QAbstractItemView::SelectRows);
     errorTable->setAlternatingRowColors(true);
@@ -262,33 +269,10 @@ void MainWindow::applyStyleSheet() {
             padding: 8px;
             border: none;
             background-color: white;
-        }
-        QTableWidget::item:hover,
-        QTableView::item:hover {
-            background-color: white !important;
-            color: inherit !important;
-            border: none !important;
-        }
-        QTableWidget::item:selected,
-        QTableView::item:selected {
-            background-color: white !important;
-            color: inherit !important;
-            border: none !important;
-        }
-        QTableWidget::item:selected:active,
-        QTableView::item:selected:active,
-        QTableWidget::item:selected:!active,
-        QTableView::item:selected:!active,
-        QTableWidget::item:focus,
-        QTableView::item:focus,
-        QTableWidget::item:focus:hover,
-        QTableView::item:focus:hover {
-            background-color: white !important;
-            color: inherit !important;
-            border: none !important;
+            color: black;
         }
         QHeaderView::section:hover {
-            background-color: transparent !important;
+            background-color: #0f4c81 !important;
         }
         QToolTip {
             background-color: transparent !important;

@@ -1,0 +1,49 @@
+# Build output
+/build/
+/build_test/
+
+# Qt generated files
+*.pro.user*
+*.moc
+*.qrc
+*.qmlc
+*.rcc
+*.qbs.user*
+*.jsc
+*.qmake.stash
+*.qmake.cache
+*.qmake.super
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+build.make
+*.dir
+
+# Generated binaries
+*.exe
+*.dll
+*.a
+*.lib
+*.so
+*.dylib
+
+# Generated reports and temporary outputs
+*.html
+*.dot
+
+# VS Code workspace settings and local configs
+.vscode/
+
+# Misc
+*.log
+*.user
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
