@@ -87,6 +87,13 @@ void SyntaxAnalyzer::exportTree(TreeNode* node, std::ofstream& out) {
     }
 }
 
+std::string SyntaxAnalyzer::cleanString(const std::string& str) {
+    if (str.size() >= 2 && str[0] == '"' && str[str.size() - 1] == '"') {
+        return str.substr(1, str.size() - 2);
+    }
+    return str;
+}
+
 // <programa>       ::= TABLERO CADENA "{" <columnas> "}" ";"
 // <columnas>       ::= <columna> <columnas> | <columna>
 // <columna>        ::= COLUMNA CADENA "{" <tareas> "}" ";"
@@ -107,7 +114,7 @@ void SyntaxAnalyzer::programa() {
     match(TokenType::TABLERO);
 
     board = Board();
-    board.name = currentToken.getLexeme();
+    board.name = cleanString(currentToken.getLexeme());
     TreeNode* t2 = createNode("CADENA", true);
     addChild(node, t2);
     match(TokenType::CADENA);
@@ -149,7 +156,7 @@ void SyntaxAnalyzer::columna(TreeNode* parent) {
     match(TokenType::COLUMNA);
 
     currentColumn = Column();
-    currentColumn.name = currentToken.getLexeme();
+    currentColumn.name = cleanString(currentToken.getLexeme());
 
     TreeNode* t2 = createNode("CADENA", true);
     addChild(node, t2);
@@ -192,24 +199,30 @@ void SyntaxAnalyzer::tarea(TreeNode* parent) {
     TreeNode* node = createNode("<tarea>", false);
     addChild(parent, node);
 
+    bool validTask = true;
+
     TreeNode* t1 = createNode("TAREA", true);
     addChild(node, t1);
-    match(TokenType::TAREA);
+    validTask &= match(TokenType::TAREA);
 
     TreeNode* t2 = createNode(":", true);
     addChild(node, t2);
-    match(TokenType::DOS_PUNTOS);
+    validTask &= match(TokenType::DOS_PUNTOS);
 
     currentTask = Task();
-    currentTask.name = currentToken.getLexeme();
+    if (currentToken.getType() == TokenType::CADENA) {
+        currentTask.name = cleanString(currentToken.getLexeme());
+    } else {
+        validTask = false;
+    }
 
     TreeNode* t3 = createNode("CADENA", true);
     addChild(node, t3);
-    match(TokenType::CADENA);
+    validTask &= match(TokenType::CADENA);
 
     TreeNode* t4 = createNode("[", true);
     addChild(node, t4);
-    match(TokenType::CORCHETE_ABRE);
+    validTask &= match(TokenType::CORCHETE_ABRE);
 
     TreeNode* attrs = createNode("<atributos>", false);
     addChild(node, attrs);
@@ -217,9 +230,11 @@ void SyntaxAnalyzer::tarea(TreeNode* parent) {
 
     TreeNode* t5 = createNode("]", true);
     addChild(node, t5);
-    match(TokenType::CORCHETE_CIERRA);
+    validTask &= match(TokenType::CORCHETE_CIERRA);
 
-    currentColumn.tasks.push_back(currentTask);
+    if (validTask && !currentTask.name.empty()) {
+        currentColumn.tasks.push_back(currentTask);
+    }
 }
 
 void SyntaxAnalyzer::atributos(TreeNode* parent) {
@@ -265,7 +280,7 @@ void SyntaxAnalyzer::atributo(TreeNode* parent) {
         match(TokenType::DOS_PUNTOS);
 
         if (currentToken.getType() == TokenType::CADENA) {
-            currentTask.responsible = currentToken.getLexeme();
+            currentTask.responsible = cleanString(currentToken.getLexeme());
         }
 
         TreeNode* t3 = createNode("CADENA", true);

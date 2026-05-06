@@ -14,21 +14,28 @@ void ReportGenerator::generateKanbanReport(const std::string& filename) {
 
     // CSS embebido
     out << "<style>\n"
-        "body { font-family: Arial; background: #f0f0f0; }\n"
-        ".board { display: flex; gap: 20px; padding: 20px; }\n"
-        ".column { background: white; padding: 15px; border-radius: 8px; width: 300px; }\n"
-        ".column h2 { text-align: center; }\n"
-        ".task { background: #fafafa; border-radius: 6px; padding: 10px; margin-bottom: 10px; border-left: 8px solid #ccc; }\n"
-        ".alta { border-color: red; }\n"
-        ".media { border-color: orange; }\n"
-        ".baja { border-color: green; }\n"
-        ".label { font-weight: bold; }\n"
+        "body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(180deg, #eaf1fb 0%, #f8fbff 100%); margin: 0; padding: 0; color: #102a43; }\n"
+        ".page { max-width: 1240px; margin: 0 auto; padding: 36px; }\n"
+        "header { text-align: center; margin-bottom: 32px; }\n"
+        "header h1 { font-size: 2.6rem; margin: 0; color: #102a43; }\n"
+        "header p { font-size: 1rem; color: #526a85; margin-top: 10px; }\n"
+        ".board { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }\n"
+        ".column { background: white; padding: 24px; border-radius: 22px; box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08); border: 1px solid rgba(15, 23, 42, 0.08); }\n"
+        ".column h2 { text-align: center; margin-top: 0; color: #0f4c81; font-size: 1.35rem; }\n"
+        ".task { background: #f2f7ff; border-radius: 18px; padding: 18px; margin-bottom: 18px; border-left: 6px solid #7da8df; transition: transform 0.2s ease, box-shadow 0.2s ease; }\n"
+        ".task:hover { transform: translateY(-1px); box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1); }\n"
+        ".alta { border-left-color: #d14343; }\n"
+        ".media { border-left-color: #f08a24; }\n"
+        ".baja { border-left-color: #0f9d58; }\n"
+        ".task p { margin: 10px 0; color: #253858; line-height: 1.65; font-size: 0.98rem; }\n"
+        ".label { font-weight: 700; color: #102a43; }\n"
+        ".note { color: #526a85; font-size: 0.95rem; margin-bottom: 24px; }\n"
         "</style>\n";
 
     out << "</head><body>\n";
-
-    out << "<h1 style='text-align:center;'>Tablero Kanban: " << board.name << "</h1>\n";
-
+    out << "<div class='page'>\n";
+    out << "<header><h1>Tablero Kanban: " << board.name << "</h1>\n";
+    out << "<p class='note'>Visualiza tus columnas y tareas con prioridades, responsables y fechas límite.</p></header>\n";
     out << "<div class='board'>\n";
 
     // Recorrer columnas
@@ -55,7 +62,7 @@ void ReportGenerator::generateKanbanReport(const std::string& filename) {
         out << "</div>\n";
     }
 
-    out << "</div>\n</body></html>";
+    out << "</div>\n</div>\n</body></html>";
     out.close();
 }
 
@@ -83,17 +90,22 @@ void ReportGenerator::generateResponsableReport(const std::string& filename) {
     out << "<title>Reporte por Responsable</title>\n";
 
     out << "<style>\n"
-        "body { font-family: Arial; background: #f0f0f0; padding: 20px; }\n"
-        "table { width: 100%; border-collapse: collapse; background: white; }\n"
-        "th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }\n"
-        "th { background: #333; color: white; }\n"
-        ".bar-container { width: 100%; background: #ddd; border-radius: 5px; }\n"
-        ".bar { height: 20px; border-radius: 5px; }\n"
+        "body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f3f7fb; margin: 0; padding: 0; color: #102a43; }\n"
+        ".page { max-width: 1100px; margin: 0 auto; padding: 32px; }\n"
+        "header { text-align: center; margin-bottom: 28px; }\n"
+        "header h1 { margin: 0; font-size: 2.2rem; }\n"
+        "header p { margin: 12px auto 0; font-size: 0.98rem; color: #526a85; max-width: 760px; }\n"
+        "table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08); }\n"
+        "th, td { padding: 14px 16px; border-bottom: 1px solid #e6ebf5; text-align: center; }\n"
+        "th { background: #0f4c81; color: white; text-transform: uppercase; letter-spacing: 0.03em; }\n"
+        "tr:nth-child(even) { background: #f8fbff; }\n"
+        ".bar-container { width: 100%; background: #e6edf8; border-radius: 999px; overflow: hidden; }\n"
+        ".bar { height: 18px; border-radius: 999px; }\n"
         "</style>\n";
 
     out << "</head><body>\n";
-
-    out << "<h1 style='text-align:center;'>Carga por Responsable</h1>\n";
+    out << "<div class='page'>\n";
+    out << "<header><h1>Carga por Responsable</h1><p class='note'>Distribución de tareas por responsable y prioridad.</p></header>\n";
 
     out << "<table>\n";
     out << "<tr><th>Responsable</th><th>Total</th><th>ALTA</th><th>MEDIA</th><th>BAJA</th><th>Distribución</th></tr>\n";
@@ -123,7 +135,7 @@ void ReportGenerator::generateResponsableReport(const std::string& filename) {
         out << "</tr>\n";
     }
 
-    out << "</table>\n</body></html>";
+    out << "</table>\n</div>\n</body></html>";
     out.close();
 }
 
@@ -139,17 +151,25 @@ void ReportGenerator::generateTokenErrorReport(
 
     // CSS embebido
     out << "<style>\n"
-        "body { font-family: Arial; background: #f0f0f0; padding: 20px; }\n"
-        "h1 { text-align: center; }\n"
-        "table { width: 100%; border-collapse: collapse; margin-bottom: 40px; background: white; }\n"
-        "th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }\n"
-        "th { background: #333; color: white; }\n"
-        ".error-row { background: #ffe5e5; }\n"
+        "body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef3fb; margin: 0; padding: 0; color: #102a43; }\n"
+        ".page { max-width: 1100px; margin: 0 auto; padding: 30px; }\n"
+        "header { text-align: center; margin-bottom: 28px; }\n"
+        "header h1 { margin: 0; font-size: 2.2rem; }\n"
+        "header p { margin: 12px auto 0; font-size: 0.98rem; color: #526a85; max-width: 760px; }\n"
+        "h2 { color: #0f4c81; margin-top: 24px; }\n"
+        "table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08); }\n"
+        "th, td { padding: 14px 16px; border-bottom: 1px solid #e6ebf5; text-align: center; }\n"
+        "th { background: #0f4c81; color: white; }\n"
+        "tr:nth-child(odd) { background: #f6f9ff; }\n"
+        ".error-row { background: #fff2f0 !important; }\n"
+        ".error-row td { color: #872a2a; font-weight: 600; }\n"
         "</style>\n";
 
     out << "</head><body>\n";
+    out << "<div class='page'>\n";
+    out << "<header><h1>Reporte de Tokens y Errores</h1><p class='note'>Revisa la tabla de tokens y los errores detectados en el análisis.</p></header>\n";
 
-    out << "<h1>Tabla de Tokens</h1>\n";
+    out << "<h2>Tabla de Tokens</h2>\n";
 
     // Tabla de tokens
     out << "<table>\n";
@@ -168,7 +188,7 @@ void ReportGenerator::generateTokenErrorReport(
     out << "</table>\n";
 
     // Tabla de errores
-    out << "<h1>Tabla de Errores</h1>\n";
+    out << "<h2>Tabla de Errores</h2>\n";
 
     out << "<table>\n";
     out << "<tr><th>No.</th><th>Lexema</th><th>Tipo</th><th>Descripción</th><th>Línea</th><th>Columna</th><th>Gravedad</th></tr>\n";
@@ -187,6 +207,7 @@ void ReportGenerator::generateTokenErrorReport(
 
     out << "</table>\n";
 
+    out << "</div>\n";
     out << "</body></html>";
     out.close();
 }

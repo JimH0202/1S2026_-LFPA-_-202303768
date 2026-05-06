@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Reporte Kanban</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(180deg, #eef3fb 0%, #f8fbff 100%); margin: 0; padding: 0; }
+.page { max-width: 1200px; margin: 0 auto; padding: 30px; }
+h1 { text-align: center; color: #102a43; margin-bottom: 24px; }
+.board { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.column { background: white; padding: 22px; border-radius: 18px; width: 320px; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06); }
+.column h2 { text-align: center; margin-top: 0; color: #0f4c81; }
+.task { background: #f5f8ff; border-radius: 14px; padding: 16px; margin-bottom: 16px; border-left: 6px solid #7da8df; }
+.alta { border-left-color: #d14343; }
+.media { border-left-color: #f08a24; }
+.baja { border-left-color: #0f9d58; }
+.task p { margin: 8px 0; color: #253858; line-height: 1.5; }
+.label { font-weight: 700; color: #102a43; }
+</style>
+</head><body>
+<div class='page'>
+<h1 style='text-align:center;'>Tablero Kanban: Proyecto LFP</h1>
+<div class='board'>
+<div class='column'>
+<h2>Por Hacer</h2>
+<div class='task alta'>
+<p><span class='label'>Tarea:</span> Diseñar AFD</p>
+<p><span class='label'>Prioridad:</span> ALTA</p>
+<p><span class='label'>Responsable:</span> Jorge</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-01</p>
+</div>
+<div class='task alta'>
+<p><span class='label'>Tarea:</span> Implementar Lexer</p>
+<p><span class='label'>Prioridad:</span> ALTA</p>
+<p><span class='label'>Responsable:</span> María</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-08</p>
+</div>
+<div class='task media'>
+<p><span class='label'>Tarea:</span> Escribir casos de prueba</p>
+<p><span class='label'>Prioridad:</span> MEDIA</p>
+<p><span class='label'>Responsable:</span> Carlos</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-10</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

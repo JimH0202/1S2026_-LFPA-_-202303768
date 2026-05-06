@@ -13,6 +13,7 @@
 #include <QUrl>
 #include <QFont>
 #include <QFileInfo>
+
 #include "LexicalAnalyzer.h"
 #include "SyntaxAnalyzer.h"
 #include "ErrorManager.h"
@@ -53,8 +54,10 @@ MainWindow::MainWindow(QWidget* parent)
     setupUI();
     setupMenus();
     applyStyleSheet();
+
     setWindowTitle("TaskScript Analyzer");
     resize(1400, 900);
+
     updateStatus("Listo para analizar. Carga un archivo .task o pega tu contenido.");
 }
 
@@ -67,15 +70,17 @@ void MainWindow::setupUI() {
     editor->setFont(QFont("Consolas", 11));
     editor->setAcceptRichText(false);
 
-    btnLoad = new QPushButton("📂 Cargar archivo", this);
-    btnAnalyze = new QPushButton("▶ Analizar", this);
-    btnReport1 = new QPushButton("🗂 Reporte Kanban", this);
-    btnReport2 = new QPushButton("👥 Reporte Responsables", this);
-    btnReport3 = new QPushButton("🧾 Reporte Tokens/Errores", this);
-    btnClear = new QPushButton("✖ Limpiar", this);
+    btnLoad = new QPushButton("Cargar archivo", this);
+    btnAnalyze = new QPushButton("Analizar", this);
+    btnReport1 = new QPushButton("Reporte Kanban", this);
+    btnReport2 = new QPushButton("Reporte Responsables", this);
+    btnReport3 = new QPushButton("Reporte Tokens/Errores", this);
+    btnReport4 = new QPushButton("Árbol de Derivación", this);
+    btnClear = new QPushButton("Limpiar", this);
 
     tokenTable = new QTableWidget(this);
     errorTable = new QTableWidget(this);
+
     setupTables();
 
     QTabWidget* tabs = new QTabWidget(this);
@@ -100,6 +105,7 @@ void MainWindow::setupUI() {
     buttonLayout->addWidget(btnReport1);
     buttonLayout->addWidget(btnReport2);
     buttonLayout->addWidget(btnReport3);
+    buttonLayout->addWidget(btnReport4);
     buttonLayout->setSpacing(10);
 
     QSplitter* splitter = new QSplitter(Qt::Horizontal, this);
@@ -125,6 +131,7 @@ void MainWindow::setupUI() {
     connect(btnReport1, &QPushButton::clicked, this, &MainWindow::openReport1);
     connect(btnReport2, &QPushButton::clicked, this, &MainWindow::openReport2);
     connect(btnReport3, &QPushButton::clicked, this, &MainWindow::openReport3);
+    connect(btnReport4, &QPushButton::clicked, this, &MainWindow::openReport4);
 }
 
 void MainWindow::setupTables() {
@@ -135,9 +142,19 @@ void MainWindow::setupTables() {
     tokenTable->setSelectionBehavior(QAbstractItemView::SelectRows);
     tokenTable->setAlternatingRowColors(true);
     tokenTable->verticalHeader()->setVisible(false);
+    tokenTable->setMouseTracking(false);
+    tokenTable->setCursor(Qt::ArrowCursor);
+    tokenTable->setSelectionMode(QAbstractItemView::NoSelection);
+    tokenTable->setFocusPolicy(Qt::NoFocus);
     tokenTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     errorTable->setColumnCount(7);
+    errorTable->setAlternatingRowColors(true);
+    errorTable->verticalHeader()->setVisible(false);
+    errorTable->setMouseTracking(false);
+    errorTable->setCursor(Qt::ArrowCursor);
+    errorTable->setSelectionMode(QAbstractItemView::NoSelection);
+    errorTable->setFocusPolicy(Qt::NoFocus);
     errorTable->setHorizontalHeaderLabels({"No.", "Lexema", "Tipo", "Descripción", "Línea", "Columna", "Gravedad"});
     errorTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     errorTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -149,8 +166,10 @@ void MainWindow::setupTables() {
 
 void MainWindow::setupMenus() {
     fileMenu = menuBar()->addMenu("&Archivo");
+
     actOpen = new QAction("Abrir archivo...", this);
     actExit = new QAction("Salir", this);
+
     fileMenu->addAction(actOpen);
     fileMenu->addSeparator();
     fileMenu->addAction(actExit);
@@ -207,33 +226,74 @@ void MainWindow::applyStyleSheet() {
         }
         QTabWidget::pane {
             border: 1px solid #d4dae3;
-            border-radius: 8px;
-            background: white;
+            border-radius: 10px;
+            background: #f9fbff;
         }
         QTabBar::tab {
-            background: #e9eff6;
+            background: #e1eff9;
             border: 1px solid #d4dae3;
             border-bottom: none;
-            padding: 10px 18px;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            margin-right: 2px;
+            padding: 10px 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-right: 4px;
+            min-width: 130px;
+            color: #1b2838;
         }
         QTabBar::tab:selected {
-            background: white;
+            background: #ffffff;
             color: #0078d7;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid #ffffff;
         }
         QHeaderView::section {
-            background-color: #edf2f8;
-            padding: 8px;
+            background-color: #0f4c81;
+            padding: 10px;
             border: 1px solid #d4dae3;
-            font-weight: 600;
-            color: #2a3f5f;
+            font-weight: 700;
+            color: white;
         }
         QTableWidget {
             gridline-color: #e1e7ee;
             background-color: white;
+            alternate-background-color: #f6f9ff;
+        }
+        QTableWidget::item,
+        QTableView::item {
+            padding: 8px;
+            border: none;
+            background-color: white;
+        }
+        QTableWidget::item:hover,
+        QTableView::item:hover {
+            background-color: white !important;
+            color: inherit !important;
+            border: none !important;
+        }
+        QTableWidget::item:selected,
+        QTableView::item:selected {
+            background-color: white !important;
+            color: inherit !important;
+            border: none !important;
+        }
+        QTableWidget::item:selected:active,
+        QTableView::item:selected:active,
+        QTableWidget::item:selected:!active,
+        QTableView::item:selected:!active,
+        QTableWidget::item:focus,
+        QTableView::item:focus,
+        QTableWidget::item:focus:hover,
+        QTableView::item:focus:hover {
+            background-color: white !important;
+            color: inherit !important;
+            border: none !important;
+        }
+        QHeaderView::section:hover {
+            background-color: transparent !important;
+        }
+        QToolTip {
+            background-color: transparent !important;
+            color: transparent !important;
+            border: none !important;
         }
         QStatusBar {
             background-color: #ffffff;
@@ -285,7 +345,9 @@ void MainWindow::analyze() {
     parser.parse();
 
     tokenTable->clearContents();
+    tokenTable->setRowCount(0);
     errorTable->clearContents();
+    errorTable->setRowCount(0);
 
     const auto& tokens = lexer.getTokens();
     tokenTable->setRowCount(static_cast<int>(tokens.size()));
@@ -293,22 +355,27 @@ void MainWindow::analyze() {
         const Token& t = tokens[i];
         auto* item0 = new QTableWidgetItem(QString::number(t.getNumber()));
         item0->setTextAlignment(Qt::AlignCenter);
+        item0->setToolTip("");
         tokenTable->setItem(i, 0, item0);
 
         auto* item1 = new QTableWidgetItem(QString::fromStdString(t.getLexeme()));
         item1->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        item1->setToolTip("");
         tokenTable->setItem(i, 1, item1);
 
         auto* item2 = new QTableWidgetItem(tokenTypeToString(t.getType()));
         item2->setTextAlignment(Qt::AlignCenter);
+        item2->setToolTip("");
         tokenTable->setItem(i, 2, item2);
 
         auto* item3 = new QTableWidgetItem(QString::number(t.getLine()));
         item3->setTextAlignment(Qt::AlignCenter);
+        item3->setToolTip("");
         tokenTable->setItem(i, 3, item3);
 
         auto* item4 = new QTableWidgetItem(QString::number(t.getColumn()));
         item4->setTextAlignment(Qt::AlignCenter);
+        item4->setToolTip("");
         tokenTable->setItem(i, 4, item4);
     }
     tokenTable->resizeRowsToContents();
@@ -319,44 +386,60 @@ void MainWindow::analyze() {
         const ErrorInfo& e = errorList[i];
         auto* item0 = new QTableWidgetItem(QString::number(e.number));
         item0->setTextAlignment(Qt::AlignCenter);
+        item0->setToolTip("");
         errorTable->setItem(i, 0, item0);
 
         auto* item1 = new QTableWidgetItem(QString::fromStdString(e.lexeme));
         item1->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        item1->setToolTip("");
         errorTable->setItem(i, 1, item1);
 
         auto* item2 = new QTableWidgetItem(e.type == ErrorType::LEXICO ? "Léxico" : "Sintáctico");
         item2->setTextAlignment(Qt::AlignCenter);
+        item2->setToolTip("");
         errorTable->setItem(i, 2, item2);
 
         auto* item3 = new QTableWidgetItem(QString::fromStdString(e.description));
         item3->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        item3->setToolTip("");
         errorTable->setItem(i, 3, item3);
 
         auto* item4 = new QTableWidgetItem(QString::number(e.line));
         item4->setTextAlignment(Qt::AlignCenter);
+        item4->setToolTip("");
         errorTable->setItem(i, 4, item4);
 
         auto* item5 = new QTableWidgetItem(QString::number(e.column));
         item5->setTextAlignment(Qt::AlignCenter);
+        item5->setToolTip("");
         errorTable->setItem(i, 5, item5);
 
-        auto* item6 = new QTableWidgetItem(e.severity == ErrorSeverity::ERROR ? "ERROR" : "CRÍTICO");
+        auto severityLabel = (e.severity == ErrorSeverity::ERROR ? "ERROR" : "CRÍTICO");
+        auto* item6 = new QTableWidgetItem(severityLabel);
         item6->setTextAlignment(Qt::AlignCenter);
+        item6->setToolTip("");
         errorTable->setItem(i, 6, item6);
+
+        QColor background = (e.severity == ErrorSeverity::CRITICO ? QColor(255, 220, 220) : QColor(255, 245, 205));
+        for (int col = 0; col < errorTable->columnCount(); ++col) {
+            if (auto* cell = errorTable->item(i, col)) {
+                cell->setBackground(background);
+            }
+        }
     }
     errorTable->resizeRowsToContents();
 
+    ReportGenerator rep(parser.getBoard());
+    rep.generateKanbanReport("reporte_kanban.html");
+    rep.generateResponsableReport("reporte_responsables.html");
+    rep.generateTokenErrorReport("reporte_tokens.html", tokens, errorList);
+
     if (!errors.hasErrors()) {
-        ReportGenerator rep(parser.getBoard());
-        rep.generateKanbanReport("reporte_kanban.html");
-        rep.generateResponsableReport("reporte_responsables.html");
-        rep.generateTokenErrorReport("reporte_tokens.html", tokens, errorList);
         updateStatus("Análisis completado. Reportes generados exitosamente.");
         QMessageBox::information(this, "Éxito", "Análisis completado y reportes generados.");
     } else {
-        updateStatus(QString::number(errorList.size()) + " errores encontrados. Revisa la pestaña Errores.");
-        QMessageBox::warning(this, "Errores", "El archivo contiene errores. Revise la tabla de errores.");
+        updateStatus(QString::number(errorList.size()) + " Archivo analizado correctamente, siempre revisa las tablas de TOKEN y ERRORES.");
+        QMessageBox::warning(this, "Errores", "Revisa la tabla de errores.");
     }
 }
 
@@ -387,19 +470,23 @@ void MainWindow::openReport3() {
     QDesktopServices::openUrl(QUrl::fromLocalFile(path));
 }
 
+void MainWindow::openReport4() {
+    QString path = "arbol.dot";
+    if (!QFile::exists(path)) {
+        QMessageBox::warning(this, "Archivo no encontrado", "El archivo DOT no existe. Analiza el archivo primero.");
+        return;
+    }
+    QDesktopServices::openUrl(QUrl::fromLocalFile(path));
+}
 void MainWindow::clearEditor() {
     editor->clear();
     tokenTable->clearContents();
     tokenTable->setRowCount(0);
     errorTable->clearContents();
     errorTable->setRowCount(0);
-    updateStatus("Editor y resultados borrados.");
+    updateStatus("Editor limpio.");
 }
 
 void MainWindow::showAbout() {
-    QMessageBox::information(this, "Acerca de TaskScript Analyzer",
-        "TaskScript Analyzer\n"
-        "Versión 1.0\n"
-        "Herramienta de análisis léxico y sintáctico con reportes HTML integrados.\n"
-        "Diseñado para tareas y tableros de proyecto.");
+    QMessageBox::information(this, "Acerca de", "TaskScript Analyzer\nVersión GUI\n2026");
 }

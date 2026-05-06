@@ -20,6 +20,6 @@ void ErrorManager::addSyntaxError(const std::string& lexeme, const std::string& 
         description,
         line,
         column,
-        ErrorSeverity::ERROR
+        ErrorSeverity::CRITICO
     });
 }

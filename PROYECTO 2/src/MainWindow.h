@@ -25,6 +25,7 @@ private:
     QPushButton* btnReport1;
     QPushButton* btnReport2;
     QPushButton* btnReport3;
+    QPushButton* btnReport4;
     QPushButton* btnClear;
 
     // Menús
@@ -49,6 +50,7 @@ private slots:
     void openReport1();
     void openReport2();
     void openReport3();
+    void openReport4();
     void clearEditor();
     void showAbout();
 };

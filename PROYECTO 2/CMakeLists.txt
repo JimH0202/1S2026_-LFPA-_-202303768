@@ -37,8 +37,6 @@ qt_add_executable(TaskScriptAnalyzer
 
 target_link_libraries(TaskScriptAnalyzer PRIVATE Qt6::Widgets)
 
-add_executable(launcher src/launcher_main.cpp)
-
 add_executable(ConsoleAnalyzer
     src/console_main.cpp
     src/Token.cpp

@@ -129,19 +129,6 @@ TaskScriptAnalyzer/fast:
 .PHONY : TaskScriptAnalyzer/fast
 
 #=============================================================================
-# Target rules for targets named launcher
-
-# Build rule for target.
-launcher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher
-.PHONY : launcher
-
-# fast build rule for target.
-launcher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/build
-.PHONY : launcher/fast
-
-#=============================================================================
 # Target rules for targets named ConsoleAnalyzer
 
 # Build rule for target.
@@ -192,32 +179,6 @@ TaskScriptAnalyzer_autogen: cmake_check_build_system
 TaskScriptAnalyzer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TaskScriptAnalyzer_autogen.dir\build.make CMakeFiles/TaskScriptAnalyzer_autogen.dir/build
 .PHONY : TaskScriptAnalyzer_autogen/fast
-
-#=============================================================================
-# Target rules for targets named launcher_autogen_timestamp_deps
-
-# Build rule for target.
-launcher_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher_autogen_timestamp_deps
-.PHONY : launcher_autogen_timestamp_deps
-
-# fast build rule for target.
-launcher_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher_autogen_timestamp_deps.dir\build.make CMakeFiles/launcher_autogen_timestamp_deps.dir/build
-.PHONY : launcher_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named launcher_autogen
-
-# Build rule for target.
-launcher_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 launcher_autogen
-.PHONY : launcher_autogen
-
-# fast build rule for target.
-launcher_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher_autogen.dir\build.make CMakeFiles/launcher_autogen.dir/build
-.PHONY : launcher_autogen/fast
 
 #=============================================================================
 # Target rules for targets named ConsoleAnalyzer_autogen_timestamp_deps
@@ -342,30 +303,6 @@ TestAnalyzer_autogen/mocs_compilation.s: TestAnalyzer_autogen/mocs_compilation.c
 TestAnalyzer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestAnalyzer.dir\build.make CMakeFiles/TestAnalyzer.dir/TestAnalyzer_autogen/mocs_compilation.cpp.s
 .PHONY : TestAnalyzer_autogen/mocs_compilation.cpp.s
-
-launcher_autogen/mocs_compilation.obj: launcher_autogen/mocs_compilation.cpp.obj
-.PHONY : launcher_autogen/mocs_compilation.obj
-
-# target to build an object file
-launcher_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.obj
-.PHONY : launcher_autogen/mocs_compilation.cpp.obj
-
-launcher_autogen/mocs_compilation.i: launcher_autogen/mocs_compilation.cpp.i
-.PHONY : launcher_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-launcher_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.i
-.PHONY : launcher_autogen/mocs_compilation.cpp.i
-
-launcher_autogen/mocs_compilation.s: launcher_autogen/mocs_compilation.cpp.s
-.PHONY : launcher_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-launcher_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\launcher.dir\build.make CMakeFiles/launcher.dir/launcher_autogen/mocs_compilation.cpp.s
-.PHONY : launcher_autogen/mocs_compilation.cpp.s
 
 src/BoardModel.obj: src/BoardModel.cpp.obj
 .PHONY : src/BoardModel.obj
@@ -657,12 +594,9 @@ help:
 	@echo ... TaskScriptAnalyzer_autogen_timestamp_deps
 	@echo ... TestAnalyzer_autogen
 	@echo ... TestAnalyzer_autogen_timestamp_deps
-	@echo ... launcher_autogen
-	@echo ... launcher_autogen_timestamp_deps
 	@echo ... ConsoleAnalyzer
 	@echo ... TaskScriptAnalyzer
 	@echo ... TestAnalyzer
-	@echo ... launcher
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.obj
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.i
 	@echo ... ConsoleAnalyzer_autogen/mocs_compilation.s
@@ -672,9 +606,6 @@ help:
 	@echo ... TestAnalyzer_autogen/mocs_compilation.obj
 	@echo ... TestAnalyzer_autogen/mocs_compilation.i
 	@echo ... TestAnalyzer_autogen/mocs_compilation.s
-	@echo ... launcher_autogen/mocs_compilation.obj
-	@echo ... launcher_autogen/mocs_compilation.i
-	@echo ... launcher_autogen/mocs_compilation.s
 	@echo ... src/BoardModel.obj
 	@echo ... src/BoardModel.i
 	@echo ... src/BoardModel.s

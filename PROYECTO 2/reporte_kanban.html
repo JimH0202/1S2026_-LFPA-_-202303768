@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Reporte Kanban</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(180deg, #eaf1fb 0%, #f8fbff 100%); margin: 0; padding: 0; color: #102a43; }
+.page { max-width: 1240px; margin: 0 auto; padding: 36px; }
+header { text-align: center; margin-bottom: 32px; }
+header h1 { font-size: 2.6rem; margin: 0; color: #102a43; }
+header p { font-size: 1rem; color: #526a85; margin-top: 10px; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
+.column { background: white; padding: 24px; border-radius: 22px; box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08); border: 1px solid rgba(15, 23, 42, 0.08); }
+.column h2 { text-align: center; margin-top: 0; color: #0f4c81; font-size: 1.35rem; }
+.task { background: #f2f7ff; border-radius: 18px; padding: 18px; margin-bottom: 18px; border-left: 6px solid #7da8df; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.task:hover { transform: translateY(-1px); box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1); }
+.alta { border-left-color: #d14343; }
+.media { border-left-color: #f08a24; }
+.baja { border-left-color: #0f9d58; }
+.task p { margin: 10px 0; color: #253858; line-height: 1.65; font-size: 0.98rem; }
+.label { font-weight: 700; color: #102a43; }
+.note { color: #526a85; font-size: 0.95rem; margin-bottom: 24px; }
+</style>
+</head><body>
+<div class='page'>
+<header><h1>Tablero Kanban: Proyecto LFP</h1>
+<p class='note'>Visualiza tus columnas y tareas con prioridades, responsables y fechas límite.</p></header>
+<div class='board'>
+<div class='column'>
+<h2>Por Hacer</h2>
+<div class='task alta'>
+<p><span class='label'>Tarea:</span> Diseñar AFD</p>
+<p><span class='label'>Prioridad:</span> ALTA</p>
+<p><span class='label'>Responsable:</span> Jorge</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-01</p>
+</div>
+<div class='task alta'>
+<p><span class='label'>Tarea:</span> Implementar Lexer</p>
+<p><span class='label'>Prioridad:</span> ALTA</p>
+<p><span class='label'>Responsable:</span> María</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-08</p>
+</div>
+<div class='task media'>
+<p><span class='label'>Tarea:</span> Escribir casos de prueba</p>
+<p><span class='label'>Prioridad:</span> MEDIA</p>
+<p><span class='label'>Responsable:</span> Carlos</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-10</p>
+</div>
+</div>
+<div class='column'>
+<h2>En Progreso</h2>
+<div class='task media'>
+<p><span class='label'>Tarea:</span> Diseñar GUI</p>
+<p><span class='label'>Prioridad:</span> MEDIA</p>
+<p><span class='label'>Responsable:</span> Ana</p>
+<p><span class='label'>Fecha límite:</span> 2026-05-05</p>
+</div>
+</div>
+<div class='column'>
+<h2>Completado</h2>
+<div class='task baja'>
+<p><span class='label'>Tarea:</span> Investigar Qt</p>
+<p><span class='label'>Prioridad:</span> BAJA</p>
+<p><span class='label'>Responsable:</span> Pedro</p>
+<p><span class='label'>Fecha límite:</span> 2026-04-20</p>
+</div>
+<div class='task baja'>
+<p><span class='label'>Tarea:</span> Configurar GitHub</p>
+<p><span class='label'>Prioridad:</span> BAJA</p>
+<p><span class='label'>Responsable:</span> Jorge</p>
+<p><span class='label'>Fecha límite:</span> 2026-04-18</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

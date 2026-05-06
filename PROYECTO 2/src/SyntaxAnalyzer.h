@@ -32,6 +32,9 @@ private:
     void addChild(TreeNode* parent, TreeNode* child);
     void exportTree(TreeNode* node, std::ofstream& out);
 
+    // Helper para limpiar cadenas
+    std::string cleanString(const std::string& str);
+
 public:
     SyntaxAnalyzer(LexicalAnalyzer* lexer, ErrorManager* errorManager);
 

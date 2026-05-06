@@ -20,6 +20,14 @@ private:
         return token;
     }
 
+    bool isIdentifierStart(char c) const {
+        return std::isalpha(static_cast<unsigned char>(c)) || c == '_';
+    }
+
+    bool isIdentifierPart(char c) const {
+        return std::isalnum(static_cast<unsigned char>(c)) || c == '_';
+    }
+
     char peek() const;
     char advance();
     bool isAtEnd() const;
@@ -65,18 +73,18 @@ public:
         case ';': return addToken(Token(tokenCounter++, ";", TokenType::PUNTO_Y_COMA, line, column - 1));
     }
 
-    // 4. Palabras reservadas o literales (se implementará en la siguiente fase)
-    if (std::isalpha(c)) {
+    // 4. Palabras reservadas o literales
+    if (isIdentifierStart(c)) {
     std::string lexema;
     lexema += c;
 
-    while (!isAtEnd() && std::isalpha(peek())) {
+    while (!isAtEnd() && isIdentifierPart(peek())) {
         lexema += advance();
     }
 
     // Convertir a mayúsculas para comparar
     std::string upper = lexema;
-    for (auto &ch : upper) ch = std::toupper(ch);
+    for (auto &ch : upper) ch = std::toupper(static_cast<unsigned char>(ch));
 
     // Palabras reservadas
     if (upper == "TABLERO") return addToken(Token(tokenCounter++, lexema, TokenType::TABLERO, line, column - lexema.size()));
