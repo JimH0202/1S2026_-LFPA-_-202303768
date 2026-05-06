@@ -1,0 +1,31 @@
+TABLERO "Proyecto Completo" {
+    COLUMNA "POR HACER" {
+        TAREA "Escribir especificación" [
+            PRIORIDAD "MEDIA",
+            RESPONSABLE "Carlos",
+            FECHA_LIMITE "20231210",
+            DESCRIPCION "Redactar requisitos y alcance"
+        ],
+        TAREA "Configurar repositorio" [
+            PRIORIDAD "BAJA",
+            RESPONSABLE "Jorge",
+            DESCRIPCION "Crear repositorio y estructura inicial"
+        ]
+    }
+    COLUMNA "EN PROGRESO" {
+        TAREA "Implementar parser" [
+            PRIORIDAD "ALTA",
+            RESPONSABLE "Lucía",
+            FECHA_LIMITE "20231220",
+            DESCRIPCION "Desarrollar análisis léxico y sintáctico"
+        ]
+    }
+    COLUMNA "FINALIZADO" {
+        TAREA "Revisar documentación" [
+            PRIORIDAD "MEDIA",
+            RESPONSABLE "María",
+            FECHA_LIMITE "20231218",
+            DESCRIPCION "Validar manual de usuario y técnico"
+        ]
+    }
+}

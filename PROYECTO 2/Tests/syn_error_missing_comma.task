@@ -1,0 +1,10 @@
+TABLERO "Proyecto Error Sintáctico" {
+    COLUMNA "POR HACER" {
+        TAREA "Implementar login" [
+            PRIORIDAD "ALTA"
+            RESPONSABLE "Laura",
+            FECHA_LIMITE "20231222",
+            DESCRIPCION "Agregar validación de usuario"
+        ]
+    }
+}

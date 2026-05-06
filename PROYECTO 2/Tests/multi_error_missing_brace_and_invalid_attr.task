@@ -1,0 +1,14 @@
+TABLERO "Proyecto MultiError" {
+    COLUMNA "POR HACER" {
+        TAREA "Revisar seguridad" [
+            PRIORIDAD "ALTA",
+            COLOR "ROJO",
+            RESPONSABLE "Marta",
+            FECHA_LIMITE "20231205"
+        ]
+        TAREA "Probar login" [
+            PRIORIDAD "MEDIA",
+            RESPONSABLE "Iván"
+            DESCRIPCION "Validar acceso"
+        ]
+    }

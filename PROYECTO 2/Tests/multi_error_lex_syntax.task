@@ -1,0 +1,16 @@
+TABLERO "Proyecto Errores" {
+    COLUMNA "POR HACER" {
+        TAREA "Crear pruebas" [
+            PRIORIDAD "BAJA",
+            RESPONSABLE "Sofía",
+            FECHA_LIMITE "20231210",
+            DESCRIPCION "Validar flujo completo"
+        ]
+        TAREA "Corregir bugs" [
+            PRIORIDAD "ALTA",
+            RESPONSABLE "Andrés",
+            FECHA_LIMITE "202312xx",
+            DESCRIPCION "Solucionar fallos en parser"
+        ]
+    }
+}

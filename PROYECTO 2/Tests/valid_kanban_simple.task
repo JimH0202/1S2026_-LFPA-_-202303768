@@ -1,0 +1,10 @@
+TABLERO "Proyecto Simple" {
+    COLUMNA "POR HACER" {
+        TAREA "Preparar diseño" [
+            PRIORIDAD "ALTA",
+            RESPONSABLE "Ana",
+            FECHA_LIMITE "20231215",
+            DESCRIPCION "Diseñar la pantalla de inicio"
+        ]
+    }
+}

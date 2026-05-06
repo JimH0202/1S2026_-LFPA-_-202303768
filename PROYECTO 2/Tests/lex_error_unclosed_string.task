@@ -1,0 +1,9 @@
+TABLERO "Proyecto Cadena Incompleta" {
+    COLUMNA "POR HACER" {
+        TAREA "Probar UI" [
+            PRIORIDAD "MEDIA",
+            RESPONSABLE "Diego",
+            DESCRIPCION "Verificar botones y enlaces
+        ]
+    }
+}

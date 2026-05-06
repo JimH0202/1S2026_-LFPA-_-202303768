@@ -1,0 +1,7 @@
+TABLERO "Proyecto Mínimo" {
+    COLUMNA "POR HACER" {
+        TAREA "Documentar" [
+            PRIORIDAD "BAJA"
+        ]
+    }
+}

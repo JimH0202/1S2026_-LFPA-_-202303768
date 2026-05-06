@@ -1,0 +1,10 @@
+TABLERO "Proyecto Error Léxico" {
+    COLUMNA "POR HACER" {
+        TAREA "Revisar código" [
+            PRIORIDAD "ALTA",
+            RESPONSABLE "Ana",
+            FECHA_LIMITE "20231212",
+            DESCRIPCION "Revisar el módulo principal @ revisar"
+        ]
+    }
+}

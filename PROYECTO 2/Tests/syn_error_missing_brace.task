@@ -1,0 +1,10 @@
+TABLERO "Proyecto Sin Llave" {
+    COLUMNA "POR HACER" {
+        TAREA "Configurar servidor" [
+            PRIORIDAD "ALTA",
+            RESPONSABLE "Pedro",
+            FECHA_LIMITE "20231230",
+            DESCRIPCION "Instalar y configurar servicio"
+        ]
+    
+}

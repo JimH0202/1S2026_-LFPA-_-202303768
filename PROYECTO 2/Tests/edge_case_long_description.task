@@ -1,0 +1,10 @@
+TABLERO "Proyecto Borde" {
+    COLUMNA "EN PROGRESO" {
+        TAREA "Escribir reporte largo" [
+            PRIORIDAD "MEDIA",
+            RESPONSABLE "Alejandro",
+            FECHA_LIMITE "20231228",
+            DESCRIPCION "Este es un caso borde con una descripción muy larga para validar que el analizador y el generador de reportes manejan correctamente textos extensos sin truncar información ni generar errores inesperados"
+        ]
+    }
+}
